@@ -1,0 +1,90 @@
+.form-card {
+    padding: 50px 100px;
+    width: 70vw;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.form-title {
+    margin-bottom: 20px;
+    color: #7EACBB;
+}
+
+.question {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    margin-top: 10px;
+}
+
+.MuiRadio-root {
+    color: #7EACBB;
+}
+
+.MuiRadio-root.Mui-checked {
+    color: #4A7886;
+}
+
+.MuiRadio-root.Mui-checked:hover {
+    background-color: #E6F4F1;
+}
+
+.MuiRadio-root:hover {
+    background-color: #E6F4F1;
+}
+
+.MuiCheckbox-root {
+    color: #7EACBB;
+}
+
+.MuiCheckbox-root.Mui-checked {
+    color: #4A7886;
+}
+
+.MuiCheckbox-root:hover {
+    background-color: #E6F4F1;
+}
+
+.MuiCheckbox-root.Mui-checked:hover {
+    background-color: #E6F4F1;
+}
+
+.submit {
+    align-self: center;
+    background-color: #8FB3BF;
+    color: white;
+    transition: 250ms;
+    margin: 20px;
+    width: 150px;
+    text-transform: none;
+}
+
+.submit:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.gift-chip.MuiToggleButton-root {
+    margin-right: 15px;
+    background-color: #8FB3BF;
+    text-transform: none;
+    color: white;
+}
+
+.gift-chip.MuiToggleButton-root:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.gift-chip.MuiToggleButton-root.Mui-selected:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.gift-chip.MuiToggleButton-root.Mui-selected {
+    background-color: #334A52;
+    color: white;
+}
