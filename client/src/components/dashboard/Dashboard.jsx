@@ -2,7 +2,7 @@ import './Dashboard.css';
 import React, { useEffect } from 'react';
 import { StylesProvider } from '@material-ui/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import NavigationBar from './NavigationBar';
+import NavigationBar from './navigation/NavigationBar';
 
 // import UserProfile from './UserProfile';
 // import EventFrame from './events/EventFrame';

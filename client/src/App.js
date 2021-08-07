@@ -23,8 +23,7 @@ const App = () => {
                         </Route>
                         <Route path="/dashboard/:userId" children={<Dashboard />} />
                     </Switch> */}
-                    <GiftForm/>
-                    {/* <Dashboard /> */}
+                    <Dashboard />
                 </main>
             </div>
         </Router>
