@@ -412,52 +412,133 @@ GiftToKeyword.create(
 
 #6
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Novel",
+    description: "Whether they're in to murder mysteries, romances or anything in between, you can't go wrong with a good novel! It's all the more special if it's one of your favorite novels to read as well. ",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=novel&ref=nb_sb_noss_1",
+    image: "https://images-na.ssl-images-amazon.com/images/I/71tqt4VL+dS.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 6
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 6
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 6
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 6
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 6
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 21,
+    gift_id: 6
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 6
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 6
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 6
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 6
+)
+
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 6
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 6
+)
+
+#7
+Gift.create(
+    name: "AirPods",
+    description: "Portable. Practical. On the top of everyone's wish list (just be sure they don't have a pair already).",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=airpods&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71NTi82uBEL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 7
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 7
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 7
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 7,
+    gift_id: 7
 )
+
+
 
 ##############################
 Gift.create(
@@ -508,3 +589,12 @@ GiftToKeyword.create(
     gift_id: 
 )
 
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
