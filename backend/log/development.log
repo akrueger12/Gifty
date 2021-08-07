@@ -73,3 +73,228 @@ Processing by WishlistController#create as */*
 Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 10.2ms | Allocations: 5980)
 
 
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:50:19 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WishlistController#show as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.5ms | Allocations: 4171)
+
+
+  
+NoMethodError (undefined method `wishlist_id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:25:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:50:53 -0500
+Processing by WishlistController#show as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.8ms | Allocations: 3182)
+
+
+  
+NoMethodError (undefined method `wishlist_id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:26:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:51:09 -0500
+Processing by WishlistController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:27:in `show'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.2ms | Allocations: 3104)
+
+
+  
+NoMethodError (undefined method `wishlist_id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:27:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:51:24 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:27:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.2ms | Allocations: 1991)
+
+
+  
+NoMethodError (undefined method `wishlist_id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:27:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:51:38 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:28:in `show'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 4.8ms | Allocations: 2675)
+
+
+  
+NoMethodError (undefined method `wishlist_id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:28:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:52:30 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 5.0ms | Allocations: 2333)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:26:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:53:25 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 4.9ms | Allocations: 2319)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:26:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:54:07 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 4.6ms | Allocations: 2319)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:26:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:55:03 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 4.7ms | Allocations: 2319)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:26:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:57:25 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `show'
+Completed 404 Not Found in 12ms (ActiveRecord: 9.0ms | Allocations: 1967)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/wishlist_controller.rb:25:in `show'
+Started GET "/wishlist/show" for ::1 at 2021-08-07 11:58:26 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `show'
+  [1m[36mWishlist Load (1.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:30:in `block (2 levels) in show'
+Completed 200 OK in 20ms (Views: 8.4ms | ActiveRecord: 4.8ms | Allocations: 6662)
+
+
+Started GET "/wishlist/show" for ::1 at 2021-08-07 12:02:08 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>1, "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `show'
+  [1m[36mWishlist Load (2.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:27:in `map'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 14.1ms | Allocations: 8601)
+
+
+Started GET "/keyword/create" for ::1 at 2021-08-07 12:04:16 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/keyword/create"):
+  
+Started GET "/keywords/create" for ::1 at 2021-08-07 12:04:27 -0500
+Processing by KeywordsController#create as */*
+  Parameters: {"keyword"=>"practical"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/keywords_controller.rb:7:in `create'
+  [1m[36mKeyword Create (2.1ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "practical"], ["created_at", "2021-08-07 17:04:27.974100"], ["updated_at", "2021-08-07 17:04:27.974100"]]
+  ↳ app/controllers/keywords_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/keywords_controller.rb:7:in `create'
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 10.3ms | Allocations: 6358)
+
+
+Started GET "/gift/create" for ::1 at 2021-08-07 12:09:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/gift/create"):
+  
+Started GET "/gifts/create" for ::1 at 2021-08-07 12:10:02 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "linkToPurchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg", "gift"=>{"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 2.8ms | Allocations: 480)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/gifts_controller.rb:7:in `[]'
+app/controllers/gifts_controller.rb:7:in `create'
+Started GET "/gifts/create" for ::1 at 2021-08-07 12:10:20 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg", "gift"=>{"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/gifts_controller.rb:7:in `[]'
+app/controllers/gifts_controller.rb:7:in `create'
+Started GET "/gifts/create" for ::1 at 2021-08-07 12:10:34 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg", "gift"=>{"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 2.6ms | Allocations: 495)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/gifts_controller.rb:8:in `[]'
+app/controllers/gifts_controller.rb:8:in `create'
+Started GET "/gifts/create" for ::1 at 2021-08-07 12:10:42 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg", "gift"=>{"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (2.0ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rubiks Cube"], ["description", "it's a cube"], ["price", "0 - 20"], ["image", "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"], ["created_at", "2021-08-07 17:10:42.877907"], ["updated_at", "2021-08-07 17:10:42.877907"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 8.0ms | Allocations: 5562)
+
+
+Started GET "/gifts/create" for ::1 at 2021-08-07 12:11:39 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg", "gift"=>{"name"=>"Rubiks Cube", "description"=>"it's a cube", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6", "image"=>"https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (0.8ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Rubiks Cube"], ["description", "it's a cube"], ["price", "0 - 20"], ["link_to_purchase", "https://www.amazon.com/Hasbro-A9312-Rubiks-Cube/dp/B00YBWOMRA/ref=sr_1_6?dchild=1&keywords=rubiks+cube&qid=1628349287&sr=8-6"], ["image", "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg"], ["created_at", "2021-08-07 17:11:40.106239"], ["updated_at", "2021-08-07 17:11:40.106239"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 7.2ms | Allocations: 5323)
+
+

@@ -1,7 +1,5 @@
 class WishlistController < ApplicationController
   def create
-    puts(params[:wishlist_id])
-    puts(params[:user_input])
     @wishlistItem = Wishlist.new(
       wishlist_id: params[:wishlist_id],
       user_input: params[:user_input]
@@ -20,5 +18,14 @@ class WishlistController < ApplicationController
   end
 
   def show
+    @userID = params[:user_id]
+
+    @wishlistID = User.find(@userID)
+
+    @userWishlist = Wishlist.where(wishlist_id: @wishlistID).map(&:user_input) 
+
+    respond_to do |format|
+      format.json { render json: { items: @userWishlist } }
+    end
   end
 end
