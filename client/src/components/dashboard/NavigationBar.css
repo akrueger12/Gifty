@@ -1,0 +1,9 @@
+/* Styles for the navigation bar */
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: #8FB3BF;
+}
+
+.MuiTabs-indicator {
+    background-color: #8FB3BF;
+}

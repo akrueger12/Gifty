@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Dashboard from './components/dashboard/Dashboard';
 
 /**
  * Main component that holds the logic for the app
@@ -12,17 +13,17 @@ const App = () => {
         <Router>
             <div>
                 <main>
-                    <Switch>
+                    {/* <Switch>
                         <Route exact path="/">
-                            {/* <LandingPage /> */}
+                            <LandingPage />
                         </Route>
                         <Route exact path="/signup">
-                            {/* <SignUpPage /> */}
+                            <SignUpPage />
                         </Route>
-                        {/* <Route path="/dashboard/:userId" children={<Dashboard />} /> */}
-                    </Switch>
+                        <Route path="/dashboard/:userId" children={<Dashboard />} />
+                    </Switch> */}
+                    <Dashboard />
                 </main>
-                <Footer />
             </div>
         </Router>
     );
