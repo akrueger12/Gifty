@@ -125,6 +125,252 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
+    keyword_id: 14,
     gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id:1
+)
+
+#2
+Gift.create(
+    name: "Jewelry",
+    description: "A gift that will remind them of you every time they put it on. A simple new staple in their collection is sure to be a hit!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=jewelry&ref=nb_sb_noss_2",
+    image: "https://bnsec.bluenile.com/bluenile/is/image/bluenile/-freshwater-cultured-pearl-earrings-infinity-twist-drop-14k-yellow-gold-/72074_main?$phab_detailmain$"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 2
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 2
+)
+
+#3
+Gift.create(
+    name: "Personalized photo calendar",
+    description: "Photo calendars are all the rage for your close friends and family! Whether a desk calendar or a full-on hanging calendar, the options are endless and the personal touches are up to you.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=photo+calendar&ref=nb_sb_noss",
+    image: "https://m.media-amazon.com/images/I/71rjAZ9hQsL._AC_SL1200_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 3
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 3
+)
+
+#4
+Gift.create(
+    name: "Painting set",
+    description: "A creative idea for the established artist or the novice! So many options with paint-by-number kits for beginners or sets of new high-quality paints for the artistic afficianado.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=painting+set&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71e8uvHTiOS._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 4
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 4
+)
+
+#5
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: ,
+    gift_id:
 )
