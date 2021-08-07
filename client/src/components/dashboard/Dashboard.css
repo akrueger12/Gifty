@@ -1,13 +1,13 @@
 /* Styles for the dashboard screen */
 
-/* .dashboard {
+.dashboard {
     min-height: 100vh;
     width: 100vw;
     position: relative;
     background-color: #f2f2e8;
 }
 
-.loading {
+/* .loading {
     display: flex;
     height: 95vh;
     justify-content: center;

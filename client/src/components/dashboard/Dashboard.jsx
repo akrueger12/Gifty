@@ -1,6 +1,9 @@
 import './Dashboard.css';
 import React, { useEffect } from 'react';
 import { StylesProvider } from '@material-ui/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import NavigationBar from './NavigationBar';
+
 // import UserProfile from './UserProfile';
 // import EventFrame from './events/EventFrame';
 // import NavigationBar from './NavigationBar';
@@ -8,7 +11,6 @@ import { StylesProvider } from '@material-ui/styles';
 // import EventCreationCard from './events/EventCreationCard';
 // import EventModificationCard from './events/EventModificationCard';
 // import { deleteEvent, retrieveEventsForUser, retrieveQuestionnaire, retrieveUserData } from '../../apis';
-// import CircularProgress from '@material-ui/core/CircularProgress';
 // import EventViewCard from './events/EventViewCard';
 // import { useParams } from 'react-router-dom';
 
@@ -183,22 +185,21 @@ export const Dashboard = () => {
     //     }
     // };
 
-    // return (
-    //     <div className="dashboard">
-    //         {!userData ? (
-    //             <div className="loading">
-    //                 {' '}
-    //                 <CircularProgress color="inherit" />{' '}
-    //             </div>
-    //         ) : (
-    //             <StylesProvider injectFirst>
-    //                 <UserProfile name={userData.screenName || 'user'} imageUrl={userData.photo} user={userData} />
-    //                 <NavigationBar switchTabAction={questionnaireTabAction} tabValue={tabValue} />
-    //                 {generateDashboardContent()}
-    //             </StylesProvider>
-    //         )}
-    //     </div>
-    // );
+    return (
+        <div className="dashboard">
+            {/* {!userData ? (
+                <div className="loading">
+                    {' '}
+                    <CircularProgress color="inherit" />{' '}
+                </div>
+            ) : ( */}
+                <StylesProvider injectFirst>
+                    <NavigationBar/>
+                    {/* {generateDashboardContent()} */}
+                </StylesProvider>
+            {/* )} */}
+        </div>
+    );
 };
 
 export default Dashboard;
