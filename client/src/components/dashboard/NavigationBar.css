@@ -1,0 +1,17 @@
+/* Styles for the navigation bar */
+
+.nav-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #8FB3BF;
+}
+
+.gift-icon {
+    color: white;
+}
+
+.user-icon {
+    color: white;
+}
