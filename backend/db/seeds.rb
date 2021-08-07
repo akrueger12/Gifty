@@ -27,53 +27,104 @@ Keyword.create(
 Keyword.create(
     keyword: "reader"
 )
-
+#6
 Keyword.create(
     keyword: "fitness"
 )
-
+#7
 Keyword.create(
     keyword: "tech"
 )
-
+#8
 Keyword.create(
     keyword: "travel"
 )
-
+#9
 Keyword.create(
     keyword: "nature lover"
 )
-
+#10
 Keyword.create(
     keyword: "lighthearted"
 )
-# male
-# female
-# other
-# 0 - 20
-# 20 - 50
-# 50 - 100
-# 100+
-# handmade
-# 0 - 5
-# 5 - 10
-# 10 - 15
-# 15 - 20
-# 20 - 30
-# 30 - 50
-# 50+
+#11
+Keyword.create(
+    keyword: "male"
+)
+#12
+Keyword.create(
+    keyword: "female"
+)
+#13
+Keyword.create(
+    keyword: "other"
+)
+#14
+Keyword.create(
+    keyword: "0 - 20"
+)
+#15
+Keyword.create(
+    keyword: "20 - 50"
+)
+#16
+Keyword.create(
+    keyword: "50 - 100"
+)
+#17
+Keyword.create(
+    keyword: "100+"
+)
+#18
+Keyword.create(
+    keyword: "handmade"
+)
+#19
+Keyword.create(
+    keyword: "0 - 5"
+)
+#20
+Keyword.create(
+    keyword: "5 - 10"
+)
+#21
+Keyword.create(
+    keyword: "10 - 15"
+)
+#22
+Keyword.create(
+    keyword: "15 - 20"
+)
+#23
+Keyword.create(
+    keyword: "20 - 30"
+)
+#24
+Keyword.create(
+    keyword: "30 - 50"
+)
+#25
+Keyword.create(
+    keyword: "50+"
+)
+
 
 #gift items
 #1
 Gift.create(
-    name: "Leather Passport Holder",
-    description: "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way.",
+    name: "Candle",
+    description: "A tried-and-true classic gift that never disappoints! It's so fun to try out seasonal scents or to stick to one of your friend's favorite signature scents.",
     price:nil,
-    link_to_purchase: "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628363794&sr=8-5",
-    image: "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"
+    link_to_purchase: "https://www.amazon.com/s?k=candle&ref=nb_sb_noss",
+    image: "https://m.media-amazon.com/images/I/81wDBJ67HWS._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
+    keyword_id: 12,
+    gift_id:1
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
     gift_id:1
 )
