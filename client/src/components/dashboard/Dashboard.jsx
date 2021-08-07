@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { StylesProvider } from '@material-ui/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import NavigationBar from './navigation/NavigationBar';
+import GiftFrame from './gifts/GiftFrame';
 
 // import UserProfile from './UserProfile';
 // import EventFrame from './events/EventFrame';
@@ -21,8 +22,8 @@ import NavigationBar from './navigation/NavigationBar';
 export const Dashboard = () => {
     // let { userId } = useParams();
 
-    // // set states
-    // const [state, setState] = React.useState('events');
+    // set states
+    const [state, setState] = React.useState('gift-view');
     // const [userData, setUserData] = React.useState(undefined);
     // const [questionnaireInfo, setQuestionnaireInfo] = React.useState({});
     // const [tabValue, setTabValue] = React.useState(0);
@@ -117,73 +118,14 @@ export const Dashboard = () => {
     //     setQuestionnaireInfo(update);
     // };
 
-    // // generate content for dashboard based on current state
-    // const generateDashboardContent = () => {
-    //     if (state === 'questionnaire') {
-    //         return <QuestionnaireTab questionnaire={questionnaireInfo} updateAction={updateButtonAction} />;
-    //     } else if (state === 'event-creation') {
-    //         return (
-    //             <>
-    //                 <EventFrame
-    //                     createEventAction={addButtonAction}
-    //                     editEventAction={editButtonAction}
-    //                     deleteEventAction={deleteButtonAction}
-    //                     viewEventAction={viewButtonAction}
-    //                     invitedEvents={invitedEvents}
-    //                     hostedEvents={hostedEvents}
-    //                 />
-    //                 <EventCreationCard
-    //                     cancelAction={cancelButtonAction}
-    //                     okAction={okButtonAction}
-    //                     userEmail={userData.email}
-    //                 />
-    //             </>
-    //         );
-    //     } else if (state === 'event-modification') {
-    //         return (
-    //             <>
-    //                 <EventFrame
-    //                     createEventAction={addButtonAction}
-    //                     editEventAction={editButtonAction}
-    //                     deleteEventAction={deleteButtonAction}
-    //                     viewEventAction={viewButtonAction}
-    //                     invitedEvents={invitedEvents}
-    //                     hostedEvents={hostedEvents}
-    //                 />
-    //                 <EventModificationCard
-    //                     cancelAction={cancelButtonAction}
-    //                     okAction={updateOkButtonAction}
-    //                     eventData={currentEvent}
-    //                 />
-    //             </>
-    //         );
-    //     } else if (state === 'event-view') {
-    //         return (
-    //             <>
-    //                 <EventFrame
-    //                     createEventAction={addButtonAction}
-    //                     editEventAction={editButtonAction}
-    //                     deleteEventAction={deleteButtonAction}
-    //                     viewEventAction={viewButtonAction}
-    //                     invitedEvents={invitedEvents}
-    //                     hostedEvents={hostedEvents}
-    //                 />
-    //                 <EventViewCard exitAction={exitButonAction} eventData={currentEvent} />
-    //             </>
-    //         );
-    //     } else {
-    //         return (
-    //             <EventFrame
-    //                 createEventAction={addButtonAction}
-    //                 editEventAction={editButtonAction}
-    //                 deleteEventAction={deleteButtonAction}
-    //                 viewEventAction={viewButtonAction}
-    //                 invitedEvents={invitedEvents}
-    //                 hostedEvents={hostedEvents}
-    //             />
-    //         );
-    //     }
-    // };
+    // generate content for dashboard based on current state
+    const generateDashboardContent = () => {
+        if (state === 'gift-view') {
+            return <GiftFrame gifts={true}/>
+        } else if (state === 'wishlist') {
+            
+        }
+    };
 
     return (
         <div className="dashboard">
@@ -195,7 +137,7 @@ export const Dashboard = () => {
             ) : ( */}
                 <StylesProvider injectFirst>
                     <NavigationBar/>
-                    {/* {generateDashboardContent()} */}
+                    {generateDashboardContent()}
                 </StylesProvider>
             {/* )} */}
         </div>
