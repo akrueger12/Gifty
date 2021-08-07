@@ -67,7 +67,6 @@ export const GiftForm = () => {
             <FormControlLabel control={<Checkbox/>} label="I’d prefer to handmake something!"/>
           </FormGroup>
 
-          {/* TODO: THIS ISN'T CLICKING RIGHT AND COLORING CHANGE IT VIVIAN */}
           <h4 className="question">
             What kind of gift would you like to give them / how would you describe them?
           </h4>
