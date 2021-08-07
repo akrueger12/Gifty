@@ -11,7 +11,7 @@ import {
   Paper,
   Grid,
 } from '@material-ui/core';
-import { ToggleButtonGroup, ToggleButton } from '@material-ui/lab';
+import { ToggleButton } from '@material-ui/lab';
 import { StylesProvider } from '@material-ui/styles';
 
 export const GiftForm = () => {
