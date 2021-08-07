@@ -21,5 +21,6 @@ class GiftsController < ApplicationController
   end
 
   def show
+    
   end
 end
