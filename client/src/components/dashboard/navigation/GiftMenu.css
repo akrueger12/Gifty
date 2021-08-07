@@ -1,0 +1,41 @@
+.gift-action-menu .MuiMenu-paper {
+    width: 20vw;
+}
+
+.gift-action-menu .MuiMenu-list {
+    padding: 8px;
+}
+
+.gift-action-menu .MuiListItem-gutters {
+    padding: 8px;
+}
+
+.gift-menu-item {
+    justify-content: center;
+    color: #8FB3BF;
+    text-transform: none;
+}
+
+.search-item {
+    justify-content: space-between;
+}
+
+.survey-item {
+    justify-content: space-between;
+}
+
+.gift-menu-title {
+    margin: 0px;
+}
+
+.search-title {
+    margin: 0px;
+}
+
+.survey-title {
+    margin: 0px;
+}
+
+.MuiSvgIcon-root {
+    color: #8FB3BF;
+}
