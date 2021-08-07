@@ -538,6 +538,69 @@ GiftToKeyword.create(
     gift_id: 7
 )
 
+#8
+Gift.create(
+    name: "Leather journal with etched initials",
+    description: "Etching on a journal adds a sentimental touch for that special person in your life. Whether they're a writer, bullet journaler, or doodler, this is a gift that definitely won't disappoint!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=leather+journal+with+etching&ref=nb_sb_noss",
+    image: "https://images-na.ssl-images-amazon.com/images/I/91TGF50PBbL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 8
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 8
+)
 
 
 ##############################
