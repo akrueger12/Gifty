@@ -2824,3 +2824,626 @@ Processing by GiftsController#show as */*
 Completed 200 OK in 62ms (Views: 2.0ms | ActiveRecord: 12.4ms | Allocations: 12761)
 
 
+Started GET "/gifts/create" for ::1 at 2021-08-07 16:27:09 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Weighted Blanket", "description"=>"One of the most therapeutic gifts that anyone could receive. Also proven to be more relaxing than regular blankets!", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Waowoo-Weighted-Blanket-Size%EF%BC%8815lbs-Premium/dp/B07PVLZRHN/ref=sr_1_5?dchild=1&keywords=weighted+blanket&qid=1628371575&sr=8-5", "image"=>"https://m.media-amazon.com/images/I/61hzQQF-2lL._AC_SL1500_.jpg", "gift"=>{"name"=>"Weighted Blanket", "description"=>"One of the most therapeutic gifts that anyone could receive. Also proven to be more relaxing than regular blankets!", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Waowoo-Weighted-Blanket-Size%EF%BC%8815lbs-Premium/dp/B07PVLZRHN/ref=sr_1_5?dchild=1&keywords=weighted+blanket&qid=1628371575&sr=8-5", "image"=>"https://m.media-amazon.com/images/I/61hzQQF-2lL._AC_SL1500_.jpg"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (2.4ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Weighted Blanket"], ["description", "One of the most therapeutic gifts that anyone could receive. Also proven to be more relaxing than regular blankets!"], ["price", "0 - 20"], ["link_to_purchase", "https://www.amazon.com/Waowoo-Weighted-Blanket-Size%EF%BC%8815lbs-Premium/dp/B07PVLZRHN/ref=sr_1_5?dchild=1&keywords=weighted+blanket&qid=1628371575&sr=8-5"], ["image", "https://m.media-amazon.com/images/I/61hzQQF-2lL._AC_SL1500_.jpg"], ["created_at", "2021-08-07 21:27:09.343575"], ["updated_at", "2021-08-07 21:27:09.343575"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 11.7ms | Allocations: 7245)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:27:43 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>16, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>16, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (2.3ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 16], ["created_at", "2021-08-07 21:27:43.644406"], ["updated_at", "2021-08-07 21:27:43.644406"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 7.8ms | Allocations: 5043)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:27:45 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>17, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>17, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.1ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 17], ["created_at", "2021-08-07 21:27:45.250839"], ["updated_at", "2021-08-07 21:27:45.250839"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 2446)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:12 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>22, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>22, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.5ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 22], ["created_at", "2021-08-07 21:28:12.883877"], ["updated_at", "2021-08-07 21:28:12.883877"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:14 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>23, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>23, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 23], ["created_at", "2021-08-07 21:28:14.178800"], ["updated_at", "2021-08-07 21:28:14.178800"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2448)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:15 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>24, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>24, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 24], ["created_at", "2021-08-07 21:28:16.021655"], ["updated_at", "2021-08-07 21:28:16.021655"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:17 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>25, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>25, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 25], ["created_at", "2021-08-07 21:28:17.510082"], ["updated_at", "2021-08-07 21:28:17.510082"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:29 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>11, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>11, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 11], ["created_at", "2021-08-07 21:28:29.600940"], ["updated_at", "2021-08-07 21:28:29.600940"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (19.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 21.5ms | Allocations: 2446)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:31 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>12, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>12, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.0ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 12], ["created_at", "2021-08-07 21:28:31.216492"], ["updated_at", "2021-08-07 21:28:31.216492"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:32 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>13, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>13, "gift_id"=>14}}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 13], ["created_at", "2021-08-07 21:28:32.708592"], ["updated_at", "2021-08-07 21:28:32.708592"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 2380)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:36 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>1, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>1, "gift_id"=>14}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.0ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 1], ["created_at", "2021-08-07 21:28:36.786738"], ["updated_at", "2021-08-07 21:28:36.786738"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:28:39 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>7, "gift_id"=>14, "gifts_to_keyword"=>{"keyword_id"=>7, "gift_id"=>14}}
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 14], ["keyword_id", 7], ["created_at", "2021-08-07 21:28:39.187308"], ["updated_at", "2021-08-07 21:28:39.187308"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2422)
+
+
+Started GET "/gifts/create" for ::1 at 2021-08-07 16:29:41 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Polaroid Camera", "description"=>"For the person who goes on the coolest adventures and always needs to document them. A modern take on a retro classic!", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Polaroid-Originals-I-Type-Instant-Camera/dp/B085PQCF7Y/ref=sr_1_3?dchild=1&keywords=polaroid+camera&qid=1628371758&sr=8-3", "image"=>"https://m.media-amazon.com/images/I/81JsuwPeEDL._AC_SL1500_.jpg", "gift"=>{"name"=>"Polaroid Camera", "description"=>"For the person who goes on the coolest adventures and always needs to document them. A modern take on a retro classic!", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Polaroid-Originals-I-Type-Instant-Camera/dp/B085PQCF7Y/ref=sr_1_3?dchild=1&keywords=polaroid+camera&qid=1628371758&sr=8-3", "image"=>"https://m.media-amazon.com/images/I/81JsuwPeEDL._AC_SL1500_.jpg"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (0.9ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Polaroid Camera"], ["description", "For the person who goes on the coolest adventures and always needs to document them. A modern take on a retro classic!"], ["price", "0 - 20"], ["link_to_purchase", "https://www.amazon.com/Polaroid-Originals-I-Type-Instant-Camera/dp/B085PQCF7Y/ref=sr_1_3?dchild=1&keywords=polaroid+camera&qid=1628371758&sr=8-3"], ["image", "https://m.media-amazon.com/images/I/81JsuwPeEDL._AC_SL1500_.jpg"], ["created_at", "2021-08-07 21:29:41.851910"], ["updated_at", "2021-08-07 21:29:41.851910"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2478)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:30:28 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>16, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>16, "gift_id"=>15}}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 16], ["created_at", "2021-08-07 21:30:28.420626"], ["updated_at", "2021-08-07 21:30:28.420626"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 3.2ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:30:30 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>17, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>17, "gift_id"=>15}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.4ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 17], ["created_at", "2021-08-07 21:30:30.341616"], ["updated_at", "2021-08-07 21:30:30.341616"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:30:50 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>22, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>22, "gift_id"=>15}}
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 22], ["created_at", "2021-08-07 21:30:50.542811"], ["updated_at", "2021-08-07 21:30:50.542811"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 2380)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:30:52 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>23, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>23, "gift_id"=>15}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 23], ["created_at", "2021-08-07 21:30:52.055770"], ["updated_at", "2021-08-07 21:30:52.055770"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 4.0ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:30:56 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>12, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>12, "gift_id"=>15}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 12], ["created_at", "2021-08-07 21:30:56.995996"], ["updated_at", "2021-08-07 21:30:56.995996"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:30:58 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>13, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>13, "gift_id"=>15}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 13], ["created_at", "2021-08-07 21:30:58.476814"], ["updated_at", "2021-08-07 21:30:58.476814"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:31:05 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>7, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>7, "gift_id"=>15}}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 7], ["created_at", "2021-08-07 21:31:05.928485"], ["updated_at", "2021-08-07 21:31:05.928485"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:31:07 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>8, "gift_id"=>15, "gifts_to_keyword"=>{"keyword_id"=>8, "gift_id"=>15}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.0ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 15], ["keyword_id", 8], ["created_at", "2021-08-07 21:31:07.616071"], ["updated_at", "2021-08-07 21:31:07.616071"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2424)
+
+
+Started GET "/gifts/create" for ::1 at 2021-08-07 16:33:09 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Bluetooth Speaker", "description"=>"Portability shouldn't mean you have to sacrifice sound quality! Bluetooth speakers have long-lasting battery lives and are perfect for all the times you're on the go.", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Enhanced-Splashproof-Portable-Bluetooth-Radiator/dp/B010OYASRG/ref=sr_1_3?dchild=1&keywords=bluetooth+speaker&qid=1628371912&sr=8-3", "image"=>"https://m.media-amazon.com/images/I/71evtyMeLiL._AC_SL1500_.jpg", "gift"=>{"name"=>"Bluetooth Speaker", "description"=>"Portability shouldn't mean you have to sacrifice sound quality! Bluetooth speakers have long-lasting battery lives and are perfect for all the times you're on the go.", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Enhanced-Splashproof-Portable-Bluetooth-Radiator/dp/B010OYASRG/ref=sr_1_3?dchild=1&keywords=bluetooth+speaker&qid=1628371912&sr=8-3", "image"=>"https://m.media-amazon.com/images/I/71evtyMeLiL._AC_SL1500_.jpg"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (0.9ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bluetooth Speaker"], ["description", "Portability shouldn't mean you have to sacrifice sound quality! Bluetooth speakers have long-lasting battery lives and are perfect for all the times you're on the go."], ["price", "0 - 20"], ["link_to_purchase", "https://www.amazon.com/Enhanced-Splashproof-Portable-Bluetooth-Radiator/dp/B010OYASRG/ref=sr_1_3?dchild=1&keywords=bluetooth+speaker&qid=1628371912&sr=8-3"], ["image", "https://m.media-amazon.com/images/I/71evtyMeLiL._AC_SL1500_.jpg"], ["created_at", "2021-08-07 21:33:09.077437"], ["updated_at", "2021-08-07 21:33:09.077437"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2486)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:29 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>14, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>14, "gift_id"=>16}}
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 14], ["created_at", "2021-08-07 21:33:29.715645"], ["updated_at", "2021-08-07 21:33:29.715645"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:36 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>15, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>15, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 15], ["created_at", "2021-08-07 21:33:36.134487"], ["updated_at", "2021-08-07 21:33:36.134487"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:37 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>16, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>16, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 16], ["created_at", "2021-08-07 21:33:37.693015"], ["updated_at", "2021-08-07 21:33:37.693015"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:51 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>21, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>21, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 21], ["created_at", "2021-08-07 21:33:51.106592"], ["updated_at", "2021-08-07 21:33:51.106592"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:52 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>22, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>22, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 22], ["created_at", "2021-08-07 21:33:52.368199"], ["updated_at", "2021-08-07 21:33:52.368199"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:53 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>23, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>23, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 23], ["created_at", "2021-08-07 21:33:53.795397"], ["updated_at", "2021-08-07 21:33:53.795397"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:33:58 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>11, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>11, "gift_id"=>16}}
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 11], ["created_at", "2021-08-07 21:33:58.825337"], ["updated_at", "2021-08-07 21:33:58.825337"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:34:00 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>12, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>12, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 12], ["created_at", "2021-08-07 21:34:00.180363"], ["updated_at", "2021-08-07 21:34:00.180363"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:34:01 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>13, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>13, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 13], ["created_at", "2021-08-07 21:34:01.472825"], ["updated_at", "2021-08-07 21:34:01.472825"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:34:07 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>1, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>1, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.0ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 1], ["created_at", "2021-08-07 21:34:07.632507"], ["updated_at", "2021-08-07 21:34:07.632507"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:34:10 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>7, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>7, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 7], ["created_at", "2021-08-07 21:34:11.041879"], ["updated_at", "2021-08-07 21:34:11.041879"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:34:12 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>8, "gift_id"=>16, "gifts_to_keyword"=>{"keyword_id"=>8, "gift_id"=>16}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (1.3ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 16], ["keyword_id", 8], ["created_at", "2021-08-07 21:34:12.959081"], ["updated_at", "2021-08-07 21:34:12.959081"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 2422)
+
+
+Started GET "/gifts/create" for ::1 at 2021-08-07 16:35:47 -0500
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Succulents", "description"=>"Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection.", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Costa-Farms-Various-Succulents-2-Inches/dp/B081ZSJ9ST/ref=sr_1_2?dchild=1&keywords=succulent&qid=1628372107&sr=8-2", "image"=>"https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SX425_.jpg", "gift"=>{"name"=>"Succulents", "description"=>"Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection.", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Costa-Farms-Various-Succulents-2-Inches/dp/B081ZSJ9ST/ref=sr_1_2?dchild=1&keywords=succulent&qid=1628372107&sr=8-2", "image"=>"https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SX425_.jpg"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (1.1ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Succulents"], ["description", "Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection."], ["price", "0 - 20"], ["link_to_purchase", "https://www.amazon.com/Costa-Farms-Various-Succulents-2-Inches/dp/B081ZSJ9ST/ref=sr_1_2?dchild=1&keywords=succulent&qid=1628372107&sr=8-2"], ["image", "https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SX425_.jpg"], ["created_at", "2021-08-07 21:35:47.811758"], ["updated_at", "2021-08-07 21:35:47.811758"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 2478)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:19 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>14, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>14, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 14], ["created_at", "2021-08-07 21:36:19.333698"], ["updated_at", "2021-08-07 21:36:19.333698"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:31 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>21, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>21, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 21], ["created_at", "2021-08-07 21:36:31.323636"], ["updated_at", "2021-08-07 21:36:31.323636"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2423)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:32 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>22, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>22, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 22], ["created_at", "2021-08-07 21:36:32.585305"], ["updated_at", "2021-08-07 21:36:32.585305"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2380)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:33 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>23, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>23, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 23], ["created_at", "2021-08-07 21:36:33.787203"], ["updated_at", "2021-08-07 21:36:33.787203"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:41 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>12, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>12, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 12], ["created_at", "2021-08-07 21:36:41.202849"], ["updated_at", "2021-08-07 21:36:41.202849"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:43 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>13, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>13, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 13], ["created_at", "2021-08-07 21:36:43.585853"], ["updated_at", "2021-08-07 21:36:43.585853"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:50 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>9, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>9, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.9ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 9], ["created_at", "2021-08-07 21:36:50.647822"], ["updated_at", "2021-08-07 21:36:50.647822"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 3.2ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:55 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>3, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>3, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 3], ["created_at", "2021-08-07 21:36:55.453012"], ["updated_at", "2021-08-07 21:36:55.453012"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2422)
+
+
+Started GET "/gifts_to_keywords/create" for ::1 at 2021-08-07 16:36:59 -0500
+Processing by GiftsToKeywordsController#create as */*
+  Parameters: {"keyword_id"=>1, "gift_id"=>17, "gifts_to_keyword"=>{"keyword_id"=>1, "gift_id"=>17}}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mGiftToKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 17], ["keyword_id", 1], ["created_at", "2021-08-07 21:36:59.460196"], ["updated_at", "2021-08-07 21:36:59.460196"]]
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_to_keywords_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2422)
+
+
+Started GET "/gifts/show" for ::1 at 2021-08-07 16:48:57 -0500
+Processing by GiftsController#show as */*
+  Parameters: {"keywords"=>["100+", "50 - 100", "20 - 30", "female", "tech", "practical"], "gift"=>{}}
+  [1m[36mKeyword Load (1.5ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "100+"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.8ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "50 - 100"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.8ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "20 - 30"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.9ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "female"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.7ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "tech"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.9ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "practical"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mGiftToKeyword Load (1.8ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 17]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.8ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 16]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.8ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 23]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.8ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 12]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.8ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 7]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (1.1ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 1]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGift Load (1.6ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (0.7ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (0.7ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.0ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.3ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (0.8ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+Completed 200 OK in 290ms (Views: 2.4ms | ActiveRecord: 40.8ms | Allocations: 21647)
+
+
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (3.1ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "test"], ["created_at", "2021-08-07 22:03:17.122956"], ["updated_at", "2021-08-07 22:03:17.122956"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (2.1ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "test"], ["created_at", "2021-08-07 22:06:15.464547"], ["updated_at", "2021-08-07 22:06:15.464547"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGift Create (1.3ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Leather Passport Holder"], ["description", "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way."], ["link_to_purchase", "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628363794&sr=8-5"], ["image", "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"], ["created_at", "2021-08-07 22:06:15.522770"], ["updated_at", "2021-08-07 22:06:15.522770"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (1.9ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "test"], ["created_at", "2021-08-07 22:06:38.034809"], ["updated_at", "2021-08-07 22:06:38.034809"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGift Create (1.8ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Leather Passport Holder"], ["description", "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way."], ["link_to_purchase", "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628363794&sr=8-5"], ["image", "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"], ["created_at", "2021-08-07 22:06:38.062748"], ["updated_at", "2021-08-07 22:06:38.062748"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (2.1ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "practical"], ["created_at", "2021-08-07 22:12:47.019352"], ["updated_at", "2021-08-07 22:12:47.019352"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "sentimental"], ["created_at", "2021-08-07 22:12:47.029906"], ["updated_at", "2021-08-07 22:12:47.029906"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "likes to try new things"], ["created_at", "2021-08-07 22:12:47.036955"], ["updated_at", "2021-08-07 22:12:47.036955"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "creative"], ["created_at", "2021-08-07 22:12:47.044219"], ["updated_at", "2021-08-07 22:12:47.044219"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.7ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "reader"], ["created_at", "2021-08-07 22:12:47.051143"], ["updated_at", "2021-08-07 22:12:47.051143"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "fitness"], ["created_at", "2021-08-07 22:12:47.058590"], ["updated_at", "2021-08-07 22:12:47.058590"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "tech"], ["created_at", "2021-08-07 22:12:47.065604"], ["updated_at", "2021-08-07 22:12:47.065604"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.7ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "travel"], ["created_at", "2021-08-07 22:12:47.072565"], ["updated_at", "2021-08-07 22:12:47.072565"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.7ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "nature lover"], ["created_at", "2021-08-07 22:12:47.081043"], ["updated_at", "2021-08-07 22:12:47.081043"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "lighthearted"], ["created_at", "2021-08-07 22:12:47.088437"], ["updated_at", "2021-08-07 22:12:47.088437"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGift Create (1.8ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Leather Passport Holder"], ["description", "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way."], ["link_to_purchase", "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628363794&sr=8-5"], ["image", "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"], ["created_at", "2021-08-07 22:12:47.124522"], ["updated_at", "2021-08-07 22:12:47.124522"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m

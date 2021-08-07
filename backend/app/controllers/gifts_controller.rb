@@ -54,8 +54,8 @@ class GiftsController < ApplicationController
 
     #return the gifts that are most common in the array
     @top6Gifts = Array.new()
-    if @topGiftIDs.length >= 6
-      for i in 0..5 do
+    if @topGiftIDs.length >= 9
+      for i in 0..8 do
         @topGift = Gift.find(@topGiftIDs[i])
         @top6Gifts.push(@topGift)
       end
