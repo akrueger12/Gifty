@@ -1,0 +1,2 @@
+class GiftToKeyword < ApplicationRecord
+end
