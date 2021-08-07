@@ -1,0 +1,41 @@
+.user-action-menu .MuiMenu-paper {
+    width: 20vw;
+}
+
+.user-action-menu .MuiMenu-list {
+    padding: 8px;
+}
+
+.user-action-menu .MuiListItem-gutters {
+    padding: 8px;
+}
+
+.menu-item {
+    justify-content: center;
+    color: #8FB3BF;
+    text-transform: none;
+}
+
+.list-item {
+    justify-content: space-between;
+}
+
+.logout-item {
+    justify-content: space-between;
+}
+
+.menu-title {
+    margin: 0px;
+}
+
+.list-title {
+    margin: 0px;
+}
+
+.logout-title {
+    margin: 0px;
+}
+
+.MuiSvgIcon-root {
+    color: #8FB3BF;
+}
