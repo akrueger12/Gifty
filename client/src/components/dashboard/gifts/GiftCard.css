@@ -1,0 +1,11 @@
+/* Styles for the invited event card */
+
+.gift-image {
+    background-color: #60AB9A;
+    height: 20vh;
+}
+
+.gift-card {
+    min-width: 160px;
+    margin: 5%;
+}
