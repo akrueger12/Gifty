@@ -363,6 +363,55 @@ GiftToKeyword.create(
 
 #5
 Gift.create(
+    name: "Kids book",
+    description: "Always a fan favorite! Helps stimulate creativity and curiosity in the young kiddo in your life.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=kids+book&ref=nb_sb_noss_1",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81bFPOWtOFL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 5
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 5
+)
+
+#6
+Gift.create(
     name: " ",
     description: " ",
     price:nil,
@@ -371,6 +420,91 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: ,
-    gift_id:
+    keyword_id: 11,
+    gift_id: 
 )
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+##############################
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
