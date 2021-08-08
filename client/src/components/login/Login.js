@@ -55,14 +55,12 @@ export const Login = () => {
                         <TextField
                             className="username-field"
                             label="Username"
-                            variant="outlined"
                             onChange={updateUsernameValue}
                             error={error}
                         />
                         <TextField
                             className="password-field"
                             label="Password"
-                            variant="outlined"
                             type="password"
                             onChange={updatePasswordValue}
                             error={error}
