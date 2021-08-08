@@ -3125,240 +3125,494 @@ GiftToKeyword.create(
     gift_id: 50
 )
 
-#
+#51
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Nonfiction Travel Book",
+    description: "Trips are expensive. For the travel junkie in your life, maybe opt for a book with beautiful pictures around the world this year that might spark their next adventure! ",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/50-States-000-Ideas-Where/dp/1426216904/ref=sr_1_6?dchild=1&keywords=travel+book&qid=1628394429&sr=8-6",
+    image: "https://images-na.ssl-images-amazon.com/images/I/51b2B4IHwBL._SX389_BO1,204,203,200_.jpg"
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 51
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 51
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 51
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 51
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 51
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 51
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 51
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 51
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 51
+)
+
+#52
+Gift.create(
+    name: "Hammock",
+    description: "Portable hammocks offer relaxation and fun on-the-go! Get a hammock for the outdoorsy person in your life who you can picture roughing it in the woods for a weekend getaway.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Vivere-Double-Hammock-Space-Saving-Tropical/dp/B004YJCP7O/ref=sr_1_5?dchild=1&keywords=hammock&qid=1628394645&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/71pFhPuGv5L._AC_SL1500_.jpg"
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 52
+)
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 52
+)
+
+#53
+Gift.create(
+    name: "Portable Jewelry Box",
+    description: "When traveling, sometimes you want to take some of your favorite jewelry pieces. Gifting a portable jewelry box allows that special person to transport jewelry with ease and without having to worry about everything getting tangled!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Portable-Jewelry-Organizer-Necklace-Earring/dp/B086PK9M8X/ref=sr_1_5?dchild=1&keywords=portable+jewelry+box&qid=1628394819&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/61SyGN6MjdS._AC_SL1500_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 53
+)
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 53
+)
+
+#54
+Gift.create(
+    name: "Leather Passport Holder",
+    description: "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628395115&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 54
+)
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 54
+)
+
+#55
+Gift.create(
+    name: "Portable Charger",
+    description: "With enough power to charge your phone or headphones multiple times over, portable chargers are an essential! Gift one to make sure their battery's never dead. ",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Miady-10000mAh-Portable-Charger-Charging/dp/B07XFBN7HX/ref=sr_1_3?dchild=1&keywords=portable+charger&qid=1628395241&sr=8-3",
+    image: "https://m.media-amazon.com/images/I/61hZ-Gu2hEL._AC_SL1500_.jpg"
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 55
+)
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 55
+)
+
+#56
+Gift.create(
+    name: "Badminton set",
+    description: "Keep them active and outdoors all summer with a sweet new badminton set! Whether they're a budding professional or a clumsy beginner, a badminton set will keep them entertained at the very least.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=badminton+set",
+    image: "https://m.media-amazon.com/images/I/81QrhKPC+OL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 56
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 56
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 56
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 56
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 56
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 56
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 56
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 56
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 3,
+    gift_id: 56
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 6,
+    gift_id: 56
 )
 
-#
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 56
+)
+
+#57
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Aqua Globes",
+    description: "Forgetful gardener? Yeah, an Aqua Globe is going to be their new best friend. AquaGlobes cut out the boring watering part of gardening!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=aquaglobe&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81qaQ5MWwrL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 57
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 57
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 57
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 57
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 57
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 57
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 57
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 57
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 57
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 57
 )
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#58
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Ring doorbell",
+    description: "Normal doorbells are sooo last year! A Ring doorbell will make them feel like they're living in the future.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=ring+doorbell&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71bgyic1TQL._SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 58
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 58
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 58
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 58
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 58
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 58
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 58
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 58
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 58
 )
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#59
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Ancestry DNA Kit",
+    description: "There's more to us than just the present. Give them the gift of learning more about their history through an Ancestry DNA kit!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=ancestry+dna+kit&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/71uGHgzfwPL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 59
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 59
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 59
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 59
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 59
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 59
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 59
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 59
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 59
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    gift_id: 59
 )
 
 #
