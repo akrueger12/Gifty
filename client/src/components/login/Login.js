@@ -55,23 +55,23 @@ export const Login = ({ onSuccess }) => {
                     </Grid>
                     <Grid item container direction = "column" style={{width: "200px", marginTop: "50px"}}>
                         <TextField
-                            className={styles.username-field}
+                            className={styles['username-field']}
                             label="Username"
                             onChange={updateUsernameValue}
                             error={error}
                         />
                         <TextField
-                            className={styles.password-field}
+                            className={styles['password-field']}
                             label="Password"
                             type="password"
                             onChange={updatePasswordValue}
                             error={error}
                         />
 
-                        <h5 className={styles.error-message}>{errorMessage}</h5>
+                        <h5 className={styles['error-message']}>{errorMessage}</h5>
                         <Grid item container justifyContent="center">
                             <Button
-                                className={styles.submit}
+                                className={styles['submit']}
                                 disableElevation
                                 variant="contained"
                                 size="large"
@@ -80,7 +80,7 @@ export const Login = ({ onSuccess }) => {
                                 Find Gifts!
                             </Button>
                             <Button
-                                className={styles.new-account}
+                                className={styles['new-account']}
                                 disableElevation
                                 variant="contained"
                                 size="large"

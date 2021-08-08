@@ -64,33 +64,33 @@ export const WishlistPage = () => {
     return (
         <Page>
             {isLoading &&
-                <div className={styles.loading}><CircularProgress /></div>
+                <div className={styles['loading']}><CircularProgress /></div>
             }
             {!isLoading &&
                 <StylesProvider injectFirst>
-                    <Paper className={styles.wish-list}>
+                    <Paper className={styles['wish-list']}>
                         <Grid container spacing={1} direction="column">
-                            <h1 className={styles.user-name}>{userData.user.username.toUpperCase()}'S WISHLIST</h1>
+                            <h1 className={styles['user-name']}>{userData.user.username.toUpperCase()}'S WISHLIST</h1>
 
-                            <div className={styles.item-addition}>
+                            <div className={styles['item-addition']}>
                                 <TextField
                                     id="outlined-basic"
                                     label="Item"
                                     variant="outlined"
-                                    className={styles.item-name}
+                                    className={styles['item-name']}
                                     value={itemInputValue}
                                     onChange={handleItemInputChange}
                                 />
-                                <Fab size="small" className={styles.add-item} onClick={onItemAdded}>
+                                <Fab size="small" className={styles['add-item']} onClick={onItemAdded}>
                                     <AddIcon className='add-icon'/>
                                 </Fab>
                             </div>
-                            <div className={styles.item-list-container}>
-                                <List dense className={styles.item-list}>
+                            <div className={styles['item-list-container']}>
+                                <List dense className={styles['item-list']}>
                                     {
                                         wishlistItems.map((item) => (
-                                            <ListItem className={styles.item}>
-                                                <div className={styles.invitee-information}>
+                                            <ListItem className={styles['item']}>
+                                                <div className={styles['invitee-information']}>
                                                     <ListItemText primary={item} />
                                                 </div>
                                                 <IconButton>

@@ -51,29 +51,29 @@ export const NewUser = ({ onSuccess }) => {
                 </Grid>
                 <Grid item container direction = "column" style={{width: "200px", marginTop: "50px", textTransform: "none"}}>
                     <Grid item>
-                        <h4 className={styles.question}>
+                        <h4 className={styles['question']}>
                             Enter a username:
                         </h4>
                     </Grid>
                     <TextField
-                    className={styles.username-field}
+                    className={styles['username-field']}
                     label="Username"
                     type="username"
                     onChange={updateUsernameValue}
                     error={error}
                     />
-                    <h4 className={styles.question}>
+                    <h4 className={styles['question']}>
                         Enter a password:
                     </h4>
                     <TextField
-                        className={styles.password-field}
+                        className={styles['password-field']}
                         label="Password"
                         type="password"
                         onChange={updatePasswordValue}
                         error={error}
                     />          
                     <Button
-                    className={styles.submit}
+                    className={styles['submit']}
                     disableElevation
                     variant="contained"
                     size="large"

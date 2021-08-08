@@ -78,16 +78,16 @@ export const GiftForm = ({ onSubmit }) => {
 
   return (
     <StylesProvider injectFirst>
-      <Paper className={styles.form-card}>
+      <Paper className={styles['form-card']}>
         <Grid container spacing={1} direction="column">
-          <h1 className={styles.form-title}>Tell us a bit about the person you are shopping for!</h1>
+          <h1 className={styles['form-title']}>Tell us a bit about the person you are shopping for!</h1>
 
-          <h4 className={styles.question}>
+          <h4 className={styles['question']}>
             What's their name?
           </h4>
-          <TextField id="standard-basic" placeholder="Name" className={styles.input-box} onChange={event => setName(event.target.value)}/>
+          <TextField id="standard-basic" placeholder="Name" className={styles['input-box']} onChange={event => setName(event.target.value)}/>
 
-          <h4 className={styles.question}>
+          <h4 className={styles['question']}>
             What's their gender?
           </h4>
           <RadioGroup onChange={event => setGender(event.target.value)}>
@@ -96,7 +96,7 @@ export const GiftForm = ({ onSubmit }) => {
             <FormControlLabel value="other" control={<Radio />} label="Other" />
           </RadioGroup>
 
-          <h4 className={styles.question}>
+          <h4 className={styles['question']}>
             What's your price range?
           </h4>
           <FormGroup>
@@ -107,14 +107,14 @@ export const GiftForm = ({ onSubmit }) => {
             })}
           </FormGroup>
 
-          <h4 className={styles.question}>
+          <h4 className={styles['question']}>
             What kind of gift would you like to give them / how would you describe them?
           </h4>
           <div>
             {giftData.map((data) => {
               return (
                 <ToggleButton
-                  className={styles.gift-chip}
+                  className={styles['gift-chip']}
                   selected={data.selected}
                   onChange={() => {
                     updateChip(data.key, data.selected);
@@ -126,7 +126,7 @@ export const GiftForm = ({ onSubmit }) => {
             })}
           </div>
 
-          <h4 className={styles.question}>
+          <h4 className={styles['question']}>
             What age range are they in?
           </h4>
           <RadioGroup onChange={event => setAge(event.target.value)}>
@@ -140,7 +140,7 @@ export const GiftForm = ({ onSubmit }) => {
           </RadioGroup>
 
           <Button
-            className={styles.submit}
+            className={styles['submit']}
             disableElevation
             variant="contained"
             size="large"

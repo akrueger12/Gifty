@@ -5,11 +5,11 @@ import { BrowserRouter as Link }  from 'react-router-dom';
 
 export const GiftCard = ({ gift }) => {
     return (
-        <Card className={styles.gift-card}>
-            <CardMedia className={styles.gift-image}>
+        <Card className={styles['gift-card']}>
+            <CardMedia className={styles['gift-image']}>
                 <img src={gift.image} alt={""} />
             </CardMedia>
-            <CardContent className={styles.gift-description}>
+            <CardContent className={styles['gift-description']}>
                 <Typography variant="h5" color="textPrimary" component="p">
                     {gift.name}
                 </Typography>

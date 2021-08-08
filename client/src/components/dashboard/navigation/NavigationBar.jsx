@@ -35,10 +35,10 @@ export const NavigationBar = () => {
     }
 
     return (
-        <Paper elevation={3} className={styles.nav-bar}>
+        <Paper elevation={3} className={styles['nav-bar']}>
             <Tabs textColor="primary">
-                <Tab icon={<CardGiftcardIcon/>} className={styles.gift-icon} onClick={onGiftIconClick} />
-                <Tab icon={<PersonIcon/>} className={styles.user-icon} onClick={onUserIconClick} />
+                <Tab icon={<CardGiftcardIcon/>} className={styles['gift-icon']} onClick={onGiftIconClick} />
+                <Tab icon={<PersonIcon/>} className={styles['user-icon']} onClick={onUserIconClick} />
             </Tabs>
             {determineMenu()}
         </Paper>
