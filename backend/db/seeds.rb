@@ -1165,63 +1165,328 @@ GiftToKeyword.create(
 
 #18
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Open when... handwritten letters",
+    description: "Handwritten letters are sure to make anyone feel loved! Open when... letters offer a fun take to make that person feel special during their big milestones, small victories, and everything in between.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=open+when+stationary&crid=155MIRFA5XWPI&sprefix=stationary+for+open+when%2Caps%2C229&ref=nb_sb_ss_ts-doa-p_1_24",
+    image: "https://images-na.ssl-images-amazon.com/images/I/71hMgv9hTdL.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 18
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 18
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 18
+)
+
+#19
+Gift.create(
+    name: "Cookbook",
+    description: "The way to anyone's heart is through their stomach. Cookbooks—whether filled with handwritten family recipes or master chefs' perfected dishes—are a welcome addition to anyone's kitchen!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=cookbook&ref=nb_sb_noss_1",
+    image: "https://images-na.ssl-images-amazon.com/images/I/A19ZRRhSZUL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 19
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 19
+)
+
+#20
+Gift.create(
+    name: "Insulated mug or water bottle(Hydroflask, Yeti, etc.)",
+    description: "Insulated mugs and water bottles offer a high quality, reusable alternative to the everyday disposable plastic bottle. With so many colors and brands on the market, you can personalize with ease for that special person!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=insulated+water+bottle&crid=1J60CQQK84JHY&sprefix=insulated+%2Caps%2C233&ref=nb_sb_ss_midas-iss-sm_1_10",
+    image: "https://m.media-amazon.com/images/I/51ZocuA5PYL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 6,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 20
+)
+
+#21
+Gift.create(
+    name: "Pullover or quarterzip jacket",
+    description: "That nice pullover or quarterzip they would obsess over but never buy for them self. Bound to get some good use and keep them warm on all their adventures!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=quarterzip&ref=nb_sb_noss_2",
+    image: "https://images.thenorthface.com/is/image/TheNorthFace/NF0A2RE8_JK3_hero?$638x745$"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 21
+)
+
+#22
+Gift.create(
+    name: "Coloring book",
+    description: "Coloring books are great for anyone from 5 to 95! Whether they think they need one or not, they won't be able to help them self from feeling like a kid again when they whip out the crayons or colored pencils again.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=coloring+book&ref=nb_sb_noss_2",
+    image: "https://images-na.ssl-images-amazon.com/images/I/A111MM0+NHL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 22
 )
 
 GiftToKeyword.create(
     keyword_id: 19,
-    gift_id: 
+    gift_id: 22
 )
 
 GiftToKeyword.create(
     keyword_id: 20,
-    gift_id: 
+    gift_id: 22
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 21,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 22
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 22
 )
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
 
 ##############################
 Gift.create(
