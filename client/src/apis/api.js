@@ -23,6 +23,28 @@ export const createNewUser = async (username, password) => {
     );
 }
 
+export const retrieveUserData = async (userId) => {
+    let url = `${BASE_URL}/user/data`;
+
+    const data = { user_id: userId };
+
+    await fetch(url, {
+        method: "POST",
+        mode: 'cors',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    }).then(async (response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                return new Error('there was an error');
+            }
+        }
+    );
+};
+
 export const loginUser = async (username, password) => {
     let url = `${BASE_URL}/users/login`;
 

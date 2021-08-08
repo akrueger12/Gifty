@@ -3,7 +3,6 @@ import './Login.css';
 import {Grid, Box, TextField, Button, Link} from '@material-ui/core';
 import Packages from './loginImage.png';
 import Logo from './Logo.png';
-
 import { loginUser } from '../../apis/api';
 
 export const Login = ({ userDataCallback }) => {
@@ -24,7 +23,7 @@ export const Login = ({ userDataCallback }) => {
                 setErrorMessage('Password or username is incorrect');
                 setError(true);
             } else {
-                window.location.href = `./dashboard`;
+                window.location.href = `./dashboard/${userData.id}`;
             }
         }
     };
