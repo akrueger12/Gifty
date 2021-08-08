@@ -14882,3 +14882,92 @@ Processing by GiftsController#show as */*
 Completed 200 OK in 703ms (Views: 16.3ms | ActiveRecord: 129.8ms | Allocations: 26669)
 
 
+Started POST "/users/login" for ::1 at 2021-08-08 06:59:56 -0500
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+Completed 200 OK in 87ms (Views: 2.6ms | ActiveRecord: 34.3ms | Allocations: 5442)
+
+
+Started POST "/users/data" for ::1 at 2021-08-08 06:59:57 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-08 06:59:57 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>1, "user"=>{"id"=>1}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `data'
+Completed 200 OK in 15ms (Views: 1.5ms | ActiveRecord: 1.6ms | Allocations: 1117)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 36ms (Views: 0.2ms | ActiveRecord: 17.2ms | Allocations: 3430)
+
+
+Started POST "/gifts/show" for ::1 at 2021-08-08 07:00:21 -0500
+Processing by GiftsController#show as */*
+  Parameters: {"keywords"=>["other", "0 - 5", "0 - 20", "likes to try new things", "creative"], "gift"=>{}}
+  [1m[36mKeyword Load (3.4ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "other"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (1.6ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "0 - 5"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (2.6ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "0 - 20"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (1.6ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "likes to try new things"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (1.6ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "creative"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mGiftToKeyword Load (4.0ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 13]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (1.2ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 19]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (1.3ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 14]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (1.3ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 3]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (1.3ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 4]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGift Load (2.7ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.1ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.1ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.0ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.1ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.0ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.0ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.4ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.2ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+Completed 200 OK in 259ms (Views: 6.1ms | ActiveRecord: 56.0ms | Allocations: 26489)
+
+
+Started POST "/users/data" for ::1 at 2021-08-08 07:06:03 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-08 07:06:03 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>1, "user"=>{"id"=>1}}
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (7.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 273ms (Views: 0.8ms | ActiveRecord: 65.6ms | Allocations: 7283)
+
+
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `data'
+Completed 200 OK in 363ms (Views: 2.8ms | ActiveRecord: 81.5ms | Allocations: 9648)
+
+
