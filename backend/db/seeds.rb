@@ -6249,1354 +6249,213 @@ Gift.create(
     name: "Smencils",
     description: "Smencils are a staple in anyone's early art life. Combining fun colors and scents, while keeping the cost low is an absolutely groovy option!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
+    link_to_purchase: "https://www.amazon.com/s?k=smencils&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/618ONbN37uL._AC_SL1000_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 107
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 107
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    gift_id: 107
 )
 
 GiftToKeyword.create(
     keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    gift_id: 107
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 107
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 107
 )
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+# 108
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "VR Headset",
+    description: "VR headsets are a fun idea for anyone interested in tech—specifically gaming! It elevates any user's experience and it's sure to elevate you on their list of favorite people.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=vr+headset&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/51odsYyURHL._SL1000_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 108
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 108
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 108
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 108
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 108
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 108
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 21,
+    gift_id: 108
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 7,
+    gift_id: 108
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 3,
+    gift_id: 108
 )
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#109
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Projector",
+    description: "For the tech guru that seems to always be getting the latest gadget, consider a projector for them! Great for movie nights, Bachelor watch sessions, or binging their favorite sitcom.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=projector&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71GlddvRMsL._AC_SL1000_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 109
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 109
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 109
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 7,
+    gift_id: 109
 )
 
-#
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 109
+)
+
+#110
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Spotify glass art",
+    description: "Whether you opt to hand make it or commission someone else to make it, a Spotify glass art music frame with a photo of the two of you and your favorite song is definitely going to be a crowd pleaser! Music + you + them = a win.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.etsy.com/search?q=spotify%20glass%20art",
+    image: "https://i.etsystatic.com/26675805/r/il/50221d/3082494238/il_1588xN.3082494238_ff48.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 110
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
+    gift_id: 110
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
+    gift_id: 110
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 110
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 110
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 18,
+    gift_id: 110
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 110
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 110
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 2,
+    gift_id: 110
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-##############################
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    gift_id: 110
 )
