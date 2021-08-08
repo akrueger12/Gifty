@@ -130,27 +130,12 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 22,
-    gift_id:1
-)
-
-GiftToKeyword.create(
-    keyword_id: 23,
-    gift_id:1
-)
-
-GiftToKeyword.create(
     keyword_id: 24,
     gift_id:1
 )
 
 GiftToKeyword.create(
     keyword_id: 25,
-    gift_id:1
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id:1
 )
 
