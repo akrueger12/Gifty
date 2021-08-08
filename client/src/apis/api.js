@@ -10,15 +10,13 @@ export const createNewUser = async (username, password) => {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({username, password})
-    }).then(async (res) => {
+    }).then(async (response) => {
             if (res.ok) {
-                return new APISuccess<T>(await res.json());
+                return response.json();
             } else {
-                return new APIError(await res.json());
+                return new Error('there was an error');
             }
         }
     );
-
-    return response.json();
 
 }

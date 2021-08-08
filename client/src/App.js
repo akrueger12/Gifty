@@ -5,7 +5,7 @@ import Dashboard from './components/dashboard/Dashboard';
 import GiftForm from './components/giftForm/GiftForm';
 import Login from './components/login/Login';
 
-import { createNewUser } from '../../apis';
+import { createNewUser } from 'src/apis/api';
 
 /**
  * Main component that holds the logic for the app
