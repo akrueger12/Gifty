@@ -1722,6 +1722,291 @@ GiftToKeyword.create(
 
 #27
 Gift.create(
+    name: "Photo album of the two of you",
+    description: "Feeling creative and a little sentimental? Make them a photo album of the two of you and any other important people in your lives. Pro tip: leave some blank pages at the end so you can fill them with photos of new memories you make down the road!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=photo+album&ref=nb_sb_noss",
+    image: "https://m.media-amazon.com/images/I/71aAtw7CEVL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 27
+)
+
+#28
+Gift.create(
+    name: "Play Doh",
+    description: "For the kid that always has to be doing something, Play Doh is a gamechanger. Let their creativity and imagination soar!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=playdoh&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81xV+D1OkGL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 28
+)
+
+#29
+Gift.create(
+    name: "Binoculars",
+    description: "Got an outdoorsy kid in mind? They'll be obsessed with the binoculars you get them—they'll feel like a real explorer.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=binoculars&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71MinRbG+cL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 29
+)
+
+#30
+Gift.create(
+    name: "Lego set",
+    description: "Legos transcend the ages. Give them the gift of endless creations and the experience of stepping on one or two of these little bricks along the way!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=legos&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91SXHJRqWqL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 30
+)
+
+#31
+Gift.create(
+    name: "Board game",
+    description: "They'll invest hours in the new board game you get them! Bring out their competitive side with this gift.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=board+game&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71I7m1tG9YL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 31
+)
+
+#32
+Gift.create(
     name: " ",
     description: " ",
     price:nil,
@@ -1778,6 +2063,7 @@ GiftToKeyword.create(
     keyword_id: 4,
     gift_id: 
 )
+
 
 ##############################
 Gift.create(
