@@ -2593,16 +2593,6 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 48
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 48
-)
-
-GiftToKeyword.create(
     keyword_id: 13,
     gift_id: 48
 )
@@ -2662,16 +2652,6 @@ GiftToKeyword.create(
 )
  
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 49
-)
- 
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 49
-)
- 
-GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 49
 )
@@ -2697,17 +2677,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 50
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 50
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 50
 )
 
@@ -2761,16 +2731,6 @@ Gift.create(
 )
  
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 51
-)
- 
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 51
-)
- 
-GiftToKeyword.create(
     keyword_id: 13,
     gift_id: 51
 )
@@ -2814,14 +2774,6 @@ Gift.create(
  
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 52
-)
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 52
-)
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 52
 )
 GiftToKeyword.create(
@@ -2915,14 +2867,6 @@ GiftToKeyword.create(
     gift_id: 54
 )
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 54
-)
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 54
-)
-GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 54
 )
@@ -2959,15 +2903,7 @@ Gift.create(
     link_to_purchase: "https://www.amazon.com/Miady-10000mAh-Portable-Charger-Charging/dp/B07XFBN7HX/ref=sr_1_3?dchild=1&keywords=portable+charger&qid=1628395241&sr=8-3",
     image: "https://m.media-amazon.com/images/I/61hZ-Gu2hEL._AC_SL1500_.jpg"
 )
- 
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 55
-)
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 55
-)
+
 GiftToKeyword.create(
     keyword_id: 13,
     gift_id: 55
@@ -3018,17 +2954,6 @@ GiftToKeyword.create(
     keyword_id: 11,
     gift_id: 56
 )
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 56
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 56
-)
-
 GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 56
@@ -3079,17 +3004,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 57
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 57
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 57
 )
 
@@ -3143,16 +3058,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 58
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 58
-)
-
-GiftToKeyword.create(
     keyword_id: 16,
     gift_id: 58
 )
@@ -3193,16 +3098,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 59
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 59
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 59
 )
 
@@ -3254,14 +3149,6 @@ GiftToKeyword.create(
     gift_id: 60
 )
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 60
-)
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 60
-)
-GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 60
 )
@@ -3304,14 +3191,6 @@ Gift.create(
 )
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 61
-)
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 61
-)
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 61
 )
 GiftToKeyword.create(
@@ -3360,15 +3239,7 @@ Gift.create(
     image: "https://m.media-amazon.com/images/I/61uXunyyaHL._SL1017_.jpg"
 )
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 62
-)
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 62
-)
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 62
 )
 GiftToKeyword.create(
@@ -3405,15 +3276,7 @@ Gift.create(
     image: "https://images-na.ssl-images-amazon.com/images/I/51ziOmjZKbL._SY498_BO1,204,203,200_.jpg"
 )
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 63
-)
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 63
-)
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 63
 )
 GiftToKeyword.create(
@@ -3460,16 +3323,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 64
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 64
-)
-
-GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 64
 )
@@ -3511,16 +3364,6 @@ Gift.create(
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=sunrise+alarm+clock&crid=31I194CENS44U&sprefix=sunrise+ala%2Caps%2C234&ref=nb_sb_ss_midas-iss-sm_1_11",
     image: "https://m.media-amazon.com/images/I/61RCKEusIRL._AC_SL1500_.jpg"
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 65
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 65
 )
 
 GiftToKeyword.create(
@@ -3578,16 +3421,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 66
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 66
-)
-
-GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 66
 )
@@ -3621,15 +3454,7 @@ Gift.create(
     image: "https://m.media-amazon.com/images/I/61wlS3fQMML._AC_SL1440_.jpg"
 )
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 67
-)
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 67
-)
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 67
 )
 GiftToKeyword.create(
@@ -3723,15 +3548,7 @@ Gift.create(
     image: "https://m.media-amazon.com/images/I/81YRLchEFNS._SL1500_.jpg"
 )
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 69
-)
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 69
-)
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 69
 )
 GiftToKeyword.create(
@@ -3774,16 +3591,6 @@ Gift.create(
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=card+game&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/818otPKjeTL._AC_SL1500_.jpg"
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 70
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 70
 )
 
 GiftToKeyword.create(
@@ -3895,16 +3702,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 72
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 72
-)
-
-GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 72
 )
@@ -3959,16 +3756,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 73
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 73
-)
-
-GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 73
 )
@@ -4018,16 +3805,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 74
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 74
-)
-
-GiftToKeyword.create(
     keyword_id: 16,
     gift_id: 74
 )
@@ -4068,11 +3845,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 75
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 75
 )
 
@@ -4170,16 +3942,6 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 77
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 77
-)
-
-GiftToKeyword.create(
     keyword_id: 13,
     gift_id: 77
 )
@@ -4229,17 +3991,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 78
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 78
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 78
 )
 
@@ -4293,17 +4045,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 79
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 79
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 79
 )
 
@@ -4411,17 +4153,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 81
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 81
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 81
 )
 
@@ -4467,16 +4199,6 @@ Gift.create(
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=sudoku&ref=nb_sb_noss_1",
     image: "https://images-na.ssl-images-amazon.com/images/I/81r9o4dz8aL.jpg"
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 82
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 82
 )
 
 GiftToKeyword.create(
@@ -4529,17 +4251,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 83
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 83
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 83
 )
 
@@ -4593,16 +4305,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 84
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 84
-)
-
-GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 84
 )
@@ -4648,16 +4350,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 85
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 85
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 85
 )
 
@@ -4711,16 +4403,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 86
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 86
-)
-
-GiftToKeyword.create(
     keyword_id: 17,
     gift_id: 86
 )
@@ -4765,17 +4447,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 87
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 87
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 87
 )
 
@@ -4825,16 +4497,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 88
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 88
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 88
 )
 
@@ -4889,16 +4551,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 89
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 89
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 89
 )
 
@@ -5011,17 +4663,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 91
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 91
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 91
 )
 
@@ -5068,19 +4710,8 @@ Gift.create(
     link_to_purchase: "https://www.amazon.com/s?k=resistance+bands&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/61WWJ4UJc6L._AC_SL1001_.jpg"
 )
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 92
-)
-
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 92
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 92
 )
 
@@ -5126,16 +4757,6 @@ Gift.create(
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=digital+camera&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/61R1uwwuScS._AC_SL1500_.jpg"
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 93
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 93
 )
 
 GiftToKeyword.create(
@@ -5188,16 +4809,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 94
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 94
-)
-
-GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 94
 )
@@ -5237,17 +4848,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 95
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 95
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 95
 )
 
@@ -5375,16 +4976,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 97
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 97
-)
-
-GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 97
 )
@@ -5449,16 +5040,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 98
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 98
-)
-
-GiftToKeyword.create(
     keyword_id: 14,
     gift_id: 98
 )
@@ -5490,16 +5071,6 @@ Gift.create(
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=karaoke+machine&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/71lXKhGP-SL._AC_SL1000_.jpg"
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 99
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 99
 )
 
 GiftToKeyword.create(
@@ -5557,16 +5128,6 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 100
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 100
-)
-
-GiftToKeyword.create(
     keyword_id: 13,
     gift_id: 100
 )
@@ -5599,19 +5160,8 @@ Gift.create(
     link_to_purchase: "https://www.amazon.com/s?k=magnadoodle&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/81mB2AwDejL._AC_SL1500_.jpg"
 )
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 101
-)
-
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 101
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 101
 )
 
@@ -5645,17 +5195,7 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 102
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 102
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 102
 )
 
@@ -5682,24 +5222,14 @@ GiftToKeyword.create(
 #103
 Gift.create(
     name: "Lite Brite",
-    description: "For young kids, everything is new and exciting—especially bright colors and",
+    description: "For young kids, everything is new and exciting—especially bright colors",
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=lite+brite&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/71lcmQox9VL._AC_SL1100_.jpg"
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 103
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 103
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 103
 )
 
@@ -5730,17 +5260,6 @@ Gift.create(
     price:nil,
     link_to_purchase: "https://www.amazon.com/s?k=kanoodle+3d&ref=nb_sb_noss_1",
     image: "https://m.media-amazon.com/images/I/71BKuWql00L._AC_SL1500_.jpg"
-)
-
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 104
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 104
 )
 
 GiftToKeyword.create(
@@ -5788,16 +5307,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 105
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 105
-)
-
-GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 105
 )
@@ -5838,11 +5347,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 106
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 106
 )
 
@@ -5925,16 +5429,6 @@ GiftToKeyword.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 108
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 108
-)
-
-GiftToKeyword.create(
     keyword_id: 16,
     gift_id: 108
 )
@@ -5975,16 +5469,6 @@ Gift.create(
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 109
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 109
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 109
 )
 
@@ -6038,22 +5522,12 @@ Gift.create(
 )
 
 GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 110
-)
-
-GiftToKeyword.create(
     keyword_id: 12,
     gift_id: 110
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 110
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
     gift_id: 110
 )
 
