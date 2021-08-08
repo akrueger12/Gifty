@@ -1,4 +1,4 @@
-import styles from './GiftCard.css';
+import styles from './GiftCard.module.css';
 import React from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 import { BrowserRouter as Link }  from 'react-router-dom';

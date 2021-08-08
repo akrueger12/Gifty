@@ -1,4 +1,4 @@
-import styles from  './GiftMenu.css';
+import styles from  './GiftMenu.module.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Menu, MenuItem } from '@material-ui/core';

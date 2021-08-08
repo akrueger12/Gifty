@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from  './GiftForm.css';
+import styles from  './GiftForm.module.css';
 import { 
   TextField,
   RadioGroup,
