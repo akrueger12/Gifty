@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
     include ActionController::MimeResponds
+    skip_before_action :verify_authenticity_token
 
     def encode(payload)
         JWT.encode(payload, ENV.fetch('JWT_SECRET', 'test'))

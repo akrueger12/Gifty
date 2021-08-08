@@ -14,7 +14,13 @@ import {
 import { ToggleButton } from '@material-ui/lab';
 import { StylesProvider } from '@material-ui/styles';
 
-export const GiftForm = () => {
+import { useHistory } from 'react-router-dom';
+
+export const GiftForm = ({ onSubmit }) => {
+  let history = useHistory();
+
+  history.push('/gift-finder/form');
+
   const [name, setName] = React.useState();
   const [gender, setGender] = React.useState();
   const [priceData, setPriceData] = React.useState([
@@ -22,7 +28,7 @@ export const GiftForm = () => {
     {key: 1, label: "$20 - $50", selected: false}, 
     {key: 2, label: "$50 - $100", selected: false}, 
     {key: 3, label: "$100+", selected: false}, 
-    {key: 4, label: "I'd prefer to handmake something!", selected: false},  
+    {key: 4, label: "Handmade", selected: false},  
   ]);
 
   const [giftData, setGiftData] = React.useState([
@@ -53,18 +59,21 @@ export const GiftForm = () => {
     setPriceData(updatedData);
   }
 
-  const completeForm = () => {
+  const getKeywords = () => {
     let keywords = [gender, ageRange]
+  
     for(let data of priceData){
       if(data.selected){
-        keywords.push(data.label)
+        keywords.push(data.label.replaceAll("$", ""))
       }
     }
     for(let data of giftData){
       if(data.selected){
-        keywords.push(data.label)
+        keywords.push(data.label.toLowerCase())
       }
     }
+  
+    return keywords;
   }
 
   return (
@@ -135,9 +144,7 @@ export const GiftForm = () => {
             disableElevation
             variant="contained"
             size="large"
-            // onClick={onSubmitClick}
-            onClick={completeForm}
-            // disabled={!complete}
+            onClick={() => onSubmit(name, getKeywords())}
           >
               Start gifting!
           </Button>

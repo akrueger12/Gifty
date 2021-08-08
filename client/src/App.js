@@ -1,9 +1,12 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Dashboard from './components/dashboard/Dashboard';
-import GiftForm from './components/giftForm/GiftForm';
-import Login from './components/login/Login'
+import Login from './components/login/Login';
+import { GiftFinder } from './components/giftFinder/GiftFinder';
+import { WishlistPage } from './components/dashboard/wishlist/WishList';
+import NewUser from './components/login/NewUser';
+import { GiftForm } from './components/giftForm/GiftForm';
+import { GiftFrame } from './components/dashboard/gifts/GiftFrame';
 
 /**
  * Main component that holds the logic for the app
@@ -15,17 +18,20 @@ const App = () => {
         <Router>
             <div>
                 <main>
-                    {/* <Switch>
-                        <Route exact path="/">
-                            <LandingPage />
+                    <Switch>
+                        <Route exact path="/"><Login onSuccess={(id) => { localStorage.userId = id }} /></Route>
+                        <Route path="/signup"><NewUser onSuccess={(id) => { localStorage.userId = id }} /></Route>
+                        <Route path="/wishlist"><WishlistPage /></Route>
+                        <Route exact path='/gift-finder'>
+                            <GiftFinder />
                         </Route>
-                        <Route exact path="/signup">
-                            <SignUpPage />
+                        <Route path='/gift-finder/form'>
+                            <GiftForm/>
                         </Route>
-                        <Route path="/dashboard/:userId" children={<Dashboard />} />
-                    </Switch> */}
-                    {/* <Dashboard /> */}
-                    <Login/>
+                        <Route path='/gift-finder/gifts'>
+                            <GiftFrame/>
+                        </Route>
+                    </Switch>
                 </main>
             </div>
         </Router>

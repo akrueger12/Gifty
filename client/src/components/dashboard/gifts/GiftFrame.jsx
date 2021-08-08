@@ -2,41 +2,26 @@ import React from 'react';
 import './GiftFrame.css';
 import { CircularProgress, Grid } from '@material-ui/core';
 import GiftCard from './GiftCard';
+import { useHistory } from 'react-router-dom';
 
 export const GiftFrame = ({ gifts }) => {
+    let history = useHistory();
+
+    history.push('/gift-finder/gifts');
+
     return gifts ? (
         <div className='gift-frame'>
             <Grid item container direction="row" justify="center">
                 <Grid container className="gift-cards">
                     <Grid container item>
                         <Grid container item xs={12} md>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
+                            {
+                                gifts.map((gift) => (
+                                    <Grid item xs={4}>
+                                        <GiftCard gift={gift} />
+                                    </Grid>
+                                ))
+                            }
                         </Grid>
                     </Grid>
                 </Grid>

@@ -1,0 +1,32 @@
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.submit{
+    width: 200px;
+}
+
+.question {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black
+}
+
+
+.submit {
+    background-color: #8FB3BF !important;
+    color: white !important;
+    transition: 250ms;
+    margin-top: 15px !important;
+    margin-bottom: 15px;
+}
+
+.submit:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
