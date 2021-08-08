@@ -1602,6 +1602,183 @@ GiftToKeyword.create(
     gift_id: 24
 )
 
+#25
+Gift.create(
+    name: "Rubik's Cube",
+    description: "Got someone in mind who's patient, determined, and loves to try new things? Get them a Rubik's cube and see what happens.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=rubiks+cube&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/71k1SeCpFYL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 25
+)
+
+#26
+Gift.create(
+    name: "High quality pen set",
+    description: "Gel, fountain, ballpoint, or flair pens—the list is endless. Make their day by giving them a nice pen set!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=pen+set&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91RtlHL2ZTL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 26
+)
+
+#27
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
 ##############################
 Gift.create(
     name: " ",
