@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './WishList.css';
+import styles from  './WishList.css';
 import {
     Paper,
     Grid,
@@ -64,33 +64,33 @@ export const WishlistPage = () => {
     return (
         <Page>
             {isLoading &&
-                <div className="loading"><CircularProgress /></div>
+                <div className={styles.loading}><CircularProgress /></div>
             }
             {!isLoading &&
                 <StylesProvider injectFirst>
-                    <Paper className="wish-list">
+                    <Paper className={styles.wish-list}>
                         <Grid container spacing={1} direction="column">
-                            <h1 className="user-name">{userData.user.username.toUpperCase()}'S WISHLIST</h1>
+                            <h1 className={styles.user-name}>{userData.user.username.toUpperCase()}'S WISHLIST</h1>
 
-                            <div className="item-addition">
+                            <div className={styles.item-addition}>
                                 <TextField
                                     id="outlined-basic"
                                     label="Item"
                                     variant="outlined"
-                                    className="item-name"
+                                    className={styles.item-name}
                                     value={itemInputValue}
                                     onChange={handleItemInputChange}
                                 />
-                                <Fab size="small" className="add-item" onClick={onItemAdded}>
+                                <Fab size="small" className={styles.add-item} onClick={onItemAdded}>
                                     <AddIcon className='add-icon'/>
                                 </Fab>
                             </div>
-                            <div className="item-list-container">
-                                <List dense className="item-list">
+                            <div className={styles.item-list-container}>
+                                <List dense className={styles.item-list}>
                                     {
                                         wishlistItems.map((item) => (
-                                            <ListItem className="item">
-                                                <div className="invitee-information">
+                                            <ListItem className={styles.item}>
+                                                <div className={styles.invitee-information}>
                                                     <ListItemText primary={item} />
                                                 </div>
                                                 <IconButton>
