@@ -40,7 +40,7 @@ export const Dashboard = ({ userData }) => {
     // generate content for dashboard based on current state
     const generateDashboardContent = () => {
         if (view === 'gift-view') {
-            return <GiftFrame gifts={gifts}/>
+            return <GiftFrame gifts={true}/>
         } else if (view === 'wishlist') {
             return <WishList/>
         }

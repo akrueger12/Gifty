@@ -5,7 +5,7 @@ import Packages from './loginImage.png';
 import Logo from './Logo.png';
 import { loginUser } from '../../apis/api';
 
-export const Login = ({ userDataCallback }) => {
+export const Login = () => {
     const [usernameInput, setUsernameInput] = React.useState('');
     const [passwordInput, setPasswordInput] = React.useState('');
     const [errorMessage, setErrorMessage] = React.useState('');
@@ -18,7 +18,6 @@ export const Login = ({ userDataCallback }) => {
             setError(true);
         } else {
             let userData = await loginUser({username: usernameInput, password: passwordInput});
-            userDataCallback(userData);
             if (userData === 'error 403') {
                 setErrorMessage('Password or username is incorrect');
                 setError(true);
