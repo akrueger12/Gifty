@@ -2007,61 +2007,317 @@ GiftToKeyword.create(
 
 #32
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Lookalike doll",
+    description: "Dolls are cool and all, but getting a doll that looks like them will make them feel all the more special. Bound to be their new favorite doll and a beloved keepsake!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
+    link_to_purchase: "https://www.amazon.com/s?k=lookalike+doll&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61JZ3SR4QLL._AC_SL1000_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 32
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 32
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 32
 )
 
 GiftToKeyword.create(
     keyword_id: 19,
-    gift_id: 
+    gift_id: 32
 )
 
 GiftToKeyword.create(
     keyword_id: 20,
-    gift_id: 
+    gift_id: 32
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 32
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 32
+)
+
+#33
+Gift.create(
+    name: "Magazine subscription",
+    description: "Get them a magazine subscription to one of their current interests or something else you're trying to get them hooked on! Living in such a digital world, a physical magazine will be a welcome change for anyone.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=magazine+subscription&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/51EO5IdapLS._AC_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 33
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 33
+)
+
+#34
+Gift.create(
+    name: "Customized mouse pad",
+    description: "Customized mouse pads allow you to tailor to their interests and personality. Lighthearted or sentimental? That's up to you!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=customized+mouse+pad&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61nrVdo061L._AC_SL1010_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 34
+)
+
+#35
+Gift.create(
+    name: "Easy Bake Oven",
+    description: "Let the kid in your life learn the joys of baking. You might even be lucky enough to reap some of the benefits of their baking! (Whether that's a good thing or bad thing, we're not sure)",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=easy+bake+oven&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/811YHQ5vJvL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 35
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 35
+)
+
+#36
+Gift.create(
+    name: "Name a Star",
+    description: "Got someone in mind whose name belongs in lights? Feasibly doing that might not be possible, but a star that's named after them might make them feel as though they've achieved superstar status.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=name+a+star&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91LsW7DyflL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 36
 )
 
 
