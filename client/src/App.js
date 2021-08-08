@@ -1,9 +1,11 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './components/login/Login';
+import { GiftFinder } from './components/giftFinder/GiftFinder';
+import { WishlistPage } from './components/dashboard/wishlist/WishList';
 import Dashboard from './components/dashboard/Dashboard';
 import GiftForm from './components/giftForm/GiftForm';
-import Login from './components/login/Login';
 import NewUser from './components/login/NewUser';
 
 /**
@@ -17,13 +19,10 @@ const App = () => {
             <div>
                 <main>
                     <Switch>
-                        <Route exact path="/">
-                            <Login />
-                        </Route>
-                        {/* <Route exact path="/signup">
-                            <SignUpPage />
-                        </Route> */}
-                        <Route path="/dashboard:userId" children={<Dashboard/>} />
+                        <Route exact path="/"><Login onSuccess={(id) => { localStorage.userId = id }} /></Route>
+                        {/* <Route exact path="/signup"><SignUpPage /></Route> */}
+                        <Route path="/wishlist"><WishlistPage /></Route>
+                        <Route path="/gift-finder"><GiftFinder /></Route>
                     </Switch>
                 </main>
             </div>

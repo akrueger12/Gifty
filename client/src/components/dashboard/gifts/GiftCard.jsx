@@ -11,14 +11,14 @@ export const GiftCard = ({ gift }) => {
     return (
         <Card className="gift-card">
             <CardMedia className="gift-image">
-                This is where the picture will go
+                <img src={gift.image} alt={""} />
             </CardMedia>
             <CardContent className="gift-description">
                 <Typography variant="h5" color="textPrimary" component="p">
-                    Name
+                    {gift.name}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    This is where the description will go
+                    {gift.description}
                 </Typography>
             </CardContent>
         </Card>

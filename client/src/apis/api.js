@@ -6,65 +6,62 @@ export const createNewUser = async (username, password) => {
 
     const data = { username: username, password: password };
 
-    await fetch(url, {
+    const response = await fetch(url, {
         method: "POST",
         mode: 'cors',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
-    }).then(async (response) => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                return new Error('there was an error');
-            }
-        }
-    );
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
 }
 
 export const retrieveUserData = async (userId) => {
-    let url = `${BASE_URL}/user/data`;
+    let url = `${BASE_URL}/users/data`;
 
-    const data = { user_id: userId };
+    const data = { id: parseInt(userId) };
 
-    await fetch(url, {
+    const response = await fetch(url, {
         method: "POST",
         mode: 'cors',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
-    }).then(async (response) => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                return new Error('there was an error');
-            }
-        }
-    );
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
 };
 
-export const loginUser = async (data) => {
+export const loginUser = async (username, password) => {
     let url = `${BASE_URL}/users/login`;
-    
-    let toRet;
-    await fetch(url, {
+
+    const data = { username: username, password: password };
+
+    const response = await fetch(url, {
         method: "POST",
         mode: 'cors',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
-    }).then(async (response) => {
-            if (response.ok) {
-                toRet = response.json();
-            } else {
-                return new Error('there was an error');
-            }
-        }
-    );
-    return toRet;
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
 }
 
 export const retrieveWishList = async (userId) => {
@@ -72,21 +69,20 @@ export const retrieveWishList = async (userId) => {
 
     const data = { user_id: userId };
 
-    await fetch(url, {
+    const response = await fetch(url, {
         method: "POST",
         mode: 'cors',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
-    }).then(async (response) => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                return new Error('there was an error');
-            }
-        }
-    );
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
 }
 
 export const retrieveGiftsForUser = async (keywords) => {
@@ -94,21 +90,20 @@ export const retrieveGiftsForUser = async (keywords) => {
 
     const data = { keywords: keywords };
 
-    await fetch(url, {
+    const response = await fetch(url, {
         method: "POST",
         mode: 'cors',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
-    }).then(async (response) => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                return new Error('there was an error');
-            }
-        }
-    );
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
 }
 
 export const createNewItem = async (userId, item) => {
@@ -116,19 +111,39 @@ export const createNewItem = async (userId, item) => {
 
     const data = { wishlist_id: userId, user_input: item };
 
-    await fetch(url, {
+    const response = await fetch(url, {
         method: "POST",
         mode: 'cors',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
-    }).then(async (response) => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                return new Error('there was an error');
-            }
-        }
-    );
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
+}
+
+export const getSuggestionsFromKeywords = async (keywords) => {
+    let url = `${BASE_URL}/gifts/show`;
+
+    const data = { keywords: keywords };
+
+    const response = await fetch(url, {
+        method: "POST",
+        mode: 'cors',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
 }

@@ -4115,7 +4115,8 @@ GiftToKeyword.create(
 GiftToKeyword.create(
     keyword_id: 15,
     gift_id: 69
-)GiftToKeyword.create(
+)
+GiftToKeyword.create(
     keyword_id: 22,
     gift_id: 69
 )

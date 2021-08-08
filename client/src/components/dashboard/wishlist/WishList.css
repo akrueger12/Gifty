@@ -1,3 +1,10 @@
+.loading {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .wish-list {
     display: flex;
     margin: 3%;

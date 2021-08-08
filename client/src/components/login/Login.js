@@ -6,7 +6,7 @@ import Logo from './Logo.png';
 import { loginUser } from '../../apis/api';
 import { useHistory } from 'react-router-dom';
 
-export const Login = () => {
+export const Login = ({ onSuccess }) => {
     const [usernameInput, setUsernameInput] = React.useState('');
     const [passwordInput, setPasswordInput] = React.useState('');
     const [errorMessage, setErrorMessage] = React.useState('');
@@ -20,12 +20,13 @@ export const Login = () => {
             setErrorMessage('Please enter your username and password');
             setError(true);
         } else {
-            let userData = await loginUser({username: usernameInput, password: passwordInput});
+            let userData = await loginUser(usernameInput, passwordInput);
             if (userData === 'error 403') {
                 setErrorMessage('Password or username is incorrect');
                 setError(true);
             } else {
-                history.push(`./dashboard/${userData.user.id}`);
+                onSuccess(parseInt(userData.user.id));
+                history.push(`/wishlist`);
             }
         }
     };

@@ -1,8 +1,16 @@
 /* Styles for the invited event card */
 
 .gift-image {
-    background-color: #60AB9A;
     height: 20vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.gift-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .gift-card {

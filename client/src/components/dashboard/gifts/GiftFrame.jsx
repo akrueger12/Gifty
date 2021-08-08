@@ -10,33 +10,13 @@ export const GiftFrame = ({ gifts }) => {
                 <Grid container className="gift-cards">
                     <Grid container item>
                         <Grid container item xs={12} md>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <GiftCard/>
-                            </Grid>
+                            {
+                                gifts.map((gift) => (
+                                    <Grid item xs={4}>
+                                        <GiftCard gift={gift} />
+                                    </Grid>
+                                ))
+                            }
                         </Grid>
                     </Grid>
                 </Grid>
