@@ -3807,3 +3807,20 @@ Processing by UsersController#login as */*
 Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 995)
 
 
+Started GET "/users/login" for ::1 at 2021-08-07 19:54:25 -0500
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"nowork", "password"=>"[FILTERED]", "user"=>{"username"=>"nowork", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nowork"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 404 Not Found in 33ms (Views: 0.5ms | ActiveRecord: 10.8ms | Allocations: 2414)
+
+
+Started GET "/users/login" for ::1 at 2021-08-07 19:54:29 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 8.5ms | Allocations: 3995)
+
+
