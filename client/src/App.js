@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './components/login/Login';
 import { GiftFinder } from './components/giftFinder/GiftFinder';
 import { WishlistPage } from './components/dashboard/wishlist/WishList';
-import { NewUser } from './components/login/NewUser';
+import NewUser from './components/login/NewUser';
 
 /**
  * Main component that holds the logic for the app

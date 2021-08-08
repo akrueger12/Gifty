@@ -1,8 +1,10 @@
-import React from 'react'
-import {Grid, TextField, Button, Box} from '@material-ui/core'
-import Logo from './Logo.png'
-import Packages from './loginImage.png'
-import './NewUser.css'
+import React from 'react';
+import {Grid, TextField, Button, Box} from '@material-ui/core';
+import Logo from './Logo.png';
+import Packages from './loginImage.png';
+import './NewUser.css';
+import { loginUser } from '../../apis/api';
+import { useHistory } from 'react-router-dom';
 
 class NewUser extends React.Component {
     constructor(props){
@@ -76,4 +78,4 @@ class NewUser extends React.Component {
     }
 }
 
-export default NewUser
+export default NewUser;

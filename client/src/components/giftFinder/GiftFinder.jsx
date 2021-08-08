@@ -10,11 +10,11 @@ export const GiftFinder = () => {
     const [keywords, setKeywords] = useState([]);
     const [suggestions, setSuggestions] = useState([]);
     useEffect(() => {
-        view.current.value = 'form';
+        view.current = 'form';
         if (keywords.length > 0) {
             getSuggestionsFromKeywords(keywords)
                 .then((response) => setSuggestions(response.gifts));
-            view.current.value = 'response';
+            view.current = 'response';
         }
     }, [keywords]);
 
@@ -28,7 +28,7 @@ export const GiftFinder = () => {
             {
                 suggestions.length === 0 || view.current.value === 'form'
                 ? <GiftForm onSubmit={handleGiftFormSubmit} />
-                : <GiftFrame gifts={suggestions} resetView={() => view.current.value = 'form'} />
+                : <GiftFrame gifts={suggestions} resetView={() => view.current = 'form'} />
             }
         </Page>
     );

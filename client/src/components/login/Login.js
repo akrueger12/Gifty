@@ -33,7 +33,7 @@ export const Login = ({ onSuccess }) => {
 
     // set screen to sign up page
     const onSignUpClick = () => {
-        window.location.href = './signup';
+        history.push(`/signup`);
     };
 
     // update user input functions
