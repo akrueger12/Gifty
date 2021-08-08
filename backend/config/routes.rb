@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'auth/general_auth'
-  get 'users/create'
-  get 'users/login'
-  get 'gifts_to_keywords/create'
-  get 'keywords/create'
-  get 'wishlist/create'
-  get 'wishlist/show'
-  get 'gifts/create'
-  get 'gifts/show'
+  post 'auth/general_auth'
+  post 'users/create'
+  post 'users/login'
+  post 'gifts_to_keywords/create'
+  post 'keywords/create'
+  post 'wishlist/create'
+  post 'wishlist/show'
+  post 'gifts/create'
+  post 'gifts/show'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

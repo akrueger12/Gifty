@@ -1,5 +1,7 @@
 class UsersController < AuthController
   def create
+    puts("PUT IS RIGHT HERE")
+    puts(params[:username])
 
     @newUser = User.new(
       username: params[:username],
@@ -50,7 +52,7 @@ class UsersController < AuthController
         iat: Time.now.to_i
       })
     respond_to do |format|
-      format.json { render json: { token: token } }
+      format.json { render json: { username: @user.username } }
     end
   end
 end
