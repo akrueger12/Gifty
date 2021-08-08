@@ -43,11 +43,6 @@ class UsersController < AuthController
       return
     end
 
-    token = encode({
-        sub: @user.id,
-        username: @user.username,
-        iat: Time.now.to_i
-      })
     respond_to do |format|
       format.json { render json: { user: @user } }
     end
