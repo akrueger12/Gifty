@@ -1488,6 +1488,120 @@ GiftToKeyword.create(
     gift_id: 22
 )
 
+
+#23
+Gift.create(
+    name: "A mug with a good pun",
+    description: "Mugs. Puns. What more could anyone want?",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=pun+mug&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61K8y9PHXuL._AC_SL1138_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 10,
+    gift_id: 23
+)
+
+#24
+Gift.create(
+    name: "Cribbage board",
+    description: "They'll be a cribbage pro by the time they're done playing their first game on this cribbage board! A classic game that's fun for all ages.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=cribbage+board&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81MxrIE8bXL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 24
+)
+
 ##############################
 Gift.create(
     name: " ",
