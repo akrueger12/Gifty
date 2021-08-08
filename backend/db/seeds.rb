@@ -3615,184 +3615,381 @@ GiftToKeyword.create(
     gift_id: 59
 )
 
-#
+#60
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "National Parks Scratch Off Map",
+    description: "For the individual who takes pride in all the national parks they've visited, a scratch off map of them might be their next favorite thing! The satisfying feeling of scratching one off and making memories is a gift that keeps on giving. ",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/National-Parks-Scratch-Off-Poster/dp/B08P4LKKK9/ref=sr_1_5?crid=21MPY7IL8BK16&dchild=1&keywords=national+parks+scratch+off+map&qid=1628395764&sprefix=national+parks+scrat%2Caps%2C225&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/819Fmy8f0CL._AC_SL1500_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 60
+)
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 60
+)
+
+#61
+Gift.create(
+    name: "DIY Coupon Books for Acts of Service they can redeem whenever!",
+    description: "For those on a budget, a handmade coupon book for the other person might be just the idea you're searching for! Completely customizable and at a low cost makes this gift an easy win with whoever's receiving it. ",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Coupon-Cards-Coupons-Certificates-Vouchers/dp/B07R6NXK1K/ref=sr_1_2?dchild=1&keywords=DIY+stationary+coupon+book&qid=1628396335&sr=8-2",
+    image: "https://m.media-amazon.com/images/I/61fGphnhucL._AC_SL1500_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 61
+)
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 61
+)
+
+#62
+Gift.create(
+    name: "Personalized Coloring Book or Picture Book with them as the main character!",
+    description: "Coloring books and picture books are great as is, but making the kid that's receiving it the main character in the book takes it to the next level! A great gift for now and a keepsake for later. ",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Personalized-Coloring-Activity-Toddlers-Children/dp/B0799QRQKS/ref=sr_1_5?dchild=1&keywords=personalized+coloring+book&qid=1628396701&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/61uXunyyaHL._SL1017_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 62
+)
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 62
+)
+
+#63
+Gift.create(
+    name: "What I love about you",
+    description: "A sentimental idea that gives you complete creative freedom! This person obviously means something to you—be bold in telling them why and they're bound to feel special.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/100-Things-Love-About-You/dp/1647398207/ref=sr_1_5?crid=20TKS9GD5VYGJ&dchild=1&keywords=what+i+love+about+you+book&qid=1628397021&sprefix=what+i+love+%2Caps%2C236&sr=8-5",
+    image: "https://images-na.ssl-images-amazon.com/images/I/51ziOmjZKbL._SY498_BO1,204,203,200_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 63
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 63
+)
+
+#64
+Gift.create(
+    name: "Keurig Coffee Maker",
+    description: "Must. Have. Coffee. Sound familiar? Get them a Keurig—you'll thank us later.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=keurig+coffee+maker&crid=11T2IQRNR6SAX&sprefix=keurig+coffee+%2Caps%2C225&ref=nb_sb_ss_midas-iss-sm_1_14",
+    image: "https://m.media-amazon.com/images/I/61i-OyzizGL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 64
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 64
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 64
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 64
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 64
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 64
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 64
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 64
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 644
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 7,
+    gift_id: 64
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#65
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Sunrise alarm clock",
+    description: "A peaceful and novel way to begin any day. Goodbye blaring alarm clocks!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=sunrise+alarm+clock&crid=31I194CENS44U&sprefix=sunrise+ala%2Caps%2C234&ref=nb_sb_ss_midas-iss-sm_1_11",
+    image: "https://m.media-amazon.com/images/I/61RCKEusIRL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 65
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 65
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 65
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 65
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 65
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 65
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 65
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 65
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 65
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 65
 )
 
-#
+#66
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Jumbo playing cards",
+    description: "Want it to be clear when you're demolishing them in a card game? Get them a set of these jumbo playing cards to make any card game instantly more fun!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=jumbo+playing+cards&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61bWQMZutTL._AC_SL1000_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 66
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 66
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 66
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 66
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 66
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 66
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 66
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 10,
+    gift_id: 66
 )
 
-#
+#67
+
+
+#################################
 Gift.create(
     name: " ",
     description: " ",
