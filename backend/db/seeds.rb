@@ -2895,124 +2895,235 @@ GiftToKeyword.create(
     gift_id: 46
 )
 
-#
+#47
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Funny or lucky socks",
+    description: "Socks are a great, low-cost gift for anyone on your list! Whether they need a new pair of lucky socks for their chess tournaments or would appreciate some socks with puns, this is a go-to gift that should not be overlooked.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/Chick-Magnet-Size-Fits-Socks/dp/B071LTDWF9/ref=sr_1_2?dchild=1&keywords=chick+magnet+socks&qid=1628392490&sr=8-2",
+    image: "https://i5.walmartimages.com/asr/9163705f-8d75-4ba2-8824-fa36d64da0ca_1.7f67832216396241f84db3941e4e0f44.jpeg"
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 47
+)
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 47
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 10,
+    gift_id: 47
+)
+
+#48
+Gift.create(
+    name: "Solar outdoor thermometer",
+    description: "Beat the heat with a solar outdoor thermometer! A practical gift for anyone that seems to be outdoors 24/7.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=solar+outdoor+thermometer&crid=3IE6EB4OEAPL6&sprefix=solar+outdoor+therm%2Caps%2C219&ref=nb_sb_ss_midas-iss-sm_1_19",
+    image: "https://m.media-amazon.com/images/I/71jISdw1dvL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 48
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 48
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 48
 )
 
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 48
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 48
+)
+
+#49
+Gift.create(
+    name: "Toilet Night-Light Tech Gadget",
+    description: "Somewhat of a gag gift, but also a cool gadget that illuminates any toilet a variety of bright different colors! This gift is perfect for White Elephant gift exchanges or anyone with a lighthearted sense of humor.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Ailun-Activated-Nightlight-Decorating-Combination/dp/B06XR9YC24/ref=sr_1_5?dchild=1&keywords=toilet+night+light&qid=1628394116&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/71jT9o2GQhL._AC_SL1500_.jpg"
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 49
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 49
+)
+ 
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 49
+)
+ 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 49
 )
-
+ 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 49
 )
-
+ 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 49
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#50
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Birdhouse",
+    description: "One bird, two birds, red bird, blue bird—something like that, right? They're bound to see at least one bird, two birds with a new birdhouse.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=birdhouse&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71rfbkdGdTL._AC_SL1100_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 50
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 50
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 50
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 50
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 50
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 18,
+    gift_id: 50
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 50
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 50
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 50
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 50
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 9,
+    gift_id: 50
 )
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
 
 #
 Gift.create(
