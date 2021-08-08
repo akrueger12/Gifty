@@ -4486,242 +4486,236 @@ GiftToKeyword.create(
 
 #76
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Bathtub tray",
+    description: "Capitalize on rest and relaxation with a bathtub caddy tray! Whether they're enjoying a nice bath with a glass of wine, flipping through a magazine, or watching a show on their tablet, a bathtub tray offers simplicity and security.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
+    link_to_purchase: "https://www.amazon.com/s?k=bathtub+tray&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/71Mkt8xxRLS._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 76
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 76
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 76
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 76
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 76
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 76
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 76
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 76
 )
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#77
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Destination map with pins",
+    description: "Someone got bit by the travel bug! A United States or world map  with thumbtacks will help them pin down where they want to go next.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=map+push+pins&crid=3K7KJM716J91G&sprefix=map%2Caps%2C242&ref=nb_sb_ss_midas-iss-sm_1_3",
+    image: "https://m.media-amazon.com/images/I/91yZiNwd+TL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 77
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 77
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 77
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 77
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 77
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 77
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 77
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 77
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 8,
+    gift_id: 77
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 10,
+    gift_id: 77
 )
 
-#
+#78
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Cocktail bar set",
+    description: "Cocktail bar sets are a must for the classy person in your life who always seems to have a fully stocked kitchen!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=cocktail+bar+set&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71o1Qm4QJeS._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 78
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 78
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 78
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 78
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 78
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 78
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 78
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 78
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 78
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 78
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 3,
+    gift_id: 78
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-
-#
+#79
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Digital photo frame",
+    description: "Digital photo frames bring a modern take to all the moments you've caught on camera! ",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=digital+photo+frame",
+    image: "https://m.media-amazon.com/images/I/71Znmc4u6JS._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 79
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 79
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 79
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 79
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 79
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 79
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 79
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 79
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 79
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 79
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#80
 Gift.create(
     name: " ",
     description: " ",
