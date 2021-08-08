@@ -1,7 +1,8 @@
 const BASE_URL = 'https://gifty-web-app.herokuapp.com/';
 
 export const createNewUser = async (username, password) => {
-    let url = `${BASE_URL}/users/create`;
+    //let url = `${BASE_URL}/users/create`;
+    let url = "https://gifty-web-app.herokuapp.com/users/create";
 
     const data = { username: username, password: password };
 
