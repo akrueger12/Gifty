@@ -1,5 +1,5 @@
 import './Dashboard.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StylesProvider } from '@material-ui/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import NavigationBar from './navigation/NavigationBar';
