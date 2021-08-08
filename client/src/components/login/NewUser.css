@@ -17,15 +17,12 @@
     color: black
 }
 
-.link{
-    align-items: "center"
-}
 
 .submit {
     background-color: #8FB3BF !important;
     color: white !important;
     transition: 250ms;
-    margin-top: 40px !important;
+    margin-top: 15px !important;
     margin-bottom: 15px;
 }
 

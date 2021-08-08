@@ -67,17 +67,19 @@ export const Login = ({ userDataCallback }) => {
                         />
 
                         <h5 className="error-message">{errorMessage}</h5>
-
-                        <Button
-                            className="submit"
-                            disableElevation
-                            variant="contained"
-                            size="large"
-                            onClick={onLoginClick}
-                        >
-                            Find Gifts!
-                        </Button>
-                        <Link href = "/signup">Create a Gifty Account</Link>
+                        <Grid item container justifyContent="center">
+                            <Button
+                                className="submit"
+                                disableElevation
+                                variant="contained"
+                                size="large"
+                                onClick={onLoginClick}
+                            >
+                                Find Gifts!
+                            </Button>
+                        
+                            <Link href = "/signup" className = "link">Create a Gifty Account</Link>
+                        </Grid>
                     </Grid>
 
                 </Grid>
