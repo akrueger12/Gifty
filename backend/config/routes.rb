@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'auth/general_auth'
-  get 'users/create'
+  post 'users/create'
   get 'users/login'
   get 'gifts_to_keywords/create'
   get 'keywords/create'

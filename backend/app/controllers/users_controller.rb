@@ -1,6 +1,8 @@
 class UsersController < AuthController
   def create
-
+    puts("PUT IS RIGHT HERE")
+    puts(params[:username])
+    
     @newUser = User.new(
       username: params[:username],
       password: params[:password]
