@@ -3,7 +3,9 @@ import './GiftFrame.css';
 import { CircularProgress, Grid } from '@material-ui/core';
 import GiftCard from './GiftCard';
 
-export const GiftFrame = ({ gifts }) => {
+export const GiftFrame = ({ gifts, resetView }) => {
+    resetView();
+
     return gifts ? (
         <div className='gift-frame'>
             <Grid item container direction="row" justify="center">

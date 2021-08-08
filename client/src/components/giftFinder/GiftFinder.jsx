@@ -13,7 +13,7 @@ export const GiftFinder = () => {
         if (keywords.length > 0) {
             getSuggestionsFromKeywords(keywords)
                 .then((response) => setSuggestions(response.gifts));
-            view = 'response';
+            view.current.value = 'response';
         }
     }, [keywords]);
 
@@ -25,9 +25,9 @@ export const GiftFinder = () => {
     return (
         <Page>
             {
-                suggestions.length === 0 
+                suggestions.length === 0 || view.current.value === 'form'
                 ? <GiftForm onSubmit={handleGiftFormSubmit} />
-                : <GiftFrame gifts={suggestions} resetView={() => view='form'} />
+                : <GiftFrame gifts={suggestions} resetView={() => view.current.value = 'form'} />
             }
         </Page>
     );
