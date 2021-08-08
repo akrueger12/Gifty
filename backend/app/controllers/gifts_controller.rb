@@ -1,4 +1,4 @@
-class GiftsController < ApplicationController
+class GiftsController < AuthController
   def create
     @giftItem = Gift.new(
       name: params[:name],

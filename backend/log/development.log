@@ -3447,3 +3447,363 @@ Completed 200 OK in 290ms (Views: 2.4ms | ActiveRecord: 40.8ms | Allocations: 21
   [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
   [1m[36mGift Create (1.8ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Leather Passport Holder"], ["description", "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way."], ["link_to_purchase", "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628363794&sr=8-5"], ["image", "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"], ["created_at", "2021-08-07 22:12:47.124522"], ["updated_at", "2021-08-07 22:12:47.124522"]]
   [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5483.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "gifty"[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (177.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "gifty"[0m
+  [1m[35m (113.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "gifty-test"[0m
+  [1m[35m (1076.7ms)[0m  [1m[35mCREATE DATABASE "gifty" ENCODING = 'utf8'[0m
+  [1m[35m (1066.8ms)[0m  [1m[35mCREATE DATABASE "gifty-test" ENCODING = 'utf8'[0m
+  [1m[35mSQL (4.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "gift_to_keywords" CASCADE[0m
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE TABLE "gift_to_keywords" ("id" bigserial primary key, "gift_id" integer, "keyword_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "gifts" CASCADE[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "gifts" ("id" bigserial primary key, "name" character varying, "description" character varying, "price" character varying, "link_to_purchase" character varying, "image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "keywords" CASCADE[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" bigserial primary key, "keyword" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "wishlist_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "wishlists" CASCADE[0m
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "wishlists" ("id" bigserial primary key, "wishlist_id" integer, "user_input" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210807161145)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210807160024),
+(20210807160929),
+(20210807161037),
+(20210807161122);
+
+[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-07 22:19:22.313279"], ["updated_at", "2021-08-07 22:19:22.313279"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "6637fe67ff72e93374841eca8937a762043861a7"], ["created_at", "2021-08-07 22:19:22.330956"], ["updated_at", "2021-08-07 22:19:22.330956"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "gift_to_keywords" CASCADE[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCREATE TABLE "gift_to_keywords" ("id" bigserial primary key, "gift_id" integer, "keyword_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "gifts" CASCADE[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "gifts" ("id" bigserial primary key, "name" character varying, "description" character varying, "price" character varying, "link_to_purchase" character varying, "image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "keywords" CASCADE[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" bigserial primary key, "keyword" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "wishlist_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "wishlists" CASCADE[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "wishlists" ("id" bigserial primary key, "wishlist_id" integer, "user_input" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210807161145)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210807160024),
+(20210807160929),
+(20210807161037),
+(20210807161122);
+
+[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-07 22:19:22.661206"], ["updated_at", "2021-08-07 22:19:22.661206"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2021-08-07 22:19:22.671214"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "6637fe67ff72e93374841eca8937a762043861a7"], ["created_at", "2021-08-07 22:19:22.679984"], ["updated_at", "2021-08-07 22:19:22.679984"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (3.0ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "practical"], ["created_at", "2021-08-07 22:19:23.077856"], ["updated_at", "2021-08-07 22:19:23.077856"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.7ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "sentimental"], ["created_at", "2021-08-07 22:19:23.088778"], ["updated_at", "2021-08-07 22:19:23.088778"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "likes to try new things"], ["created_at", "2021-08-07 22:19:23.096362"], ["updated_at", "2021-08-07 22:19:23.096362"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "creative"], ["created_at", "2021-08-07 22:19:23.103237"], ["updated_at", "2021-08-07 22:19:23.103237"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "reader"], ["created_at", "2021-08-07 22:19:23.110420"], ["updated_at", "2021-08-07 22:19:23.110420"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.6ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "fitness"], ["created_at", "2021-08-07 22:19:23.118085"], ["updated_at", "2021-08-07 22:19:23.118085"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "tech"], ["created_at", "2021-08-07 22:19:23.126393"], ["updated_at", "2021-08-07 22:19:23.126393"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "travel"], ["created_at", "2021-08-07 22:19:23.135136"], ["updated_at", "2021-08-07 22:19:23.135136"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "nature lover"], ["created_at", "2021-08-07 22:19:23.144630"], ["updated_at", "2021-08-07 22:19:23.144630"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mKeyword Create (0.8ms)[0m  [1m[32mINSERT INTO "keywords" ("keyword", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["keyword", "lighthearted"], ["created_at", "2021-08-07 22:19:23.153908"], ["updated_at", "2021-08-07 22:19:23.153908"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGift Create (3.2ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Leather Passport Holder"], ["description", "Leather passport holders are perfect for experienced international travelers in your life! Their passport is getting some good use in—they might as well have something to protect it along the way."], ["link_to_purchase", "https://www.amazon.com/Leather-Passport-Holder-Tobacco-Snakebite/dp/B0991TVQ1T/ref=sr_1_5?dchild=1&keywords=leather+passport+holder&qid=1628363794&sr=8-5"], ["image", "https://m.media-amazon.com/images/I/611Fo24ZgkS._AC_SL1500_.jpg"], ["created_at", "2021-08-07 22:19:23.187082"], ["updated_at", "2021-08-07 22:19:23.187082"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGiftToKeyword Create (3.3ms)[0m  [1m[32mINSERT INTO "gift_to_keywords" ("gift_id", "keyword_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gift_id", 1], ["keyword_id", 1], ["created_at", "2021-08-07 22:19:23.218614"], ["updated_at", "2021-08-07 22:19:23.218614"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4609777509260035245)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4609777509260035245)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/gifts/create" for ::1 at 2021-08-07 17:47:28 -0500
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GiftsController#create as */*
+  Parameters: {"name"=>"Succulents", "description"=>"Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection.", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Costa-Farms-Various-Succulents-2-Inches/dp/B081ZSJ9ST/ref=sr_1_2?dchild=1&keywords=succulent&qid=1628372107&sr=8-2", "image"=>"https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SX425_.jpg", "gift"=>{"name"=>"Succulents", "description"=>"Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection.", "price"=>"0 - 20", "link_to_purchase"=>"https://www.amazon.com/Costa-Farms-Various-Succulents-2-Inches/dp/B081ZSJ9ST/ref=sr_1_2?dchild=1&keywords=succulent&qid=1628372107&sr=8-2", "image"=>"https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SX425_.jpg"}}
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mGift Create (4.1ms)[0m  [1m[32mINSERT INTO "gifts" ("name", "description", "price", "link_to_purchase", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Succulents"], ["description", "Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection."], ["price", "0 - 20"], ["link_to_purchase", "https://www.amazon.com/Costa-Farms-Various-Succulents-2-Inches/dp/B081ZSJ9ST/ref=sr_1_2?dchild=1&keywords=succulent&qid=1628372107&sr=8-2"], ["image", "https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SX425_.jpg"], ["created_at", "2021-08-07 22:47:29.260492"], ["updated_at", "2021-08-07 22:47:29.260492"]]
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gifts_controller.rb:11:in `create'
+Completed 200 OK in 85ms (Views: 0.4ms | ActiveRecord: 32.0ms | Allocations: 7272)
+
+
+Started GET "/user/create" for ::1 at 2021-08-07 17:48:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user/create"):
+  
+Started GET "/users/create" for ::1 at 2021-08-07 17:48:58 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-07 22:48:58.397160"], ["updated_at", "2021-08-07 22:48:58.397160"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 14.1ms | Allocations: 6909)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:5:in `encode'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/users/create" for ::1 at 2021-08-07 17:49:19 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (6.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-07 22:49:20.676099"], ["updated_at", "2021-08-07 22:49:20.676099"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 39.4ms | Allocations: 7249)
+
+
+  
+NoMethodError (undefined method `encode' for #<UsersController:0x00000000009678>):
+  
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/users/create" for ::1 at 2021-08-07 17:49:31 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-07 22:49:32.774278"], ["updated_at", "2021-08-07 22:49:32.774278"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 29.8ms | Allocations: 6723)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:5:in `encode'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/users/create" for ::1 at 2021-08-07 17:51:53 -0500
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (7.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-07 22:51:53.883313"], ["updated_at", "2021-08-07 22:51:53.883313"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 45.8ms | Allocations: 8487)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:5:in `encode'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/users/create" for ::1 at 2021-08-07 17:54:47 -0500
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-07 22:54:47.465683"], ["updated_at", "2021-08-07 22:54:47.465683"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 12.3ms | Allocations: 6555)
+
+
+Started GET "/users/login" for ::1 at 2021-08-07 17:56:16 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 6.3ms | Allocations: 6022)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x000000000d5d0090>):
+  
+app/controllers/users_controller.rb:39:in `login'
+Started GET "/users/create" for ::1 at 2021-08-07 17:59:11 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-07 22:59:11.864536"], ["updated_at", "2021-08-07 22:59:11.864536"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 8.2ms | Allocations: 2580)
+
+
+Started GET "/users/login" for ::1 at 2021-08-07 18:08:19 -0500
+  [1m[35m (10.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 46.0ms | Allocations: 7652)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x000000000d7a5fa0>):
+  
+app/controllers/users_controller.rb:39:in `login'
+Started GET "/users/login" for ::1 at 2021-08-07 18:12:04 -0500
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 44.9ms | Allocations: 8148)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<User:0x000000000d1de590>
+Did you mean?  password):
+  
+app/controllers/users_controller.rb:39:in `login'
+Started GET "/users/login" for ::1 at 2021-08-07 18:26:07 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 21.8ms | Allocations: 5622)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x000000000b15a620>):
+  
+app/controllers/users_controller.rb:39:in `login'
+Started GET "/users/login" for ::1 at 2021-08-07 19:30:56 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 9.1ms | Allocations: 7652)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x000000000d5b74c8>):
+  
+app/controllers/users_controller.rb:39:in `login'
+Started GET "/users/login" for ::1 at 2021-08-07 19:33:06 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 5.9ms | Allocations: 6041)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<User:0x000000000d2dd950>
+Did you mean?  password):
+  
+app/controllers/users_controller.rb:39:in `login'
+Started GET "/users/login" for ::1 at 2021-08-07 19:35:27 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 7.8ms | Allocations: 5493)
+
+
+Started GET "/users/create" for ::1 at 2021-08-07 19:35:33 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "isab"], ["password", "password"], ["created_at", "2021-08-08 00:35:33.325245"], ["updated_at", "2021-08-08 00:35:33.325245"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 3.6ms | Allocations: 2697)
+
+
+Started GET "/users/login" for ::1 at 2021-08-07 19:40:04 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1016)
+
+
+Started GET "/users/create" for ::1 at 2021-08-07 19:40:22 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"yee", "password"=>"[FILTERED]", "user"=>{"username"=>"yee", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "yee"], ["password", "password"], ["created_at", "2021-08-08 00:40:22.224519"], ["updated_at", "2021-08-08 00:40:22.224519"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2527)
+
+
+Started GET "/users/login" for ::1 at 2021-08-07 19:40:50 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"yee", "password"=>"[FILTERED]", "user"=>{"username"=>"yee", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "yee"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 995)
+
+

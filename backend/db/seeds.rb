@@ -602,6 +602,258 @@ GiftToKeyword.create(
     gift_id: 8
 )
 
+#9
+Gift.create(
+    name: "Streaming service subscription",
+    description: "For the practical individual that has diverse interests, a new streaming service subscription unlocks year-long entertainment just for them! This gift reminds them to take a step back and relax throughout the coming year. ",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=netflix&ref=nb_sb_noss",
+    image: "https://m.media-amazon.com/images/I/61UNe1hz9rL._SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 9
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 9
+)
+
+#10
+Gift.create(
+    name: "Puzzle",
+    description: "A classic gift? Yes. But an easily personalizable crowd pleaser? Also yes.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=puzzle&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71aIFTvCzAL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 10
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 10
+)
+
+#11
+Gift.create(
+    name: "Weighted blanket",
+    description: "One of the most therapeutic gifts that anyone could receive. Also proven to be more relaxing than regular blankets!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=weighted+blanket&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61rABE9s5ZL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 11
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 11
+)
+
+#12
+Gift.create(
+    name: "Polaroid camera",
+    description: "For the person who goes on the coolest adventures and always needs to document them. A modern take on a retro classic!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=polaroid+camera&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71Maj9eHOPL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 12
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 12
+)
+
+
 
 ##############################
 Gift.create(
