@@ -22,3 +22,25 @@ export const createNewUser = async (username, password) => {
         }
     );
 }
+
+export const loginUser = async (username, password) => {
+    let url = `${BASE_URL}/users/login`;
+
+    const data = { username: username, password: password };
+
+    await fetch(url, {
+        method: "POST",
+        mode: 'cors',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    }).then(async (response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                return new Error('there was an error');
+            }
+        }
+    );
+}

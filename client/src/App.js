@@ -5,8 +5,6 @@ import Dashboard from './components/dashboard/Dashboard';
 import GiftForm from './components/giftForm/GiftForm';
 import Login from './components/login/Login';
 
-import { createNewUser } from './apis/api';
-
 /**
  * Main component that holds the logic for the app
  * @returns {App}
@@ -24,9 +22,8 @@ const App = () => {
                         <Route exact path="/signup">
                             <SignUpPage />
                         </Route>
-                        <Route path="/dashboard/:userId" children={<Dashboard />} />
+                        <Route path="/dashboard" children={<Dashboard />} />
                     </Switch> */}
-                    {/* <Dashboard /> */}
                     <Login/>
                 </main>
             </div>
