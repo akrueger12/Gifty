@@ -3987,364 +3987,504 @@ GiftToKeyword.create(
 )
 
 #67
-
-
-#################################
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Long Distance touch bracelet set",
+    description: "Distance makes the heart grow fonder. Maybe true, but having a long distance touch bracelet set would help you and your loved one feel closer!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/Bond-Touch-Bracelets-Long-Distance-Lovers/dp/B07VBP4R7F/ref=sr_1_3?dchild=1&keywords=long+distance+touch+bracelet&qid=1628397192&sr=8-3",
+    image: "https://m.media-amazon.com/images/I/61wlS3fQMML._AC_SL1440_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 67
+)
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 67
+)
+
+#68
+Gift.create(
+    name: "Birthstone Jewelry",
+    description: "Birthstones carry significance to many people—whether it's their birthstone or the birthstone of a loved one or child. Jewelry that incorporates birthstones serves as a constant reminder of something that means so much to them!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=birthstone+jewelry&crid=1C72DSOE20GEK&sprefix=birthstone%2Caps%2C242&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/613TYcK787L._AC_UL1500_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 68
+)
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 68
+)
+
+#69
+Gift.create(
+    name: "Star Map of Significant Date",
+    description: "Is there a particular date that means a lot to the two of you? Capitalize on that and give them a map of the night sky on that date and they're sure to compliment on the creativity! ",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/Custom-Star-Map-Personalized-Constellation/dp/B07RC9FWLN/ref=sr_1_5?dchild=1&keywords=star+map&qid=1628397768&sr=8-5",
+    image: "https://m.media-amazon.com/images/I/81YRLchEFNS._SL1500_.jpg"
+)
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 69
+)GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 69
+)
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 69
+)
+
+#70
+Gift.create(
+    name: "Card game",
+    description: "Are they a homebody that prefers game nights instead of going out? Have no fear! Giving them a new card game is bound to get you an invite to the next game night.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=card+game&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/818otPKjeTL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 70
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 70
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 70
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 70
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 70
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 70
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 70
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 70
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 70
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 10,
+    gift_id: 70
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-
-#
+# 71
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Spa certificate",
+    description: "Sometimes it's just nice to be pampered. Get them a spa certificate! ",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=spa+certificate",
+    image: "https://m.media-amazon.com/images/I/51WOIZLLBnL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 71
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 71
+)
+
+#72
+Gift.create(
+    name: "Attachable bedside caddy",
+    description: "Attachable bedside caddies keep everything of importance within an arm's reach! Practical and portable—they're a win-win.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=bedside+caddy&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71beIe36tOL._AC_SL1100_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 72
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 72
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 72
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 72
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 72
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 72
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 72
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 72
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 72
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 72
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 8,
+    gift_id: 72
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#73
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Tile",
+    description: "If they always seem to be losing their keys—or any other valuable for that matter—a Tile will make that fun little game of hide-and-seek with the lost item go all the quicker!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=tile&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/51n41LQHXkL._AC_SL1200_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 73
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 73
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 73
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 73
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 73
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 73
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 73
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 73
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 73
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 7,
+    gift_id: 73
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#74
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Soundbar",
+    description: "Crank up the bass! A soundbar will elevate anyone's listening experience.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=soundbar&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81iwOS07YdL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 74
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 74
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 74
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 74
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 74
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 74
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 74
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 74
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 7,
+    gift_id: 74
 )
 
-#
+#75
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Flower bouquet of the month membership",
+    description: "Flowers are beautiful and always a crowd-pleaser. A flower bouquet of the month membership will remind that special person that they're loved all throughout the year!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
+    link_to_purchase: "https://www.bloomsybox.com/?gclid=CjwKCAjw3riIBhAwEiwAzD3TicIEFTU68l6IAeyj0z0V3arqLYbBQVs-4Q9rJkDaKZ6YqHYBRB3g5BoCficQAvD_BwE",
+    image: "https://cdn11.bigcommerce.com/s-dw3tqjqzk0/images/stencil/1280x1280/products/1979/2822/167398M__83000.1548527182__22710.1553218369.jpg?c=2"
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 75
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 25,
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 3,
+    gift_id: 75
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 9,
+    gift_id: 75
 )
 
-#
-Gift.create(
-    name: " ",
-    description: " ",
-    price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 12,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 13,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#76
 Gift.create(
     name: " ",
     description: " ",
