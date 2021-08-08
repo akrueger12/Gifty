@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashboard';
 import GiftForm from './components/giftForm/GiftForm';
-import Login from './components/login/Login.jsx'
+import Login from './components/login/Login'
 import NewUser from './components/login/NewUser'
 
 /**
