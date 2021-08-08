@@ -1,13 +1,8 @@
 import './GiftCard.css';
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
+import { Card, CardMedia, CardContent, Typography, Link } from '@material-ui/core';
 
 export const GiftCard = ({ gift }) => {
-    // // action when user clicks view button
-    // const onViewClick = () => {
-    //     viewEventAction(event);
-    // };
-
     return (
         <Card className="gift-card">
             <CardMedia className="gift-image">
@@ -19,6 +14,10 @@ export const GiftCard = ({ gift }) => {
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {gift.description}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    Buy Now: 
+                    <Link target="_blank" to={gift.link_to_purchase} color='#7EACBB'>{gift.name}</Link>
                 </Typography>
             </CardContent>
         </Card>
