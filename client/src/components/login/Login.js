@@ -1,12 +1,12 @@
 import React from 'react';
 import './Login.css';
-import {Grid, Typography, Link, IntroLayout, Box, TextField, Button} from '@material-ui/core';
+import {Grid, Box, TextField, Button, Link} from '@material-ui/core';
 import Packages from './loginImage.png';
 import Logo from './Logo.png';
 
 import { loginUser } from '../../apis/api';
 
-export const Login = () => {
+export const Login = ({ userDataCallback }) => {
     const [usernameInput, setUsernameInput] = React.useState('');
     const [passwordInput, setPasswordInput] = React.useState('');
     const [errorMessage, setErrorMessage] = React.useState('');
@@ -19,7 +19,7 @@ export const Login = () => {
             setError(true);
         } else {
             let userData = await loginUser({username: usernameInput, password: passwordInput});
-            console.log("worked?")
+            userDataCallback(userData);
             if (userData === 'error 403') {
                 setErrorMessage('Password or username is incorrect');
                 setError(true);
