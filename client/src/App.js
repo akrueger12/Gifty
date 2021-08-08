@@ -10,6 +10,12 @@ import Login from './components/login/Login';
  * @returns {App}
  */
 const App = () => {
+    const [userData, setUserData] = React.useState(undefined);
+
+    function userDataCallback(data) {
+        setUserData(data);
+    }
+
     // route the user to the correct page base on url
     return (
         <Router>
@@ -17,12 +23,12 @@ const App = () => {
                 <main>
                     <Switch>
                         <Route exact path="/">
-                            <Login />
+                            <Login userDataCallback={userDataCallback}/>
                         </Route>
                         {/* <Route exact path="/signup">
                             <SignUpPage />
                         </Route> */}
-                        <Route path="/dashboard" children={<Dashboard />} />
+                        <Route path="/dashboard" children={<Dashboard userData={userData}/>} />
                     </Switch>
                 </main>
             </div>
