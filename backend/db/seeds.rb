@@ -4717,6 +4717,2730 @@ GiftToKeyword.create(
 
 #80
 Gift.create(
+    name: "Squishmallow",
+    description: "Seriously the softest stuffed animal you will ever find! 10 out of 10, would recommend.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=squishmallow",
+    image: "https://m.media-amazon.com/images/I/61wtFj77zdL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 10,
+    gift_id: 80
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 80
+)
+
+#81
+Gift.create(
+    name: "Slippers",
+    description: "Gift ideas slipping your mind? Keep it classic: grab them some high quality slippers that they'll obsess over.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=slippers&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/71gkXB9qr1L._AC_UL1200_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 81
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 81
+)
+
+#82
+Gift.create(
+    name: "Sudoku or crossword book",
+    description: "Whether numbers or letters are their forte, a sudoku or crossword book is sure to keep them entertained!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=sudoku&ref=nb_sb_noss_1",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81r9o4dz8aL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 82 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 10,
+    gift_id: 82
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 82
+)
+
+#83
+Gift.create(
+    name: "Heated blanket",
+    description: "Warm their heart with a blanket that will never fail to warm them. ",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=heated+blanket&i=stripbooks&ref=nb_sb_noss",
+    image: "https://i5.walmartimages.com/asr/d24d68f7-1ade-486c-8b14-90f5b1e017d8_2.b5218fdd1e18a53df9b7d2d6518c4472.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 83
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 83
+)
+
+#84
+Gift.create(
+    name: "Book rest",
+    description: "Sometimes you come across a book that you just don't want to put down. Putting it down on a book rest doesn't count as putting it down if you're still reading it, right?",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=book+rest&i=stripbooks&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/71bFcR76vwL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 84
+)
+
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 84
+)
+
+#85
+Gift.create(
+    name: "Roomba",
+    description: "Nobody should be confined to cleaning—especially when there's technology designed to mitigate that. Get them a Roomba and give them their free time back!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=roomba",
+    image: "https://m.media-amazon.com/images/I/71EZytE2egL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 85
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 85
+)
+
+#86
+Gift.create(
+    name: "Tablet",
+    description: "A practical and essential piece of technology! Great for a wide variety of ages and interests.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=ipad&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71mava1GE1L._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 86
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 86
+)
+
+#87
+Gift.create(
+    name: "eReader",
+    description: "Give them the gift that keeps on giving. With an eReader, they'll always be fully stocked on reading material!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=ereader&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61Ww4abGclL._AC_SL1000_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 87
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 87
+)
+
+#88
+Gift.create(
+    name: "Favorite baked good",
+    description: "Do you make a baked good that they always rave about? Bake them a double batch and let them go crazy.",
+    price:nil,
+    link_to_purchase: "https://www.tasteofhome.com/recipes/",
+    image: "https://kristineskitchenblog.com/wp-content/uploads/2021/04/apple-pie-1200-square-592-2.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 88
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 88
+)
+
+#89
+Gift.create(
+    name: "Dumbell set",
+    description: "Bringing into the home has never been easier! Get them a bright colored set to keep them motivated and excited to use the new equipment.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=dumbell+set&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91OvDPsdAWL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 6,
+    gift_id: 89
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 89
+)
+
+#90
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+#
+Gift.create(
     name: " ",
     description: " ",
     price:nil,
