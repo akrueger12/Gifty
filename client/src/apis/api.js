@@ -1,5 +1,5 @@
 const LOCAL = false;
-const BASE_URL = LOCAL ? 'http://localhost:3000' : 'https://still-anchorage-33733.herokuapp.com/';
+const BASE_URL = LOCAL ? 'http://localhost:3000' : 'https://gifty-web-app.herokuapp.com/';
 
 export const createNewUser = async (username, password) => {
     let url = `${BASE_URL}/users/create`;
