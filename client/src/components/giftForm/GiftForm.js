@@ -14,7 +14,13 @@ import {
 import { ToggleButton } from '@material-ui/lab';
 import { StylesProvider } from '@material-ui/styles';
 
+import { useHistory } from 'react-router-dom';
+
 export const GiftForm = ({ onSubmit }) => {
+  let history = useHistory();
+
+  history.push('/gift-finder/form');
+
   const [name, setName] = React.useState();
   const [gender, setGender] = React.useState();
   const [priceData, setPriceData] = React.useState([

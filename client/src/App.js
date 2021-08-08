@@ -5,6 +5,8 @@ import Login from './components/login/Login';
 import { GiftFinder } from './components/giftFinder/GiftFinder';
 import { WishlistPage } from './components/dashboard/wishlist/WishList';
 import NewUser from './components/login/NewUser';
+import { GiftForm } from './components/giftForm/GiftForm';
+import { GiftFrame } from './components/dashboard/gifts/GiftFrame';
 
 /**
  * Main component that holds the logic for the app
@@ -18,9 +20,17 @@ const App = () => {
                 <main>
                     <Switch>
                         <Route exact path="/"><Login onSuccess={(id) => { localStorage.userId = id }} /></Route>
-                        <Route path="/signup"><NewUser /></Route>
+                        <Route path="/signup"><NewUser onSuccess={(id) => { localStorage.userId = id }} /></Route>
                         <Route path="/wishlist"><WishlistPage /></Route>
-                        <Route path="/gift-finder"><GiftFinder /></Route>
+                        <Route path='/gift-finder'>
+                            <GiftFinder />
+                        </Route>
+                        <Route path='/gift-finder/form'>
+                            <GiftForm/>
+                        </Route>
+                        <Route path='/gift-finder/gifts'>
+                            <GiftFrame/>
+                        </Route>
                     </Switch>
                 </main>
             </div>

@@ -2,9 +2,12 @@ import React from 'react';
 import './GiftFrame.css';
 import { CircularProgress, Grid } from '@material-ui/core';
 import GiftCard from './GiftCard';
+import { useHistory } from 'react-router-dom';
 
-export const GiftFrame = ({ gifts, resetView }) => {
-    resetView();
+export const GiftFrame = ({ gifts }) => {
+    let history = useHistory();
+
+    history.push('/gift-finder/gifts');
 
     return gifts ? (
         <div className='gift-frame'>

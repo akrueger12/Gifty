@@ -18,7 +18,7 @@ export const GiftCard = ({ gift }) => {
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {'Buy Now: '}
-                    <Link target="_blank" to={gift.link_to_purchase} color='#7EACBB'>{gift.name}</Link>
+                    <Link target="_blank" to={gift.link_to_purchase} color='#7EACBB'>{gift.link_to_purchase}</Link>
                 </Typography>
             </CardContent>
         </Card>
