@@ -24,7 +24,6 @@ const App = () => {
                         </Route> */}
                         <Route path="/dashboard" children={<Dashboard />} />
                     </Switch>
-                    <Login/>
                 </main>
             </div>
         </Router>
