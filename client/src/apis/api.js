@@ -1,4 +1,4 @@
-const LOCAL = true;
+const LOCAL = false;
 const BASE_URL = LOCAL ? 'http://localhost:3000' : 'Deployed';
 
 export const createNewUser = async (username, password) => {
