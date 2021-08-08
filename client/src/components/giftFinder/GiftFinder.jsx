@@ -25,9 +25,9 @@ export const GiftFinder = () => {
     return (
         <Page>
             {
-                suggestions.length === 0 
+                suggestions.length === 0 || view.current.value === 'form'
                 ? <GiftForm onSubmit={handleGiftFormSubmit} />
-                : <GiftFrame gifts={suggestions} resetView={() => view.current.value='form'} />
+                : <GiftFrame gifts={suggestions} resetView={() => view.current.value = 'form'} />
             }
         </Page>
     );
