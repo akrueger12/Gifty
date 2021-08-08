@@ -144,7 +144,7 @@ export const GiftForm = ({ onSubmit }) => {
             disableElevation
             variant="contained"
             size="large"
-            onClick={onSubmit(name, getKeywords())}
+            onClick={() => onSubmit(name, getKeywords())}
           >
               Start gifting!
           </Button>
