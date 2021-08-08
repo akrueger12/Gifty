@@ -1,4 +1,4 @@
-import styles from  './NavigationBar.module.css';
+import styles from  './NavigationBar.css';
 import React from 'react';
 import { Paper, Tab, Tabs } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';

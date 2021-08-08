@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from  './GiftFrame.module.css';
+import styles from  './GiftFrame.css';
 import { CircularProgress, Grid } from '@material-ui/core';
 import GiftCard from './GiftCard';
 import { useHistory } from 'react-router-dom';

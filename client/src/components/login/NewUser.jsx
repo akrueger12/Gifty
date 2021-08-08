@@ -2,7 +2,7 @@ import React from 'react';
 import {Grid, TextField, Button, Box} from '@material-ui/core';
 import Logo from './Logo.png';
 import Packages from './loginImage.png';
-import styles from  './NewUser.module.css';
+import styles from  './NewUser.css';
 import { createNewUser} from '../../apis/api';
 import { useHistory } from 'react-router-dom';
 

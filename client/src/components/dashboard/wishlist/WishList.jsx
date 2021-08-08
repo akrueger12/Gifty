@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from  './WishList.module.css';
+import styles from  './WishList.css';
 import {
     Paper,
     Grid,
