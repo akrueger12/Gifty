@@ -52,7 +52,7 @@ class UsersController < AuthController
         iat: Time.now.to_i
       })
     respond_to do |format|
-      format.json { render json: { username: @user.username } }
+      format.json { render json: { user: @user } }
     end
   end
 end
