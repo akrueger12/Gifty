@@ -18,7 +18,7 @@ export const Login = () => {
             setErrorMessage('Please enter your username and password');
             setError(true);
         } else {
-            let userData = await loginUser({email: usernameInput, password: passwordInput});
+            let userData = await loginUser({username: usernameInput, password: passwordInput});
             console.log("worked?")
             if (userData === 'error 403') {
                 setErrorMessage('Password or username is incorrect');
