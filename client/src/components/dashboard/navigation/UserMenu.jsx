@@ -1,4 +1,4 @@
-import styles from  './UserMenu.css';
+import styles from  './UserMenu.module.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Menu, MenuItem } from '@material-ui/core';
