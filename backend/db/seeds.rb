@@ -1165,61 +1165,1159 @@ GiftToKeyword.create(
 
 #18
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Open when... handwritten letters",
+    description: "Handwritten letters are sure to make anyone feel loved! Open when... letters offer a fun take to make that person feel special during their big milestones, small victories, and everything in between.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=open+when+stationary&crid=155MIRFA5XWPI&sprefix=stationary+for+open+when%2Caps%2C229&ref=nb_sb_ss_ts-doa-p_1_24",
+    image: "https://images-na.ssl-images-amazon.com/images/I/71hMgv9hTdL.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 18
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 18
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 18
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 18
+)
+
+#19
+Gift.create(
+    name: "Cookbook",
+    description: "The way to anyone's heart is through their stomach. Cookbooks—whether filled with handwritten family recipes or master chefs' perfected dishes—are a welcome addition to anyone's kitchen!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=cookbook&ref=nb_sb_noss_1",
+    image: "https://images-na.ssl-images-amazon.com/images/I/A19ZRRhSZUL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 19
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 19
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 19
+)
+
+#20
+Gift.create(
+    name: "Insulated mug or water bottle(Hydroflask, Yeti, etc.)",
+    description: "Insulated mugs and water bottles offer a high quality, reusable alternative to the everyday disposable plastic bottle. With so many colors and brands on the market, you can personalize with ease for that special person!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=insulated+water+bottle&crid=1J60CQQK84JHY&sprefix=insulated+%2Caps%2C233&ref=nb_sb_ss_midas-iss-sm_1_10",
+    image: "https://m.media-amazon.com/images/I/51ZocuA5PYL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 6,
+    gift_id: 20
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 20
+)
+
+#21
+Gift.create(
+    name: "Pullover or quarterzip jacket",
+    description: "That nice pullover or quarterzip they would obsess over but never buy for them self. Bound to get some good use and keep them warm on all their adventures!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=quarterzip&ref=nb_sb_noss_2",
+    image: "https://images.thenorthface.com/is/image/TheNorthFace/NF0A2RE8_JK3_hero?$638x745$"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 17,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 21
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 21
+)
+
+#22
+Gift.create(
+    name: "Coloring book",
+    description: "Coloring books are great for anyone from 5 to 95! Whether they think they need one or not, they won't be able to help them self from feeling like a kid again when they whip out the crayons or colored pencils again.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=coloring+book&ref=nb_sb_noss_2",
+    image: "https://images-na.ssl-images-amazon.com/images/I/A111MM0+NHL.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 22
 )
 
 GiftToKeyword.create(
     keyword_id: 19,
-    gift_id: 
+    gift_id: 22
 )
 
 GiftToKeyword.create(
     keyword_id: 20,
-    gift_id: 
+    gift_id: 22
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
+    keyword_id: 21,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 22
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 22
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 22
+)
+
+
+#23
+Gift.create(
+    name: "A mug with a good pun",
+    description: "Mugs. Puns. What more could anyone want?",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=pun+mug&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61K8y9PHXuL._AC_SL1138_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 23
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 23
+)
+
+GiftToKeyword.create(
+    keyword_id: 10,
+    gift_id: 23
+)
+
+#24
+Gift.create(
+    name: "Cribbage board",
+    description: "They'll be a cribbage pro by the time they're done playing their first game on this cribbage board! A classic game that's fun for all ages.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=cribbage+board&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81MxrIE8bXL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 24
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 24
+)
+
+#25
+Gift.create(
+    name: "Rubik's Cube",
+    description: "Got someone in mind who's patient, determined, and loves to try new things? Get them a Rubik's cube and see what happens.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=rubiks+cube&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/71k1SeCpFYL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 25
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 25
 )
 
 GiftToKeyword.create(
     keyword_id: 4,
-    gift_id: 
+    gift_id: 25
+)
+
+#26
+Gift.create(
+    name: "High quality pen set",
+    description: "Gel, fountain, ballpoint, or flair pens—the list is endless. Make their day by giving them a nice pen set!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=pen+set&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91RtlHL2ZTL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 26
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 26
+)
+
+#27
+Gift.create(
+    name: "Photo album of the two of you",
+    description: "Feeling creative and a little sentimental? Make them a photo album of the two of you and any other important people in your lives. Pro tip: leave some blank pages at the end so you can fill them with photos of new memories you make down the road!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=photo+album&ref=nb_sb_noss",
+    image: "https://m.media-amazon.com/images/I/71aAtw7CEVL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 27
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 27
+)
+
+#28
+Gift.create(
+    name: "Play Doh",
+    description: "For the kid that always has to be doing something, Play Doh is a gamechanger. Let their creativity and imagination soar!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=playdoh&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81xV+D1OkGL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 28
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 28
+)
+
+#29
+Gift.create(
+    name: "Binoculars",
+    description: "Got an outdoorsy kid in mind? They'll be obsessed with the binoculars you get them—they'll feel like a real explorer.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=binoculars&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71MinRbG+cL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 29
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 29
+)
+
+#30
+Gift.create(
+    name: "Lego set",
+    description: "Legos transcend the ages. Give them the gift of endless creations and the experience of stepping on one or two of these little bricks along the way!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=legos&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91SXHJRqWqL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 30
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 30
+)
+
+#31
+Gift.create(
+    name: "Board game",
+    description: "They'll invest hours in the new board game you get them! Bring out their competitive side with this gift.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=board+game&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/71I7m1tG9YL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 31
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 31
+)
+
+#32
+Gift.create(
+    name: "Lookalike doll",
+    description: "Dolls are cool and all, but getting a doll that looks like them will make them feel all the more special. Bound to be their new favorite doll and a beloved keepsake!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=lookalike+doll&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61JZ3SR4QLL._AC_SL1000_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 32
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 32
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 32
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 32
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 32
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 32
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 32
+)
+
+#33
+Gift.create(
+    name: "Magazine subscription",
+    description: "Get them a magazine subscription to one of their current interests or something else you're trying to get them hooked on! Living in such a digital world, a physical magazine will be a welcome change for anyone.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=magazine+subscription&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/51EO5IdapLS._AC_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 33
+)
+
+GiftToKeyword.create(
+    keyword_id: 5,
+    gift_id: 33
+)
+
+#34
+Gift.create(
+    name: "Customized mouse pad",
+    description: "Customized mouse pads allow you to tailor to their interests and personality. Lighthearted or sentimental? That's up to you!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=customized+mouse+pad&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61nrVdo061L._AC_SL1010_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 34
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 34
+)
+
+#35
+Gift.create(
+    name: "Easy Bake Oven",
+    description: "Let the kid in your life learn the joys of baking. You might even be lucky enough to reap some of the benefits of their baking! (Whether that's a good thing or bad thing, we're not sure)",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=easy+bake+oven&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/811YHQ5vJvL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 35
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 35
+)
+
+#36
+Gift.create(
+    name: "Name a Star",
+    description: "Got someone in mind whose name belongs in lights? Feasibly doing that might not be possible, but a star that's named after them might make them feel as though they've achieved superstar status.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=name+a+star&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/91LsW7DyflL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 36
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 36
 )
 
 
