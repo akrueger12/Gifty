@@ -16,7 +16,7 @@
     text-transform: none;
 }
 
-.search-item {
+.list-item {
     justify-content: space-between;
 }
 
@@ -28,7 +28,7 @@
     margin: 0px;
 }
 
-.search-title {
+.list-title {
     margin: 0px;
 }
 

@@ -16,19 +16,11 @@
     text-transform: none;
 }
 
-.list-item {
-    justify-content: space-between;
-}
-
 .logout-item {
     justify-content: space-between;
 }
 
 .menu-title {
-    margin: 0px;
-}
-
-.list-title {
     margin: 0px;
 }
 

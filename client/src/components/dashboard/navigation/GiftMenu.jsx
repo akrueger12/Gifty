@@ -1,7 +1,7 @@
 import './GiftMenu.css';
 import React from 'react';
 import { Menu, MenuItem } from '@material-ui/core';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import ListAltIcon from '@material-ui/icons/ListAlt';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
 export const GiftMenu = ({ handleClose, anchorEl }) => {
@@ -20,9 +20,9 @@ export const GiftMenu = ({ handleClose, anchorEl }) => {
                 <h3 className="gift-menu-title">Get Gifting</h3>
             </MenuItem>
             {/* ADD THE ON CLICKS */}
-            <MenuItem className="search-item">
-                <p className="search-title">Search Users</p>
-                <PeopleAltIcon/>
+            <MenuItem className="list-item">
+                <p className="list-title">Wish List</p>
+                <ListAltIcon/>
             </MenuItem>
             <MenuItem className="survey-item">
                 <p className="survey-title">Fill Survey</p>
