@@ -2622,297 +2622,277 @@ GiftToKeyword.create(
 
 #42
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Deep muscle masasger",
+    description: "Your body is a temple. Remind them to treat it as such with one of these great deep muscle massagers!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=deep+muscle+massager&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/61UoH8ooo7L._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 42
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 42
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 42
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 42
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 42
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 42
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 42
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 42
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 42
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 6,
+    gift_id: 42
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#43
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Massage gift certificate",
+    description: "Remind them to treat them self with a massage gift certificate! Sometimes you don't know there's a problem with your back until someone spends 80 minutes working on the seemingly countless knots.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.massageenvy.com/gift-cards",
+    image: "https://i.etsystatic.com/18860092/r/il/9f3300/1758137140/il_570xN.1758137140_9ezh.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 43
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 43
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 43
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 43
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 43
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 43
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 43
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 43
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 43
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 3,
+    gift_id: 43
 )
 
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#44
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Roo",
+    description: "Let them keep their hands free as they hike, shop, or just peruse the town! A Roo is perfect for one of these young millenials.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
+    link_to_purchase: "https://www.amazon.com/s?k=north+face+roo&ref=nb_sb_noss_2",
+    image: "https://scheels.scene7.com/is/image/Scheels/05332947350_F?wid=1200&hei=1200"
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 44
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 44
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 44
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 15,
+    gift_id: 44
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 22,
+    gift_id: 44
 )
 
 GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 44
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 44
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 6,
+    gift_id: 44
 )
 
-#
+#45
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Variety tea pack",
+    description: "Here's the tea: you never know what kind of tea you like until you try them. Enlighten them with a tea testing variety pack!",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
+    link_to_purchase: "https://www.amazon.com/s?k=variety+tea+pack&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81hOTLGRFZL._SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 11,
-    gift_id: 
+    gift_id: 45
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 45
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 45
 )
 
 GiftToKeyword.create(
     keyword_id: 14,
-    gift_id: 
+    gift_id: 45
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 45
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 24,
+    gift_id: 45
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 45
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 45
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 45
 )
 
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-#
+#46
 Gift.create(
-    name: " ",
-    description: " ",
+    name: "Weight bangles",
+    description: "Innovation alert! Do they want to burn calories without having to overly exert them self? Allow us to introduce you to weight bangles. You'll thank us later.",
     price:nil,
-    link_to_purchase: " ",
-    image: " "
-)
-
-GiftToKeyword.create(
-    keyword_id: 11,
-    gift_id: 
+    link_to_purchase: "https://www.amazon.com/s?k=weight+bangles&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/61AoM5HVPGL._AC_SL1500_.jpg"
 )
 
 GiftToKeyword.create(
     keyword_id: 12,
-    gift_id: 
+    gift_id: 46
 )
 
 GiftToKeyword.create(
     keyword_id: 13,
-    gift_id: 
+    gift_id: 46
 )
 
 GiftToKeyword.create(
-    keyword_id: 14,
-    gift_id: 
+    keyword_id: 16,
+    gift_id: 46
 )
 
 GiftToKeyword.create(
-    keyword_id: 19,
-    gift_id: 
+    keyword_id: 17,
+    gift_id: 46
 )
 
 GiftToKeyword.create(
-    keyword_id: 20,
-    gift_id: 
+    keyword_id: 23,
+    gift_id: 46
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 46
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 46
 )
 
 GiftToKeyword.create(
     keyword_id: 1,
-    gift_id: 
+    gift_id: 46
 )
 
 GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 1,
-    gift_id: 
-)
-
-GiftToKeyword.create(
-    keyword_id: 4,
-    gift_id: 
+    keyword_id: 6,
+    gift_id: 46
 )
 
 #
