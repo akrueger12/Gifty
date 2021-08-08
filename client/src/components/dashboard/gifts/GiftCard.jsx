@@ -1,6 +1,7 @@
 import './GiftCard.css';
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography, Link } from '@material-ui/core';
+import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
+import { BrowserRouter as Link }  from 'react-router-dom';
 
 export const GiftCard = ({ gift }) => {
     return (
@@ -16,7 +17,7 @@ export const GiftCard = ({ gift }) => {
                     {gift.description}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Buy Now: 
+                    {'Buy Now: '}
                     <Link target="_blank" to={gift.link_to_purchase} color='#7EACBB'>{gift.name}</Link>
                 </Typography>
             </CardContent>
