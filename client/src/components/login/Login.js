@@ -4,12 +4,15 @@ import {Grid, Box, TextField, Button, Link} from '@material-ui/core';
 import Packages from './loginImage.png';
 import Logo from './Logo.png';
 import { loginUser } from '../../apis/api';
+import { useHistory } from 'react-router-dom';
 
 export const Login = () => {
     const [usernameInput, setUsernameInput] = React.useState('');
     const [passwordInput, setPasswordInput] = React.useState('');
     const [errorMessage, setErrorMessage] = React.useState('');
     const [error, setError] = React.useState(false);
+
+    let history = useHistory();
 
     // validate input and retrieve the user data to allow the user to login
     const onLoginClick = async () => {
@@ -22,7 +25,7 @@ export const Login = () => {
                 setErrorMessage('Password or username is incorrect');
                 setError(true);
             } else {
-                window.location.href = `./dashboard/${userData.id}`;
+                history.push(`./dashboard/${userData.user.id}`);
             }
         }
     };

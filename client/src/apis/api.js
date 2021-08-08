@@ -45,11 +45,10 @@ export const retrieveUserData = async (userId) => {
     );
 };
 
-export const loginUser = async (username, password) => {
+export const loginUser = async (data) => {
     let url = `${BASE_URL}/users/login`;
-
-    const data = { username: username, password: password };
-
+    
+    let toRet;
     await fetch(url, {
         method: "POST",
         mode: 'cors',
@@ -59,12 +58,13 @@ export const loginUser = async (username, password) => {
         body: JSON.stringify(data)
     }).then(async (response) => {
             if (response.ok) {
-                return response.json();
+                toRet = response.json();
             } else {
                 return new Error('there was an error');
             }
         }
     );
+    return toRet;
 }
 
 export const retrieveWishList = async (userId) => {
