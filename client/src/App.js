@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashboard';
 import GiftForm from './components/giftForm/GiftForm';
-import Login from './components/login/Login'
+import Login from './components/login/Login.jsx'
+import NewUser from './components/login/NewUser'
 
 /**
  * Main component that holds the logic for the app
@@ -15,17 +16,17 @@ const App = () => {
         <Router>
             <div>
                 <main>
-                    {/* <Switch>
+                    <Switch>
                         <Route exact path="/">
-                            <LandingPage />
+                            <Login/>
                         </Route>
-                        <Route exact path="/signup">
-                            <SignUpPage />
+                        <Route path="/signup">
+                            <NewUser/>
                         </Route>
-                        <Route path="/dashboard/:userId" children={<Dashboard />} />
-                    </Switch> */}
+                        {/* <Route path="/dashboard/:userId" children={<Dashboard />} /> */}
+                    </Switch>
                     {/* <Dashboard /> */}
-                    <Login/>
+                    {/* <Login childProps = "Hello"/> */}
                 </main>
             </div>
         </Router>

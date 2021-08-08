@@ -4,6 +4,23 @@
     height: 100vh;
 }
 
+
+.submit{
+    width: 200px;
+}
+
+.question {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black
+}
+
+.link{
+    align-items: "center"
+}
+
 .submit {
     background-color: #8FB3BF !important;
     color: white !important;
@@ -15,23 +32,4 @@
 .submit:hover {
     background-color: #E6F4F1;
     color: black;
-}
-
-.background {
-    height:'100vh';
-}
-
-.divider{
-    height:'100vh';
-    background-color: '#8fb3bf';
-    width: "15px";
-}
-
-.input{
-    height:'100vh';
-    background-color: '#dde8ed';
-}
-
-.link{
-    margin-top: 15px !important;
 }
