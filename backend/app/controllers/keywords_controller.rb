@@ -1,4 +1,4 @@
-class KeywordsController < ApplicationController
+class KeywordsController < AuthController
   def create
     @keywordItem = Keyword.new(
       keyword: params[:keyword],

@@ -1,4 +1,4 @@
-class GiftsToKeywordsController < ApplicationController
+class GiftsToKeywordsController < AuthController
   def create
     @connectorItem = GiftToKeyword.new(
       keyword_id: params[:keyword_id],

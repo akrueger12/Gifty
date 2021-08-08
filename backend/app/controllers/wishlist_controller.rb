@@ -1,4 +1,4 @@
-class WishlistController < ApplicationController
+class WishlistController < AuthController
   def create
     @wishlistItem = Wishlist.new(
       wishlist_id: params[:wishlist_id],
