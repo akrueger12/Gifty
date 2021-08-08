@@ -17,6 +17,19 @@
     color: black;
 }
 
+.new-account {
+    background-color: #8FB3BF !important;
+    color: white !important;
+    transition: 250ms;
+    margin-top: 40px !important;
+    margin-bottom: 15px;
+}
+
+.new-account:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
 .background {
     height:'100vh';
 }

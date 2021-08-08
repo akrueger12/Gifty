@@ -31,10 +31,10 @@ export const Login = ({ onSuccess }) => {
         }
     };
 
-    // // set screen to sign up page
-    // const onSignUpClick = () => {
-    //     window.location.href = './signup';
-    // };
+    // set screen to sign up page
+    const onSignUpClick = () => {
+        window.location.href = './signup';
+    };
 
     // update user input functions
     const updateUsernameValue = (event) => {
@@ -78,6 +78,15 @@ export const Login = ({ onSuccess }) => {
                                 onClick={onLoginClick}
                             >
                                 Find Gifts!
+                            </Button>
+                            <Button
+                                className="new-account"
+                                disableElevation
+                                variant="contained"
+                                size="large"
+                                onClick={onSignUpClick}
+                            >
+                                Create a Gifty Account
                             </Button>
                         
                             {/* <Link href = "/signup" className = "link">Create a Gifty Account</Link> */}
