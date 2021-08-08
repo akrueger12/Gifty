@@ -15,15 +15,15 @@ const App = () => {
         <Router>
             <div>
                 <main>
-                    {/* <Switch>
+                    <Switch>
                         <Route exact path="/">
-                            <LandingPage />
+                            <Login />
                         </Route>
-                        <Route exact path="/signup">
+                        {/* <Route exact path="/signup">
                             <SignUpPage />
-                        </Route>
+                        </Route> */}
                         <Route path="/dashboard" children={<Dashboard />} />
-                    </Switch> */}
+                    </Switch>
                     <Login/>
                 </main>
             </div>

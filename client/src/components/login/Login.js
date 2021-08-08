@@ -24,7 +24,7 @@ export const Login = () => {
                 setErrorMessage('Password or username is incorrect');
                 setError(true);
             } else {
-                // window.location.href = `./dashboard`;
+                window.location.href = `./dashboard`;
             }
         }
     };
