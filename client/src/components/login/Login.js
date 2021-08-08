@@ -77,7 +77,7 @@ export const Login = ({ userDataCallback }) => {
                         >
                             Find Gifts!
                         </Button>
-                    
+                        <Link href = "/signup">Create a Gifty Account</Link>
                     </Grid>
 
                 </Grid>
