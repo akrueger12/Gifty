@@ -853,6 +853,128 @@ GiftToKeyword.create(
     gift_id: 12
 )
 
+#13
+Gift.create(
+    name: "Bluetooth speaker",
+    description: "Portability shouldn't mean you have to sacrifice sound quality! Bluetooth speakers have long-lasting battery lives and are perfect for all the times you're on the go.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=bluetooth+speaker&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61y+b4M0RZL._AC_SL1200_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 13
+)
+
+#14
+Gift.create(
+    name: "Succulents",
+    description: "Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=succulents&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 14
+)
 
 
 ##############################
