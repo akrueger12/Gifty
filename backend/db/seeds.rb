@@ -853,6 +853,374 @@ GiftToKeyword.create(
     gift_id: 12
 )
 
+#13
+Gift.create(
+    name: "Bluetooth speaker",
+    description: "Portability shouldn't mean you have to sacrifice sound quality! Bluetooth speakers have long-lasting battery lives and are perfect for all the times you're on the go.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=bluetooth+speaker&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/61y+b4M0RZL._AC_SL1200_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 16,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 13
+)
+
+GiftToKeyword.create(
+    keyword_id: 7,
+    gift_id: 13
+)
+
+#14
+Gift.create(
+    name: "Succulents",
+    description: "Succulents are great to spice up any room! Bringing some exciting new life into any space, this could be the perfect addition to anyone's growing plant collection.",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=succulents&ref=nb_sb_noss_1",
+    image: "https://m.media-amazon.com/images/I/81KADLdHXZL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 3,
+    gift_id: 14
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 14
+)
+
+#15
+Gift.create(
+    name: "Framed map of favorite place",
+    description: "Is there a spot that means something special to the two of you? Remind them of that and all your memories spent there!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=framed+map+of+england&ref=nb_sb_noss_2",
+    image: "https://m.media-amazon.com/images/I/61uz+Rlr1ML._AC_SL1024_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 18,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 21,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 8,
+    gift_id: 15
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 15
+)
+
+#16
+Gift.create(
+    name: "Reusable bags with a fun print",
+    description: "For the individuals that are saving the world, one reusable bag at a time! Reusable bags don't have to be boring—check out all the fun prints and choose the ones that speak most to you!",
+    price:nil,
+    link_to_purchase: "https://www.amazon.com/s?k=reusable+grocery+bags&crid=3JHECUU7UJEPL&sprefix=reusable%2Caps%2C234&ref=nb_sb_ss_midas-iss-sm_1_8",
+    image: "https://m.media-amazon.com/images/I/81pzn14dKfL._AC_SL1500_.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 9,
+    gift_id: 16
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 16
+)
+
+#17
+Gift.create(
+    name: "Commissioned painting of a photo of the two of you",
+    description: "A creative and sentimental gift for anyone who's worth a thousand words. A unique idea for anyone who already seems to have everything!",
+    price:nil,
+    link_to_purchase: "https://www.etsy.com/search?q=faceless+portrait+custom&explicit=1&is_personalizable=true",
+    image: "https://i.etsystatic.com/9088033/r/il/96ee70/2586570772/il_1588xN.2586570772_5cqg.jpg"
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 15,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 22,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 23,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 24,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 25,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 2,
+    gift_id: 17
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 17
+)
+
+#18
+Gift.create(
+    name: " ",
+    description: " ",
+    price:nil,
+    link_to_purchase: " ",
+    image: " "
+)
+
+GiftToKeyword.create(
+    keyword_id: 11,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 12,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 13,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 14,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 19,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 20,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 1,
+    gift_id: 
+)
+
+GiftToKeyword.create(
+    keyword_id: 4,
+    gift_id: 
+)
 
 
 ##############################
