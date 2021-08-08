@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   post 'auth/general_auth'
   post 'users/create'
   post 'users/login'
+  post 'users/data'
   post 'gifts_to_keywords/create'
   post 'keywords/create'
   post 'wishlist/create'
