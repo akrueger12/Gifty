@@ -1,5 +1,5 @@
-import React from 'react';
 import { StylesProvider } from '@material-ui/styles';
+import React from 'react';
 import NavigationBar from '../dashboard/navigation/NavigationBar';
 import './Page.css';
 

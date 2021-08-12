@@ -2,7 +2,7 @@ import React from 'react';
 import {Grid, TextField, Button, Box} from '@material-ui/core';
 import Logo from './Logo.png';
 import Packages from './loginImage.png';
-import styles from  './NewUser.module.css';
+import './NewUser.css';
 import { createNewUser} from '../../apis/api';
 import { useHistory } from 'react-router-dom';
 
@@ -51,29 +51,29 @@ export const NewUser = ({ onSuccess }) => {
                 </Grid>
                 <Grid item container direction = "column" style={{width: "200px", marginTop: "50px", textTransform: "none"}}>
                     <Grid item>
-                        <h4 className={styles['question']}>
+                        <h4 className='question'>
                             Enter a username:
                         </h4>
                     </Grid>
                     <TextField
-                    className={styles['username-field']}
+                    className='username-field'
                     label="Username"
                     type="username"
                     onChange={updateUsernameValue}
                     error={error}
                     />
-                    <h4 className={styles['question']}>
+                    <h4 className='question'>
                         Enter a password:
                     </h4>
                     <TextField
-                        className={styles['password-field']}
+                        className='password-field'
                         label="Password"
                         type="password"
                         onChange={updatePasswordValue}
                         error={error}
                     />          
                     <Button
-                    className={styles['submit']}
+                    className='submit'
                     disableElevation
                     variant="contained"
                     size="large"

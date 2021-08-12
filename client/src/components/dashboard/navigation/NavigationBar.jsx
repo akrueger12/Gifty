@@ -1,6 +1,6 @@
-import styles from  './NavigationBar.module.css';
+import './NavigationBar.css';
 import React from 'react';
-import { Paper, Tab, Tabs } from '@material-ui/core';
+import { Paper, StylesProvider, Tab, Tabs } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import UserMenu from './UserMenu';
@@ -35,13 +35,15 @@ export const NavigationBar = () => {
     }
 
     return (
-        <Paper elevation={3} className={styles['nav-bar']}>
-            <Tabs textColor="primary">
-                <Tab icon={<CardGiftcardIcon/>} className={styles['gift-icon']} onClick={onGiftIconClick} />
-                <Tab icon={<PersonIcon/>} className={styles['user-icon']} onClick={onUserIconClick} />
-            </Tabs>
-            {determineMenu()}
-        </Paper>
+        <StylesProvider injectFirst>
+            <Paper elevation={3} className='nav-bar'>
+                <Tabs textColor="primary">
+                    <Tab icon={<CardGiftcardIcon/>} className='gift-icon' onClick={onGiftIconClick} />
+                    <Tab icon={<PersonIcon/>} className='user-icon' onClick={onUserIconClick} />
+                </Tabs>
+                {determineMenu()}
+            </Paper>
+        </StylesProvider>
     );
 };
 

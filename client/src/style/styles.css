@@ -1,0 +1,411 @@
+/* GiftCard */
+
+.gift-image {
+    height: 20vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.gift-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gift-card {
+    min-width: 160px;
+    margin: 5%;
+}
+
+/* GiftFrame */
+
+.gift-frame {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.gift-cards {
+    padding: 20px 20px 20px 20px;
+    width: 100vw;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-frame {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.MuiCircularProgress-colorPrimary {
+    color: #7EACBB;
+}
+
+/* GiftMenu */
+
+.gift-action-menu .MuiMenu-paper {
+    width: 20vw;
+}
+
+.gift-action-menu .MuiMenu-list {
+    padding: 8px;
+}
+
+.gift-action-menu .MuiListItem-gutters {
+    padding: 8px;
+}
+
+.gift-menu-item {
+    justify-content: center;
+    color: #8FB3BF;
+    text-transform: none;
+}
+
+.list-item {
+    justify-content: space-between;
+}
+
+.survey-item {
+    justify-content: space-between;
+}
+
+.gift-menu-title {
+    margin: 0px;
+}
+
+.list-title {
+    margin: 0px;
+}
+
+.survey-title {
+    margin: 0px;
+}
+
+.MuiSvgIcon-root {
+    color: #8FB3BF;
+}
+
+/* NavigationBar */
+
+.nav-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #8FB3BF;
+}
+
+.gift-icon .MuiSvgIcon-root {
+    color: white;
+}
+
+.user-icon .MuiSvgIcon-root{
+    color: white;
+}
+
+/* UserMenu */
+
+.user-action-menu .MuiMenu-paper {
+    width: 20vw;
+}
+
+.user-action-menu .MuiMenu-list {
+    padding: 8px;
+}
+
+.user-action-menu .MuiListItem-gutters {
+    padding: 8px;
+}
+
+.menu-item {
+    justify-content: center;
+    color: #8FB3BF;
+    text-transform: none;
+}
+
+.logout-item {
+    justify-content: space-between;
+}
+
+.menu-title {
+    margin: 0px;
+}
+
+.logout-title {
+    margin: 0px;
+}
+
+.MuiSvgIcon-root {
+    color: #8FB3BF;
+}
+
+/* WishList */
+
+.loading {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wish-list {
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding: 50px 50px;
+    min-height: 70vh;
+    width: 70vw;
+}
+
+.user-name {
+    color: #718C95;
+}
+
+.item-list-container {
+    background-color: #DDE8ED;
+}
+
+.item-list {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.MuiSvgIcon-root.clear-icon{
+    color: #262F56;
+}
+
+.item-name {
+    width: 95%;
+    padding-right: 20px;
+}
+
+.item-addition {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.add-item {
+    align-self: center;
+    background-color: #7EACBB;
+    color: white;
+}
+
+.add-item:hover {
+    background-color: #B4CFD7;
+}
+
+.MuiSvgIcon-root.add-icon {
+    color: white;
+}
+
+/* GiftForm */
+
+.form-card {
+    padding: 50px 100px;
+    width: 70vw;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.form-title {
+    margin-bottom: 20px;
+    color: #7EACBB;
+}
+
+.question {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    margin-top: 10px;
+}
+
+.MuiRadio-root {
+    color: #7EACBB;
+}
+
+.MuiRadio-root.Mui-checked {
+    color: #4A7886;
+}
+
+.MuiRadio-root.Mui-checked:hover {
+    background-color: #E6F4F1;
+}
+
+.MuiRadio-root:hover {
+    background-color: #E6F4F1;
+}
+
+.MuiCheckbox-root {
+    color: #7EACBB;
+}
+
+.MuiCheckbox-root.Mui-checked {
+    color: #4A7886;
+}
+
+.MuiCheckbox-root:hover {
+    background-color: #E6F4F1;
+}
+
+.MuiCheckbox-root.Mui-checked:hover {
+    background-color: #E6F4F1;
+}
+
+.submit {
+    align-self: center;
+    background-color: #8FB3BF;
+    color: white;
+    transition: 250ms;
+    margin: 20px;
+    width: 150px;
+    text-transform: none;
+}
+
+.submit:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.gift-chip.MuiToggleButton-root {
+    margin-right: 15px;
+    background-color: #8FB3BF;
+    text-transform: none;
+    color: white;
+}
+
+.gift-chip.MuiToggleButton-root:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.gift-chip.MuiToggleButton-root.Mui-selected:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.gift-chip.MuiToggleButton-root.Mui-selected {
+    background-color: #334A52;
+    color: white;
+}
+
+.gift-chips {
+    padding-top: 20px;
+}
+
+/* Login */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.submit {
+    background-color: #8FB3BF !important;
+    color: white !important;
+    transition: 250ms;
+    margin-top: 40px !important;
+    margin-bottom: 15px;
+}
+
+.submit:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.new-account {
+    background-color: #8FB3BF !important;
+    color: white !important;
+    transition: 250ms;
+    margin-top: 40px !important;
+    margin-bottom: 15px;
+}
+
+.new-account:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+.background {
+    height:'100vh';
+}
+
+.divider{
+    height:'100vh';
+    background-color: '#8fb3bf';
+    width: "15px";
+}
+
+.input{
+    height:'100vh';
+    background-color: '#dde8ed';
+}
+
+.link{
+    margin-top: 15px !important;
+    align-items: "center";
+}
+
+/* NewUser */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.submit{
+    width: 200px;
+}
+
+.question {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black
+}
+
+
+.submit {
+    background-color: #8FB3BF !important;
+    color: white !important;
+    transition: 250ms;
+    margin-top: 15px !important;
+    margin-bottom: 15px;
+}
+
+.submit:hover {
+    background-color: #E6F4F1;
+    color: black;
+}
+
+/* Page */
+
+.page {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #f2f2e8;
+}

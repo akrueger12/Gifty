@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from  './GiftForm.module.css';
+import './GiftForm.css';
 import { 
   TextField,
   RadioGroup,
@@ -12,7 +12,6 @@ import {
   Grid,
 } from '@material-ui/core';
 import { ToggleButton } from '@material-ui/lab';
-import { StylesProvider } from '@material-ui/styles';
 
 import { useHistory } from 'react-router-dom';
 
@@ -77,80 +76,78 @@ export const GiftForm = ({ onSubmit }) => {
   }
 
   return (
-    <StylesProvider injectFirst>
-      <Paper className={styles['form-card']}>
-        <Grid container spacing={1} direction="column">
-          <h1 className={styles['form-title']}>Tell us a bit about the person you are shopping for!</h1>
+    <Paper className='form-card'>
+      <Grid container spacing={1} direction="column">
+        <h1 className='form-title'>Tell us a bit about the person you are shopping for!</h1>
 
-          <h4 className={styles['question']}>
-            What's their name?
-          </h4>
-          <TextField id="standard-basic" placeholder="Name" className={styles['input-box']} onChange={event => setName(event.target.value)}/>
+        <h4 className='question'>
+          What's their name?
+        </h4>
+        <TextField id="standard-basic" placeholder="Name" className='input-box' onChange={event => setName(event.target.value)}/>
 
-          <h4 className={styles['question']}>
-            What's their gender?
-          </h4>
-          <RadioGroup onChange={event => setGender(event.target.value)}>
-            <FormControlLabel value="female" control={<Radio />} label="Female" />
-            <FormControlLabel value="male" control={<Radio />} label="Male" />
-            <FormControlLabel value="other" control={<Radio />} label="Other" />
-          </RadioGroup>
+        <h4 className='question'>
+          What's their gender?
+        </h4>
+        <RadioGroup onChange={event => setGender(event.target.value)}>
+          <FormControlLabel value="female" control={<Radio />} label="Female" />
+          <FormControlLabel value="male" control={<Radio />} label="Male" />
+          <FormControlLabel value="other" control={<Radio />} label="Other" />
+        </RadioGroup>
 
-          <h4 className={styles['question']}>
-            What's your price range?
-          </h4>
-          <FormGroup>
-            {priceData.map((data) => {
-              return(
-                <FormControlLabel control={<Checkbox/>} label = {data.label} onChange={() => {updatePrice(data.key, data.selected);}}/>
-              )
-            })}
-          </FormGroup>
+        <h4 className='question'>
+          What's your price range?
+        </h4>
+        <FormGroup>
+          {priceData.map((data) => {
+            return(
+              <FormControlLabel control={<Checkbox/>} label = {data.label} onChange={() => {updatePrice(data.key, data.selected);}}/>
+            )
+          })}
+        </FormGroup>
 
-          <h4 className={styles['question']}>
-            What kind of gift would you like to give them / how would you describe them?
-          </h4>
-          <div>
-            {giftData.map((data) => {
-              return (
-                <ToggleButton
-                  className={styles['gift-chip']}
-                  selected={data.selected}
-                  onChange={() => {
-                    updateChip(data.key, data.selected);
-                  }
-                }>
-                  {data.label}
-                </ToggleButton>
-              );
-            })}
-          </div>
+        <h4 className='question'>
+          What kind of gift would you like to give them / how would you describe them?
+        </h4>
+        <div className='gift-chips'>
+          {giftData.map((data) => {
+            return (
+              <ToggleButton
+                className='gift-chip'
+                selected={data.selected}
+                onChange={() => {
+                  updateChip(data.key, data.selected);
+                }
+              }>
+                {data.label}
+              </ToggleButton>
+            );
+          })}
+        </div>
 
-          <h4 className={styles['question']}>
-            What age range are they in?
-          </h4>
-          <RadioGroup onChange={event => setAge(event.target.value)}>
-            <FormControlLabel value="0 - 5" control={<Radio />} label="0 - 5" />
-            <FormControlLabel value="5 - 10" control={<Radio />} label="5 - 10" />
-            <FormControlLabel value="10 - 15" control={<Radio />} label="10 - 15" />
-            <FormControlLabel value="15 - 20" control={<Radio />} label="15 - 20" />
-            <FormControlLabel value="20 - 30" control={<Radio />} label="20 - 30" />
-            <FormControlLabel value="30 - 50" control={<Radio />} label="30 - 50" />
-            <FormControlLabel value="50+" control={<Radio />} label="50+" />
-          </RadioGroup>
+        <h4 className='question'>
+          What age range are they in?
+        </h4>
+        <RadioGroup onChange={event => setAge(event.target.value)}>
+          <FormControlLabel value="0 - 5" control={<Radio />} label="0 - 5" />
+          <FormControlLabel value="5 - 10" control={<Radio />} label="5 - 10" />
+          <FormControlLabel value="10 - 15" control={<Radio />} label="10 - 15" />
+          <FormControlLabel value="15 - 20" control={<Radio />} label="15 - 20" />
+          <FormControlLabel value="20 - 30" control={<Radio />} label="20 - 30" />
+          <FormControlLabel value="30 - 50" control={<Radio />} label="30 - 50" />
+          <FormControlLabel value="50+" control={<Radio />} label="50+" />
+        </RadioGroup>
 
-          <Button
-            className={styles['submit']}
-            disableElevation
-            variant="contained"
-            size="large"
-            onClick={() => onSubmit(name, getKeywords())}
-          >
-              Start gifting!
-          </Button>
-        </Grid>
-      </Paper>
-    </StylesProvider>
+        <Button
+          className='submit'
+          disableElevation
+          variant="contained"
+          size="large"
+          onClick={() => onSubmit(name, getKeywords())}
+        >
+            Start gifting!
+        </Button>
+      </Grid>
+    </Paper>
   );
 }
 

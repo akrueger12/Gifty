@@ -1,15 +1,15 @@
-import styles from './GiftCard.module.css';
+import './GiftCard.css';
 import React from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 import { BrowserRouter as Link }  from 'react-router-dom';
 
 export const GiftCard = ({ gift }) => {
     return (
-        <Card className={styles['gift-card']}>
-            <CardMedia className={styles['gift-image']}>
+        <Card className='gift-card'>
+            <CardMedia className='gift-image'>
                 <img src={gift.image} alt={""} />
             </CardMedia>
-            <CardContent className={styles['gift-description']}>
+            <CardContent className='gift-description'>
                 <Typography variant="h5" color="textPrimary" component="p">
                     {gift.name}
                 </Typography>
