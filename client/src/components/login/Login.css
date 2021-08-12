@@ -23,6 +23,7 @@
     transition: 250ms;
     margin-top: 40px !important;
     margin-bottom: 15px;
+    text-transform: none;
 }
 
 .new-account:hover {
