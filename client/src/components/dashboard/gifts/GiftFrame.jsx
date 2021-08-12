@@ -12,7 +12,7 @@ export const GiftFrame = ({ gifts }) => {
     return gifts ? (
         <div className='gift-frame'>
             <Grid item container direction="row" justify="center">
-                <Grid container className="gift-cards">
+                <Grid container className='gift-cards'>
                     <Grid container item>
                         <Grid container item xs={12} md>
                             {

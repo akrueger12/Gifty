@@ -11,7 +11,6 @@ import {
     TextField,
     CircularProgress
 } from '@material-ui/core';
-import { StylesProvider } from '@material-ui/styles';
 import { useHistory } from 'react-router-dom';
 import { retrieveUserData, retrieveWishList, createNewItem } from '../../../apis/api';
 import ClearIcon from '@material-ui/icons/Clear';
@@ -64,46 +63,44 @@ export const WishlistPage = () => {
     return (
         <Page>
             {isLoading &&
-                <div className="loading"><CircularProgress /></div>
+                <div className='loading'><CircularProgress /></div>
             }
             {!isLoading &&
-                <StylesProvider injectFirst>
-                    <Paper className="wish-list">
-                        <Grid container spacing={1} direction="column">
-                            <h1 className="user-name">{userData.user.username.toUpperCase()}'S WISHLIST</h1>
+                <Paper className='wish-list'>
+                    <Grid container spacing={1} direction="column">
+                        <h1 className='user-name'>{userData.user.username.toUpperCase()}'S WISHLIST</h1>
 
-                            <div className="item-addition">
-                                <TextField
-                                    id="outlined-basic"
-                                    label="Item"
-                                    variant="outlined"
-                                    className="item-name"
-                                    value={itemInputValue}
-                                    onChange={handleItemInputChange}
-                                />
-                                <Fab size="small" className="add-item" onClick={onItemAdded}>
-                                    <AddIcon className='add-icon'/>
-                                </Fab>
-                            </div>
-                            <div className="item-list-container">
-                                <List dense className="item-list">
-                                    {
-                                        wishlistItems.map((item) => (
-                                            <ListItem className="item">
-                                                <div className="invitee-information">
-                                                    <ListItemText primary={item} />
-                                                </div>
-                                                <IconButton>
-                                                    <ClearIcon className='clear-icon'/>
-                                                </IconButton>
-                                            </ListItem>
-                                        ))
-                                    }
-                                </List>
-                            </div>
-                        </Grid>
-                    </Paper>
-                </StylesProvider>
+                        <div className='item-addition'>
+                            <TextField
+                                id="outlined-basic"
+                                label="Item"
+                                variant="outlined"
+                                className='item-name'
+                                value={itemInputValue}
+                                onChange={handleItemInputChange}
+                            />
+                            <Fab size="small" className='add-item' onClick={onItemAdded}>
+                                <AddIcon className='add-icon'/>
+                            </Fab>
+                        </div>
+                        <div className='item-list-container'>
+                            <List dense className='item-list'>
+                                {
+                                    wishlistItems.map((item) => (
+                                        <ListItem className='item'>
+                                            <div className='invitee-information'>
+                                                <ListItemText primary={item} />
+                                            </div>
+                                            <IconButton>
+                                                <ClearIcon className='clear-icon'/>
+                                            </IconButton>
+                                        </ListItem>
+                                    ))
+                                }
+                            </List>
+                        </div>
+                    </Grid>
+                </Paper>
             }
         </Page>
     );

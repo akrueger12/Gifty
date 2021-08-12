@@ -1,6 +1,6 @@
 import React from 'react';
-import './Login.css';
-import {Grid, Box, TextField, Button, Link} from '@material-ui/core';
+import './Login.css'
+import {Grid, Box, TextField, Button} from '@material-ui/core';
 import Packages from './loginImage.png';
 import Logo from './Logo.png';
 import { loginUser } from '../../apis/api';
@@ -55,23 +55,23 @@ export const Login = ({ onSuccess }) => {
                     </Grid>
                     <Grid item container direction = "column" style={{width: "200px", marginTop: "50px"}}>
                         <TextField
-                            className="username-field"
+                            className='username-field'
                             label="Username"
                             onChange={updateUsernameValue}
                             error={error}
                         />
                         <TextField
-                            className="password-field"
+                            className='password-field'
                             label="Password"
                             type="password"
                             onChange={updatePasswordValue}
                             error={error}
                         />
 
-                        <h5 className="error-message">{errorMessage}</h5>
+                        <h5 className='error-message'>{errorMessage}</h5>
                         <Grid item container justifyContent="center">
                             <Button
-                                className="submit"
+                                className='submit'
                                 disableElevation
                                 variant="contained"
                                 size="large"
@@ -80,7 +80,7 @@ export const Login = ({ onSuccess }) => {
                                 Find Gifts!
                             </Button>
                             <Button
-                                className="new-account"
+                                className='new-account'
                                 disableElevation
                                 variant="contained"
                                 size="large"

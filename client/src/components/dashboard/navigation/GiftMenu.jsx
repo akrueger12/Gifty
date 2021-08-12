@@ -17,17 +17,17 @@ export const GiftMenu = ({ handleClose, anchorEl }) => {
             getContentAnchorEl={null}
             anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
             transformOrigin={{ vertical: 'top', horizontal: 'center' }}
-            className="gift-action-menu"
+            className='gift-action-menu'
         >
-            <MenuItem disabled className="gift-menu-item">
-                <h3 className="gift-menu-title">Get Gifting</h3>
+            <MenuItem disabled className='gift-menu-item'>
+                <h3 className='gift-menu-title'>Get Gifting</h3>
             </MenuItem>
-            <MenuItem className="list-item" onClick={() => history.push("/wishlist")}>
-                <p className="list-title">Wish List</p>
+            <MenuItem className='list-item' onClick={() => history.push("/wishlist")}>
+                <p className='list-title'>Wish List</p>
                 <ListAltIcon/>
             </MenuItem>
-            <MenuItem className="survey-item" onClick={() => history.push("/gift-finder")}>
-                <p className="survey-title">Fill Survey</p>
+            <MenuItem className='survey-item' onClick={() => history.push("/gift-finder")}>
+                <p className='survey-title'>Fill Survey</p>
                 <AssignmentIcon/>
             </MenuItem>
         </Menu>
