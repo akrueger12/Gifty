@@ -23021,3 +23021,276 @@ puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
 puma (5.4.0) lib/puma/server.rb:440:in `process_client'
 puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/wishlist/destroy" for ::1 at 2021-08-13 17:22:13 -0500
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/wishlist/destroy"):
+  
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:22:39 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (16.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "okie dokie"]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 404 Not Found in 134ms (ActiveRecord: 48.2ms | Allocations: 3218)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wishlist without an ID):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:23:03 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (2.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "okie dokie"]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `puts'
+Completed 404 Not Found in 16ms (ActiveRecord: 13.4ms | Allocations: 1469)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wishlist without an ID):
+  
+app/controllers/wishlist_controller.rb:37:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:23:31 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `puts'
+Completed 404 Not Found in 27ms (ActiveRecord: 23.7ms | Allocations: 1396)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wishlist without an ID):
+  
+app/controllers/wishlist_controller.rb:37:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:23:42 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (2.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["wishlist_id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.3ms | Allocations: 3337)
+
+
+  [1m[36mCACHE Wishlist Load (0.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["wishlist_id", 1], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `id' for #<ActiveRecord::Relation []>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:24:25 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["wishlist_id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 3373)
+
+
+  [1m[36mCACHE Wishlist Load (0.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["wishlist_id", 1], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `id' for #<ActiveRecord::Relation []>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:24:33 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `puts'
+Completed 404 Not Found in 13ms (ActiveRecord: 11.6ms | Allocations: 1382)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wishlist without an ID):
+  
+app/controllers/wishlist_controller.rb:37:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:24:54 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"okie dokie", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"okie dokie"}}
+  [1m[36mWishlist Load (2.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 LIMIT $2[0m  [["wishlist_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `destroy'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 15.8ms | Allocations: 1756)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started GET "/wishlist/create" for ::1 at 2021-08-13 17:26:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/wishlist/create"):
+  
+Started POST "/wishlist/create" for ::1 at 2021-08-13 17:26:53 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"teddy bear", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"teddy bear"}}
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (10.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 1], ["user_input", "teddy bear"], ["created_at", "2021-08-13 22:26:53.570245"], ["updated_at", "2021-08-13 22:26:53.570245"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 63ms (Views: 1.2ms | ActiveRecord: 24.3ms | Allocations: 5155)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 17:27:06 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (4.4ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 1], ["user_input", "roses"], ["created_at", "2021-08-13 22:27:06.424268"], ["updated_at", "2021-08-13 22:27:06.424268"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 37ms (Views: 0.4ms | ActiveRecord: 11.4ms | Allocations: 2424)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:28:08 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (4.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "roses"]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 26.8ms | Allocations: 3217)
+
+
+  
+ArgumentError (You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`.):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:28:25 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (2.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 9.7ms | Allocations: 5413)
+
+
+  [1m[36mCACHE Wishlist Load (0.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `id' for #<Wishlist::ActiveRecord_Relation:0x000000000b192430>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:29:01 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "roses"]]
+  ↳ app/controllers/wishlist_controller.rb:36:in `puts'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 11.7ms | Allocations: 5081)
+
+
+  
+NoMethodError (undefined method `id' for #<Wishlist::ActiveRecord_Relation:0x000000000b373c90>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:37:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:29:27 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (4.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 10.4ms | Allocations: 5213)
+
+
+  [1m[36mCACHE Wishlist Load (0.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `wishlist_id' for #<Wishlist::ActiveRecord_Relation:0x000000000b308788>):
+  
+app/controllers/wishlist_controller.rb:36:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:30:51 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (3.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 14.8ms | Allocations: 5306)
+
+
+  [1m[36mCACHE Wishlist Load (0.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `id' for #<Wishlist::ActiveRecord_Relation:0x000000000abef910>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:36:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:31:02 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "wishlists"."id" FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "roses"]]
+  ↳ app/controllers/wishlist_controller.rb:36:in `destroy'
+  [1m[36mWishlist Load (1.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 16.0ms | Allocations: 5948)
+
+
+  [1m[36mCACHE Wishlist Load (0.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2 /* loading for inspect */ LIMIT $3[0m  [["wishlist_id", 1], ["user_input", "roses"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `id' for #<Wishlist::ActiveRecord_Relation:0x0000000009fbd7f0>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:37:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:32:14 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (3.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `destroy'
+Completed 404 Not Found in 25ms (ActiveRecord: 20.9ms | Allocations: 2127)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Wishlist with 'id'={:wishlist_id=>1}):
+  
+app/controllers/wishlist_controller.rb:33:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:32:28 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (4.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 LIMIT $2[0m  [["wishlist_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `destroy'
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 24.7ms | Allocations: 5101)
+
+
+  
+NoMethodError (undefined method `where' for #<Wishlist:0x000000000cf8e858>
+Did you mean?  when):
+  
+app/controllers/wishlist_controller.rb:33:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:34:18 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (2.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "roses"]]
+  ↳ app/controllers/wishlist_controller.rb:38:in `puts'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 17.9ms | Allocations: 5048)
+
+
+  
+NoMethodError (undefined method `id' for #<Wishlist::ActiveRecord_Relation:0x000000000cdc9f40>
+Did you mean?  ids):
+  
+app/controllers/wishlist_controller.rb:39:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:37:37 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 6.3ms | Allocations: 2957)
+
+
+  
+NoMethodError (undefined method `collect' for #<WishlistController:0x0000000001c200>):
+  
+app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:37:51 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (2.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "roses"]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `collect'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 20.1ms | Allocations: 3739)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/wishlist_controller.rb:39:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 17:38:09 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>1, "user_input"=>"roses", "wishlist"=>{"wishlist_id"=>1, "user_input"=>"roses"}}
+  [1m[36mWishlist Load (4.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "roses"]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `collect'
+  [1m[36mWishlist Load (4.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:39:in `destroy'
+  [1m[36mWishlist Destroy (6.0ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wishlist_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:39:in `destroy'
+Completed 200 OK in 111ms (Views: 0.7ms | ActiveRecord: 51.0ms | Allocations: 5394)
+
+
