@@ -23294,3 +23294,1861 @@ Processing by WishlistController#destroy as */*
 Completed 200 OK in 111ms (Views: 0.7ms | ActiveRecord: 51.0ms | Allocations: 5394)
 
 
+Started POST "/users/create" for ::1 at 2021-08-13 18:07:29 -0500
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"newAccount", "password"=>"[FILTERED]", "user"=>{"username"=>"newAccount", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "newAccount"], ["password", "password"], ["created_at", "2021-08-13 23:07:30.099735"], ["updated_at", "2021-08-13 23:07:30.099735"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 60ms (Views: 1.4ms | ActiveRecord: 23.1ms | Allocations: 6481)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:07:30 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:07:30 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 30ms (Views: 1.2ms | ActiveRecord: 8.9ms | Allocations: 1609)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 8.3ms | Allocations: 1469)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:07:55 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"movie", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"movie"}}
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.6ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "movie"], ["created_at", "2021-08-13 23:07:55.515729"], ["updated_at", "2021-08-13 23:07:55.515729"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 53ms (Views: 0.3ms | ActiveRecord: 27.6ms | Allocations: 4386)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:07:55 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.5ms | ActiveRecord: 7.1ms | Allocations: 1579)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:08:03 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"more movie", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"more movie"}}
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (4.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "more movie"], ["created_at", "2021-08-13 23:08:04.029936"], ["updated_at", "2021-08-13 23:08:04.029936"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 43ms (Views: 0.6ms | ActiveRecord: 12.6ms | Allocations: 2442)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:08:04 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 8.0ms | Allocations: 1598)
+
+
+Started POST "/users/login" for ::1 at 2021-08-13 18:08:18 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"newAccount", "password"=>"[FILTERED]", "user"=>{"username"=>"newAccount", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "newAccount"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `login'
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 1.8ms | Allocations: 1114)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:08:19 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:08:19 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 12ms (Views: 1.6ms | ActiveRecord: 1.6ms | Allocations: 1008)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 4.8ms | Allocations: 1596)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:09:41 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:09:41 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 30ms (Views: 2.3ms | ActiveRecord: 3.1ms | Allocations: 1001)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 31ms (Views: 0.4ms | ActiveRecord: 8.1ms | Allocations: 1596)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:17:55 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:17:55 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 113ms (Views: 1.2ms | ActiveRecord: 22.9ms | Allocations: 7476)
+
+
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 107ms (Views: 0.2ms | ActiveRecord: 30.5ms | Allocations: 9043)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:18:01 -0500
+Started POST "/users/data" for ::1 at 2021-08-13 18:18:01 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (5.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 38ms (Views: 0.7ms | ActiveRecord: 9.2ms | Allocations: 1629)
+
+
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 19ms (Views: 2.9ms | ActiveRecord: 3.2ms | Allocations: 983)
+
+
+Started POST "/users/login" for ::1 at 2021-08-13 18:20:15 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"newAccount", "password"=>"[FILTERED]", "user"=>{"username"=>"newAccount", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "newAccount"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `login'
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 1.7ms | Allocations: 996)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:20:15 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:20:15 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 3.5ms | Allocations: 1005)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 3.3ms | Allocations: 1596)
+
+
+Started POST "/users/login" for ::1 at 2021-08-13 18:37:41 -0500
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"newAccount", "password"=>"[FILTERED]", "user"=>{"username"=>"newAccount", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "newAccount"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `login'
+Completed 200 OK in 79ms (Views: 3.1ms | ActiveRecord: 29.8ms | Allocations: 5443)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:37:42 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:37:42 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 2.5ms | Allocations: 1117)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 15.2ms | Allocations: 3459)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:37:42 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:37:42 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:37:42 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"movie", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"movie"}}
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "movie"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (1.9ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 10.6ms | Allocations: 3768)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:37:43 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"more movie", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"more movie"}}
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "more movie"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (3.9ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 42ms (Views: 0.3ms | ActiveRecord: 12.0ms | Allocations: 3641)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:37:43 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"movie", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"movie"}}
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "movie"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 1514)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"more movie", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"more movie"}}
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "more movie"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 1060)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:37:43 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:37:43 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (6.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 45ms (Views: 0.4ms | ActiveRecord: 12.7ms | Allocations: 1637)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:37:43 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 7.8ms | Allocations: 1578)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 1572)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 1542)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:38:15 -0500
+Started POST "/users/data" for ::1 at 2021-08-13 18:38:15 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 4.8ms | Allocations: 1566)
+
+
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.1ms | Allocations: 1002)
+
+
+Started POST "/users/login" for ::1 at 2021-08-13 18:38:34 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"newAccount", "password"=>"[FILTERED]", "user"=>{"username"=>"newAccount", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "newAccount"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `login'
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 1.6ms | Allocations: 990)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:38:34 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:38:34 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 24ms (Views: 2.0ms | ActiveRecord: 6.9ms | Allocations: 988)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (5.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 37ms (Views: 0.7ms | ActiveRecord: 9.4ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:38:41 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (3.1ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "item"], ["created_at", "2021-08-13 23:38:41.280180"], ["updated_at", "2021-08-13 23:38:41.280180"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 31ms (Views: 0.2ms | ActiveRecord: 9.0ms | Allocations: 2551)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:38:41 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:38:41 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:38:41 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (2.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (4.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (3.7ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 67ms (Views: 0.5ms | ActiveRecord: 18.8ms | Allocations: 3575)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 2.6ms | Allocations: 1479)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:38:42 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:38:42 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 29ms (Views: 0.6ms | ActiveRecord: 4.2ms | Allocations: 1564)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 6.9ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:40:54 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"why", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"why"}}
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (3.0ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "why"], ["created_at", "2021-08-13 23:40:54.634989"], ["updated_at", "2021-08-13 23:40:54.634989"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 2422)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:40:54 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 4.7ms | Allocations: 1569)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:40:54 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:40:55 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"why", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"why"}}
+  [1m[36mWishlist Load (1.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "why"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (1.9ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 39ms (Views: 0.2ms | ActiveRecord: 9.1ms | Allocations: 3580)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"why", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"why"}}
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "why"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 1027)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:40:55 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:40:55 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 1564)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:42:26 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "item"], ["created_at", "2021-08-13 23:42:26.845770"], ["updated_at", "2021-08-13 23:42:26.845770"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 2420)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:42:26 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:42:27 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:42:27 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (4.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.2ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 42ms (Views: 0.4ms | ActiveRecord: 13.3ms | Allocations: 3583)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (1.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 1479)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:42:27 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:42:27 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 37ms (Views: 0.6ms | ActiveRecord: 12.3ms | Allocations: 1566)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 6.9ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:42:39 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"why", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"why"}}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "why"], ["created_at", "2021-08-13 23:42:39.337207"], ["updated_at", "2021-08-13 23:42:39.337207"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 2419)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:42:39 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 5.0ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:42:39 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:42:39 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"why", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"why"}}
+  [1m[36mWishlist Load (1.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "why"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (1.9ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 38ms (Views: 0.3ms | ActiveRecord: 9.1ms | Allocations: 3583)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"why", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"why"}}
+  [1m[36mWishlist Load (1.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "why"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 1026)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:42:40 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:42:40 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 1562)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 5.8ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:43:41 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:43:41 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 1.4ms | Allocations: 995)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 3.9ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:43:46 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.9ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "item"], ["created_at", "2021-08-13 23:43:46.548536"], ["updated_at", "2021-08-13 23:43:46.548536"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 7.0ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:43:46 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 7.6ms | Allocations: 1568)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:44:13 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:44:13 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 1.6ms | Allocations: 997)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 1568)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:44:30 -0500
+Started POST "/users/data" for ::1 at 2021-08-13 18:44:30 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 1584)
+
+
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.3ms | Allocations: 983)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:44:47 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"okay", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"okay"}}
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.2ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "okay"], ["created_at", "2021-08-13 23:44:47.331204"], ["updated_at", "2021-08-13 23:44:47.331204"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 6.5ms | Allocations: 2419)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:44:47 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.7ms | ActiveRecord: 7.4ms | Allocations: 1596)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:45:02 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:45:03 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 2.1ms | Allocations: 983)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 1596)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:47:15 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:47:16 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 13ms (Views: 1.6ms | ActiveRecord: 2.1ms | Allocations: 997)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 1596)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:47:42 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"idk", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"idk"}}
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "idk"], ["created_at", "2021-08-13 23:47:42.735876"], ["updated_at", "2021-08-13 23:47:42.735876"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 2418)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:47:42 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 6.7ms | Allocations: 1624)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:10 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:10 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (3.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (5.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.5ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 49ms (Views: 0.3ms | ActiveRecord: 17.3ms | Allocations: 3665)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"okay", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"okay"}}
+  [1m[36mWishlist Load (2.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "okay"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (4.2ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:11 -0500
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 46ms (Views: 0.3ms | ActiveRecord: 16.0ms | Allocations: 3933)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"idk", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"idk"}}
+Started POST "/users/data" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (8.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 8.7ms | Allocations: 1579)
+
+
+  [1m[36mWishlist Load (6.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "idk"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.0ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 216ms (Views: 0.2ms | ActiveRecord: 84.9ms | Allocations: 10164)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"okay", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"okay"}}
+  [1m[36mWishlist Load (2.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "okay"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 1062)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 26ms (Views: 1.0ms | ActiveRecord: 3.2ms | Allocations: 1050)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 6.8ms | Allocations: 1639)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:11 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 1590)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 4.9ms | Allocations: 1606)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 6.5ms | Allocations: 1627)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 7.2ms | Allocations: 1609)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 5.6ms | Allocations: 1605)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (4.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 1069)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"okay", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"okay"}}
+  [1m[36mWishlist Load (4.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "okay"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 4.4ms | Allocations: 1070)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"idk", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"idk"}}
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "idk"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 1065)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (3.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 1065)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"okay", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"okay"}}
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "okay"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 1054)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"idk", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"idk"}}
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "idk"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 1064)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:12 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 5.2ms | Allocations: 1613)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:13 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 5.6ms | Allocations: 1598)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:13 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 1602)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:13 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 5.3ms | Allocations: 1576)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 1556)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 1561)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:13 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"idk", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"idk"}}
+  [1m[36mWishlist Load (0.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "idk"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1026)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:13 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:51:19 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"dskafjl", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"dskafjl"}}
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.4ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "dskafjl"], ["created_at", "2021-08-13 23:51:19.854622"], ["updated_at", "2021-08-13 23:51:19.854622"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:19 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:20 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:51:20 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"dskafjl", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"dskafjl"}}
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "dskafjl"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (1.8ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 8.3ms | Allocations: 3583)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"dskafjl", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"dskafjl"}}
+  [1m[36mWishlist Load (4.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "dskafjl"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 1480)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:20 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:20 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 1568)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:51:36 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:51:36 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 1.7ms | Allocations: 993)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:54:43 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:54:43 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.4ms | Allocations: 996)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 18:55:11 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:55:11 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 3.1ms | Allocations: 1003)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:55:14 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (1.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "item"], ["created_at", "2021-08-13 23:55:14.843870"], ["updated_at", "2021-08-13 23:55:14.843870"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 5.4ms | Allocations: 2419)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:55:14 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:58:40 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:58:40 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+Started POST "/users/data" for ::1 at 2021-08-13 18:58:40 -0500
+  [1m[36mWishlist Load (1.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (13.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (1.3ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 52ms (Views: 0.2ms | ActiveRecord: 19.4ms | Allocations: 3911)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (1.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 1631)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:41 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:41 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 1022)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:41 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 6.4ms | Allocations: 2008)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:58:41 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 31ms (Views: 0.2ms | ActiveRecord: 5.5ms | Allocations: 1587)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:58:41 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 1571)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (1.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 1042)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"item", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"item"}}
+  [1m[36mWishlist Load (1.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "item"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 1026)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:41 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:41 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 4.5ms | Allocations: 1562)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 18:58:58 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"ye", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"ye"}}
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.6ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "ye"], ["created_at", "2021-08-13 23:58:58.491887"], ["updated_at", "2021-08-13 23:58:58.491887"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 2419)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:58 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:58:58 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 18:58:58 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"ye", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"ye"}}
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "ye"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.2ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 44ms (Views: 0.5ms | ActiveRecord: 9.8ms | Allocations: 3583)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"ye", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"ye"}}
+  [1m[36mWishlist Load (1.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "ye"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 1483)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:59 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 18:58:59 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 6.0ms | Allocations: 1568)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 4.1ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 19:00:07 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:00:07 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 12ms (Views: 1.1ms | ActiveRecord: 2.1ms | Allocations: 995)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:00:14 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"dslj;afkj", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"dslj;afkj"}}
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.9ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "dslj;afkj"], ["created_at", "2021-08-14 00:00:14.530519"], ["updated_at", "2021-08-14 00:00:14.530519"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 7.4ms | Allocations: 2418)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:00:14 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 29ms (Views: 0.5ms | ActiveRecord: 6.3ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:00:14 -0500
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:00:15 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"dslj;afkj", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"dslj;afkj"}}
+  [1m[36mWishlist Load (1.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "dslj;afkj"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (3.0ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 42ms (Views: 0.5ms | ActiveRecord: 11.6ms | Allocations: 3588)
+
+
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"dslj;afkj", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"dslj;afkj"}}
+  [1m[36mWishlist Load (1.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "dslj;afkj"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 1454)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:00:15 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:00:15 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 4.6ms | Allocations: 1554)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 5.5ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 19:02:45 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:02:45 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 2.7ms | Allocations: 1003)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:02:54 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"pink panther", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"pink panther"}}
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.8ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 7], ["user_input", "pink panther"], ["created_at", "2021-08-14 00:02:54.233184"], ["updated_at", "2021-08-14 00:02:54.233184"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:02:54 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (1.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 4.1ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:02:56 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"7", "user_input"=>"pink panther", "wishlist"=>{"wishlist_id"=>"7", "user_input"=>"pink panther"}}
+  [1m[36mWishlist Load (2.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 7], ["user_input", "pink panther"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (3.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (3.4ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 50ms (Views: 0.4ms | ActiveRecord: 15.9ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:02:56 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 27ms (Views: 0.5ms | ActiveRecord: 5.8ms | Allocations: 1540)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 19:03:11 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:03:11 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>7, "user"=>{"id"=>7}}
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 26ms (Views: 3.0ms | ActiveRecord: 8.4ms | Allocations: 1003)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"7", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 7]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 6.5ms | Allocations: 1540)
+
+
+Started POST "/users/create" for ::1 at 2021-08-13 19:03:27 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"anna", "password"=>"[FILTERED]", "user"=>{"username"=>"anna", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (5.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "anna"], ["password", "password"], ["created_at", "2021-08-14 00:03:27.882559"], ["updated_at", "2021-08-14 00:03:27.882559"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 45ms (Views: 2.0ms | ActiveRecord: 11.4ms | Allocations: 2490)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 19:03:28 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:03:28 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>8, "user"=>{"id"=>8}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 1.9ms | Allocations: 1001)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.6ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:03:36 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"For this to work", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"For this to work"}}
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.3ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 8], ["user_input", "For this to work"], ["created_at", "2021-08-14 00:03:36.314558"], ["updated_at", "2021-08-14 00:03:36.314558"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 6.2ms | Allocations: 2418)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:03:36 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:03:57 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"For this to work", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"For this to work"}}
+  [1m[36mWishlist Load (1.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 8], ["user_input", "For this to work"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.8ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 46ms (Views: 0.4ms | ActiveRecord: 14.0ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:03:58 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 29ms (Views: 0.5ms | ActiveRecord: 6.3ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:04:08 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"To add many things", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"To add many things"}}
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 8], ["user_input", "To add many things"], ["created_at", "2021-08-14 00:04:09.160797"], ["updated_at", "2021-08-14 00:04:09.160797"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 6.3ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:09 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 5.2ms | Allocations: 1568)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:04:13 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"but only remove one", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"but only remove one"}}
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (4.9ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 8], ["user_input", "but only remove one"], ["created_at", "2021-08-14 00:04:13.854732"], ["updated_at", "2021-08-14 00:04:13.854732"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 46ms (Views: 0.5ms | ActiveRecord: 12.3ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:14 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 4.1ms | Allocations: 1597)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:04:15 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"To add many things", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"To add many things"}}
+  [1m[36mWishlist Load (3.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 8], ["user_input", "To add many things"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (5.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (6.0ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 25.0ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:15 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:04:32 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"but only remove one", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"but only remove one"}}
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 8], ["user_input", "but only remove one"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (3.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (3.8ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 69ms (Views: 0.5ms | ActiveRecord: 21.4ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:32 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 29ms (Views: 0.6ms | ActiveRecord: 6.4ms | Allocations: 1540)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:04:42 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"Bear", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"Bear"}}
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (5.2ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 8], ["user_input", "Bear"], ["created_at", "2021-08-14 00:04:42.369194"], ["updated_at", "2021-08-14 00:04:42.369194"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 8.7ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:42 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 3.7ms | Allocations: 1568)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:04:47 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"ice skates", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"ice skates"}}
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (1.9ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 8], ["user_input", "ice skates"], ["created_at", "2021-08-14 00:04:48.119888"], ["updated_at", "2021-08-14 00:04:48.119888"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 5.4ms | Allocations: 2417)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:48 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 1596)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:04:50 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"8", "user_input"=>"Bear", "wishlist"=>{"wishlist_id"=>"8", "user_input"=>"Bear"}}
+  [1m[36mWishlist Load (4.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 8], ["user_input", "Bear"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (4.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (4.5ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 71ms (Views: 0.5ms | ActiveRecord: 21.9ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:04:50 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"8", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 8]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 6.0ms | Allocations: 1568)
+
+
+Started POST "/users/login" for ::1 at 2021-08-13 19:05:14 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"isab", "password"=>"[FILTERED]", "user"=>{"username"=>"isab", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isab"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `login'
+Completed 200 OK in 18ms (Views: 3.0ms | ActiveRecord: 2.7ms | Allocations: 994)
+
+
+Started POST "/users/data" for ::1 at 2021-08-13 19:05:15 -0500
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:05:15 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>1, "user"=>{"id"=>1}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 27ms (Views: 2.7ms | ActiveRecord: 4.2ms | Allocations: 1004)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.6ms | ActiveRecord: 6.3ms | Allocations: 1541)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:05:29 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"1", "user_input"=>"F", "wishlist"=>{"wishlist_id"=>"1", "user_input"=>"F"}}
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (3.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 1], ["user_input", "F"], ["created_at", "2021-08-14 00:05:29.422000"], ["updated_at", "2021-08-14 00:05:29.422000"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 8.8ms | Allocations: 2418)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:05:29 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.1ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 30ms (Views: 0.5ms | ActiveRecord: 6.7ms | Allocations: 1568)
+
+
+Started POST "/wishlist/create" for ::1 at 2021-08-13 19:05:34 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"1", "user_input"=>"Yee", "wishlist"=>{"wishlist_id"=>"1", "user_input"=>"Yee"}}
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.7ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 1], ["user_input", "Yee"], ["created_at", "2021-08-14 00:05:34.380286"], ["updated_at", "2021-08-14 00:05:34.380286"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 2375)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:05:34 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (3.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 5.2ms | Allocations: 1596)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:05:35 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"1", "user_input"=>"F", "wishlist"=>{"wishlist_id"=>"1", "user_input"=>"F"}}
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "F"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (3.3ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 52ms (Views: 0.4ms | ActiveRecord: 14.5ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:05:36 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.9ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 5.3ms | Allocations: 1568)
+
+
+Started POST "/wishlist/destroy" for ::1 at 2021-08-13 19:05:40 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"1", "user_input"=>"Yee", "wishlist"=>{"wishlist_id"=>"1", "user_input"=>"Yee"}}
+  [1m[36mWishlist Load (2.5ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 1], ["user_input", "Yee"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (2.4ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.6ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 44ms (Views: 0.3ms | ActiveRecord: 12.6ms | Allocations: 3533)
+
+
+Started POST "/wishlist/show" for ::1 at 2021-08-13 19:05:40 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"1", "wishlist"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (2.2ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 1]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 4.7ms | Allocations: 1540)
+
+

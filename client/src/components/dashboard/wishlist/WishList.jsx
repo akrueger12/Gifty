@@ -13,7 +13,7 @@ import {
     StylesProvider
 } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
-import { retrieveUserData, retrieveWishList, createNewItem } from '../../../apis/api';
+import { retrieveUserData, retrieveWishList, createNewItem, destroyWishlistItem } from '../../../apis/api';
 import ClearIcon from '@material-ui/icons/Clear';
 import AddIcon from '@material-ui/icons/Add';
 import { Page } from '../../page/Page';
@@ -39,6 +39,12 @@ export const WishlistPage = () => {
         createNewItem(localStorage.userId, itemInputValue)
             .then(() => { updateWishlist() })
         setItemInputValue("");
+    }
+
+    const onItemRemoved = (itemName) => {
+        console.log("onItemRemovedEntered");
+        destroyWishlistItem(localStorage.userId, itemName)
+        .then(() => { updateWishlist() })
     }
 
     const updateWishlist = () => {
@@ -93,12 +99,12 @@ export const WishlistPage = () => {
                                 <List dense className='item-list'>
                                     {
                                         wishlistItems.map((item) => (
-                                            <ListItem className='item'>
+                                            <ListItem className='item' key={item}>
                                                 <div className='invitee-information'>
                                                     <ListItemText primary={item} />
                                                 </div>
                                                 <IconButton>
-                                                    <ClearIcon className='clear-icon'/>
+                                                    <ClearIcon className='clear-icon' onClick={() => onItemRemoved(item)}/>
                                                 </IconButton>
                                             </ListItem>
                                         ))
