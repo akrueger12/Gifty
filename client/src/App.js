@@ -22,7 +22,7 @@ const App = () => {
                         <Route exact path="/"><Login onSuccess={(id) => { localStorage.userId = id }} /></Route>
                         <Route path="/signup"><NewUser onSuccess={(id) => { localStorage.userId = id }} /></Route>
                         <Route path="/wishlist"><WishlistPage /></Route>
-                        <Route exact path='/gift-finder'>
+                        <Route path='/gift-finder'>
                             <GiftFinder />
                         </Route>
                         <Route path='/gift-finder/form'>
