@@ -28,4 +28,14 @@ class WishlistController < AuthController
       format.json { render json: { items: @userWishlist } }
     end
   end
+
+  def destroy
+    @wishlist_item_id = Wishlist.where(wishlist_id: params[:wishlist_id], user_input: params[:user_input]).collect(&:id)
+
+    Wishlist.destroy(@wishlist_item_id)
+
+    respond_to do |format|
+      format.json { render json: { status: :ok } }
+    end
+  end
 end

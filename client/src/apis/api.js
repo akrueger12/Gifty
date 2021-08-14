@@ -126,6 +126,27 @@ export const createNewItem = async (userId, item) => {
     }
 }
 
+export const destroyWishlistItem = async (userId, item) => {
+    let url = `${BASE_URL}/wishlist/destroy`;
+
+    const data = { wishlist_id: userId, user_input: item};
+
+    const response = await fetch(url, {
+        method: "POST",
+        mode: 'cors',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        return new Error('there was an error');
+    }
+}
+
 export const getSuggestionsFromKeywords = async (keywords) => {
     let url = `${BASE_URL}/gifts/show`;
 
