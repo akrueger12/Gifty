@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
   post 'auth/general_auth'
   post 'users/create'
   post 'users/login'

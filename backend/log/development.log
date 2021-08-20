@@ -25177,3 +25177,296 @@ Processing by Rails::InfoController#routes as HTML
 Completed 200 OK in 210ms (Views: 204.9ms | ActiveRecord: 0.0ms | Allocations: 10529)
 
 
+Started GET "/" for ::1 at 2021-08-20 16:05:03 -0500
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 39.7ms | Allocations: 339)
+Completed 200 OK in 126ms (Views: 69.0ms | ActiveRecord: 0.0ms | Allocations: 2590)
+
+
+Started GET "/" for ::1 at 2021-08-20 16:07:05 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.6ms | Allocations: 221)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 841)
+
+
+Started POST "//users/create" for ::1 at 2021-08-20 16:07:22 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"testThis", "password"=>"[FILTERED]", "user"=>{"username"=>"testThis", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (13.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "testThis"], ["password", "password"], ["created_at", "2021-08-20 21:07:22.105793"], ["updated_at", "2021-08-20 21:07:22.105793"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 38ms (Views: 0.9ms | ActiveRecord: 30.5ms | Allocations: 5571)
+
+
+Started POST "//users/data" for ::1 at 2021-08-20 16:07:22 -0500
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:07:22 -0500
+Processing by UsersController#data as */*
+  Parameters: {"id"=>9, "user"=>{"id"=>9}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 2.1ms | Allocations: 1951)
+
+
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (4.3ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 6.7ms | Allocations: 1465)
+
+
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:07:33 -0500
+Started POST "//users/data" for ::1 at 2021-08-20 16:07:33 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (0.8ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 1574)
+
+
+Processing by UsersController#data as */*
+  Parameters: {"id"=>9, "user"=>{"id"=>9}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.9ms | Allocations: 983)
+
+
+Started POST "//gifts/show" for ::1 at 2021-08-20 16:07:44 -0500
+Processing by GiftsController#show as */*
+  Parameters: {"keywords"=>["female", "5 - 10", "100+", "practical"], "gift"=>{}}
+  [1m[36mKeyword Load (2.7ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "female"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.8ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "5 - 10"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (1.1ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "100+"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mKeyword Load (0.7ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords" WHERE "keywords"."keyword" = $1 LIMIT $2[0m  [["keyword", "practical"], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:28:in `block in show'
+  [1m[36mGiftToKeyword Load (3.5ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 12]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.8ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 20]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.9ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 17]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGiftToKeyword Load (0.9ms)[0m  [1m[34mSELECT "gift_to_keywords".* FROM "gift_to_keywords" WHERE "gift_to_keywords"."keyword_id" = $1[0m  [["keyword_id", 1]]
+  ↳ app/controllers/gifts_controller.rb:37:in `collect'
+  [1m[36mGift Load (3.3ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.4ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.0ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.1ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.0ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.2ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.2ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (1.1ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+  [1m[36mGift Load (0.9ms)[0m  [1m[34mSELECT "gifts".* FROM "gifts" WHERE "gifts"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/gifts_controller.rb:59:in `block in show'
+Completed 200 OK in 133ms (Views: 2.7ms | ActiveRecord: 36.2ms | Allocations: 23218)
+
+
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:07:50 -0500
+Started POST "//users/data" for ::1 at 2021-08-20 16:07:50 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 1551)
+
+
+Processing by UsersController#data as */*
+  Parameters: {"id"=>9, "user"=>{"id"=>9}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:46:in `data'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 979)
+
+
+Started POST "//wishlist/create" for ::1 at 2021-08-20 16:07:55 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"9", "user_input"=>"Yuh", "wishlist"=>{"wishlist_id"=>"9", "user_input"=>"Yuh"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (2.0ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 9], ["user_input", "Yuh"], ["created_at", "2021-08-20 21:07:55.801865"], ["updated_at", "2021-08-20 21:07:55.801865"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.6ms | Allocations: 4333)
+
+
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:07:55 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 1571)
+
+
+Started POST "//wishlist/create" for ::1 at 2021-08-20 16:07:59 -0500
+Processing by WishlistController#create as */*
+  Parameters: {"wishlist_id"=>"9", "user_input"=>"Okay", "wishlist"=>{"wishlist_id"=>"9", "user_input"=>"Okay"}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mWishlist Create (1.2ms)[0m  [1m[32mINSERT INTO "wishlists" ("wishlist_id", "user_input", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["wishlist_id", 9], ["user_input", "Okay"], ["created_at", "2021-08-20 21:07:59.358948"], ["updated_at", "2021-08-20 21:07:59.358948"]]
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:8:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 2412)
+
+
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:07:59 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 1591)
+
+
+Started POST "//wishlist/destroy" for ::1 at 2021-08-20 16:08:00 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"9", "user_input"=>"Yuh", "wishlist"=>{"wishlist_id"=>"9", "user_input"=>"Yuh"}}
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 9], ["user_input", "Yuh"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (2.2ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.1ms | Allocations: 3563)
+
+
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:08:00 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 1562)
+
+
+Started POST "//wishlist/destroy" for ::1 at 2021-08-20 16:08:04 -0500
+Processing by WishlistController#destroy as */*
+  Parameters: {"wishlist_id"=>"9", "user_input"=>"Okay", "wishlist"=>{"wishlist_id"=>"9", "user_input"=>"Okay"}}
+  [1m[36mWishlist Load (1.0ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1 AND "wishlists"."user_input" = $2[0m  [["wishlist_id", 9], ["user_input", "Okay"]]
+  ↳ app/controllers/wishlist_controller.rb:33:in `collect'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mWishlist Destroy (0.8ms)[0m  [1m[31mDELETE FROM "wishlists" WHERE "wishlists"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlist_controller.rb:35:in `destroy'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.6ms | Allocations: 3521)
+
+
+Started POST "//wishlist/show" for ::1 at 2021-08-20 16:08:04 -0500
+Processing by WishlistController#show as */*
+  Parameters: {"user_id"=>"9", "wishlist"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/wishlist_controller.rb:23:in `show'
+  [1m[36mWishlist Load (0.7ms)[0m  [1m[34mSELECT "wishlists".* FROM "wishlists" WHERE "wishlists"."wishlist_id" = $1[0m  [["wishlist_id", 9]]
+  ↳ app/controllers/wishlist_controller.rb:25:in `map'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 1534)
+
+
+Started GET "/" for ::1 at 2021-08-20 16:22:56 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 255)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/annar/Documents/GitHub/Gifty/backend/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 2049ms
+Built at: 08/20/2021 4:23:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5889.2ms | Allocations: 43867)
+Completed 200 OK in 5904ms (Views: 5896.3ms | ActiveRecord: 0.0ms | Allocations: 46209)
+
+
