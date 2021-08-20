@@ -1,5 +1,5 @@
-//const BASE_URL = 'https://gifty-web-app.herokuapp.com/';
-const BASE_URL = 'http://localhost:3000/';
+const BASE_URL = 'https://gifty-web-app.herokuapp.com/';
+//const BASE_URL = 'http://localhost:3000/';
 
 export const createNewUser = async (username, password) => {
     let url = `${BASE_URL}/users/create`;
